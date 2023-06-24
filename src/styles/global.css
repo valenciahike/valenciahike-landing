@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.swiper {
+    --swiper-navigation-size: 20px;
+}
+
+.swiper-button-next, .swiper-button-prev {
+    @apply bg-white hover:bg-cream-yellow shadow-md rounded-full !w-10 !h-10 after:text-stone-800;
+}
+
+.swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled {
+    @apply !hidden;
+}
