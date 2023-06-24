@@ -9,16 +9,9 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 
 export default () => {
-  const router = useRouter();
+    const router = useRouter();
 
-    // const getContainerOffset = (el) => {
-    //     const elem = document.querySelectorAll(el)[0];
-    //     var offsetAmount = window.getComputedStyle(elem).marginLeft;
-
-    //     return parseInt(offsetAmount);
-    // }
-
-  return (
+    return (
         <Swiper
             modules={[Navigation, A11y, Autoplay]}
             slidesPerView={1.4}
