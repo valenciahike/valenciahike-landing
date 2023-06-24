@@ -22,10 +22,6 @@ const Meta = (props: IMetaProps) => {
         <link rel="icon" type="image/png" sizes="32x32" href={`${router.basePath}/favicon-32x32.png`} key="icon32" />
         <link rel="icon" type="image/png" sizes="16x16" href={`${router.basePath}/favicon-16x16.png`} key="icon16" />
         <link rel="icon" href={`${router.basePath}/favicon.ico`} key="favicon" />
-
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Candal&family=Permanent+Marker&display=swap" rel="stylesheet" />
       </Head>
       <NextSeo title={props.title} description={props.description} canonical={props.canonical}
         openGraph={{

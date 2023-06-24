@@ -22,19 +22,19 @@ const Main = (props: IMainProps) => {
                 <nav className="py-2">
                     <div className="container flex justify-between flex-wrap items-center gap-4">
                         <div className="flex items-center flex-grow">
-                            <a href="" className="inline-block">
-                                <img src={`${router.basePath}/assets/images/logo.svg`} alt="" />
-                            </a>
+                            <Link href="/" className="inline-block">
+                                <img src={`${router.basePath}/assets/images/logo_original.png`} className='w-24' alt="" />
+                            </Link>
                             <div className="lg:hidden flex items-center flex-nowrap gap-2 ml-auto">
                                 <button type="button" className="flex justify-center items-center bg-cream-yellow w-10 h-10 rounded-full text-center p-1">
-                                    <svg className="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" /> </svg>
+                                    <svg className="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor"> <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" /> </svg>
                                 </button>
                             </div>
                         </div>
                         <div id="menu-collapse" className="basis-full lg:basis-auto lg:ml-auto lg:!block" style={{ display: 'none' }}>
                             <ul className="flex items-center flex-col lg:flex-row gap-1">
-                                <li> <Link href="/" className={`block hover:bg-primary-light hover:text-white text-stone-800 uppercase font-title rounded-full px-4 py-2 text-sm ${router.pathname == '/' ? '!bg-primary !text-white' : ''}`}>Home</Link> </li>
-                                <li> <Link href="/about" className={`block hover:bg-primary-light hover:text-white text-stone-800 uppercase font-title rounded-full px-4 py-2 text-sm ${router.pathname == '/about' ? '!bg-primary !text-white' : ''}`}>Nosotros</Link> </li>
+                                <li> <Link href="/" className={`block hover:text-primary-light text-stone-800 uppercase font-title rounded-full px-4 py-2 text-sm ${router.pathname == '/' ? '!bg-primary !text-white' : ''}`}>Home</Link> </li>
+                                <li> <Link href="/about" className={`block hover:text-primary-light text-stone-800 uppercase font-title rounded-full px-4 py-2 text-sm ${router.pathname == '/about' ? '!bg-primary !text-white' : ''}`}>Nosotros</Link> </li>
                             </ul>
                         </div>
                     </div>
@@ -47,8 +47,8 @@ const Main = (props: IMainProps) => {
                 <div className="container">
                     <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-y-8 gap-x-4 lg:gap-8">
                         <div className="col-span-2 sm:col-span-3 lg:col-auto text-sm text-center lg:text-left">
-                            <a href="http://valenciahike.test" className="inline-block mb-4">
-                                <img className="inline-block w-32" src="http://valenciahike.test/home/logo_original.png" alt="" />
+                            <a href="/" className="inline-block mb-4">
+                                <img className="inline-block w-32" src={`${router.basePath}/assets/images/logo_original.png`} alt="" />
                             </a>
                             <div>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
                         </div>
@@ -72,11 +72,11 @@ const Main = (props: IMainProps) => {
                         <div className="col-span-2 sm:col-auto">
                             <h6 className="inline-block text-primary-light uppercase pt-1 border-t-4 border-primary-light mb-4">Contacto</h6>
                             <div className="flex flex-col items-start gap-y-3">
-                                <a href="javascript:void(0)" className="inline-flex items-center gap-2 break-all hover:text-tertiary hover:underline">
+                                <a href="" className="inline-flex items-center gap-2 break-all hover:text-tertiary hover:underline">
                                     <svg className="flex-shrink-0 text-primary-light w-6 h-6 bi bi-whatsapp" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"> <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"></path> </svg>
                                     <div>(+58) 414 123 4567</div>
                                 </a>
-                                <a href="javascript:void(0)" className="inline-flex items-center gap-2 break-all hover:text-tertiary hover:underline">
+                                <a href="" className="inline-flex items-center gap-2 break-all hover:text-tertiary hover:underline">
                                     <svg className="flex-shrink-0 text-primary-light w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"> <path d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z"></path> <path d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z"></path> </svg>
                                     <div>hola@valenciahike.com</div>
                                 </a>
