@@ -35,7 +35,7 @@ const Index = () => {
 
             <div className="mb-12">
                 <div className="container">
-                    <div className="grid grid-cols-2 items-center gap-6 lg:gap-12 xl:gap-20">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-y-6 lg:gap-12 xl:gap-20">
                         <div>
                             <h1 className="text-3xl lg:text-5xl font-title font-bold mb-4">¿Quiénes somos?</h1>
                             <h6 className="text-xl lg:text-2xl font-subtitle text-primary-light">Conoce las montañas de Carabobo</h6>
@@ -86,7 +86,7 @@ const Index = () => {
         {/* hiking benefits */}
         <section className="relative py-20">
             <div className="container">
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-y-6 lg:gap-8">
                     <div className="lg:border-r lg:pr-12 lg:mr-6">
                         <h1 className="text-3xl lg:text-5xl font-title font-bold mb-4">Beneficios del <span className="text-primary-light">Senderismo</span></h1>
                         <div className="font-serif text-stone-500 mt-6">
@@ -94,7 +94,7 @@ const Index = () => {
                         </div>
                     </div>
 
-                    <div className="grid grid-cols-2 gap-8">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                         <div className='flex gap-4 font-serif text-stone-700'>
                             <div className="inline-flex justify-center items-center flex-shrink-0 bg-primary-light bg-opacity-10 w-12 h-12 rounded-full text-primary text-2xl mb-2">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="#5a7c5c" viewBox="0 0 256 256"><path d="M72,136H32a8,8,0,0,1,0-16H67.72L81.34,99.56a8,8,0,0,1,13.32,0l25.34,38,9.34-14A8,8,0,0,1,136,120h24a8,8,0,0,1,0,16H140.28l-13.62,20.44a8,8,0,0,1-13.32,0L88,118.42l-9.34,14A8,8,0,0,1,72,136ZM178,32c-20.65,0-38.73,8.88-50,23.89C116.73,40.88,98.65,32,78,32A62.07,62.07,0,0,0,16,94c0,.75,0,1.5,0,2.25a8,8,0,1,0,16-.5c0-.58,0-1.17,0-1.75A46.06,46.06,0,0,1,78,48c19.45,0,35.78,10.36,42.6,27a8,8,0,0,0,14.8,0c6.82-16.67,23.15-27,42.6-27a46.06,46.06,0,0,1,46,46c0,53.61-77.76,102.15-96,112.8-10.83-6.31-42.63-26-66.68-52.21a8,8,0,1,0-11.8,10.82c31.17,34,72.93,56.68,74.69,57.63a8,8,0,0,0,7.58,0C136.21,220.66,240,164,240,94A62.07,62.07,0,0,0,178,32Z"></path></svg>
@@ -155,15 +155,15 @@ const Index = () => {
             </div>
 
             <div className="container">
-                <div className="grid items-center grid-cols-12 gap-4 lg:gap-6 xl:gap-12">
-                    <div className="col-span-3">
+                <div className="grid items-center grid-cols-1 lg:grid-cols-12 gap-y-8 lg:gap-6 xl:gap-12">
+                    <div className="col-span-12 lg:col-span-3">
                         <h1 className="text-3xl xl:text-5xl font-title font-bold mb-4">Nuestros <span className="text-primary-light">Productos</span></h1>
                         <div className="font-serif text-stone-500 mt-6 mb-4">
                             <p>Comprando nuestros productos estas apoyando de a sit amet, adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         </div>
                         <a href="" className="inline-block bg-green-700 text-white hover:text-white/80 font-bold rounded-2xl bg-gradient-to-b from-primary-light to-primary-dark px-6 py-3 hover:-translate-y-px">Ver tienda</a>
                     </div>
-                    <div className="col-span-9 grid grid-cols-4 gap-4 xl:gap-6">
+                    <div className="col-span-12 lg:col-span-9 | grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 xl:gap-6">
 
                         <div className="group bg-cream-yellow rounded-2xl hover:border-stone-800 hover:shadow-stone-900/10 hover:shadow-xl hover:scale-105 p-4 transition-all duration-300 ease-out">
                             <div className="mb-4">

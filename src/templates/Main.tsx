@@ -27,9 +27,9 @@ const Main = (props: IMainProps) => {
                     <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-y-8 gap-x-4 lg:gap-12">
                         <div className="col-span-2 sm:col-span-3 lg:col-auto text-sm text-center lg:text-left">
                             <a href="/" className="inline-block mb-4">
-                                <img className="inline-block w-32" src={`${router.basePath}/assets/images/logo_original.png`} alt="" />
+                                <img className="inline-block w-32 md:w-40" src={`${router.basePath}/assets/images/logo_original.png`} alt="" />
                             </a>
-                            <div>Somos una organización dedicados a formar una comunidad de montañistas y mostrar las rutas de montaña que ofrece el estado Carabobo y Venezuela</div>
+                            {/* <div>Somos una organización dedicados a formar una comunidad de montañistas y mostrar las rutas de montaña que ofrece el estado Carabobo y Venezuela</div> */}
                         </div>
                         <div>
                             <h6 className="inline-block font-subtitle text-primary-light uppercase mb-4">Sobre nosotros</h6>

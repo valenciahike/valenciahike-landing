@@ -14,7 +14,7 @@ export default () => {
     return (
         <Swiper
             modules={[Navigation, A11y, Autoplay]}
-            slidesPerView={1.4}
+            slidesPerView={2.4}
             spaceBetween={16}
             navigation
             autoplay={ true }
