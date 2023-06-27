@@ -23,7 +23,7 @@ const Main = (props: IMainProps) => {
             <main>{props.children}</main>
 
             <footer className="relative bg-primary-dark font-serif text-white pt-20 lg:pt-24">
-                <div className="container">
+                <div className="container max-w-6xl">
                     <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-y-8 gap-x-4 lg:gap-12">
                         <div className="col-span-2 sm:col-span-3 lg:col-auto text-sm text-center lg:text-left">
                             <a href="/" className="inline-block mb-4">
@@ -87,7 +87,7 @@ const Main = (props: IMainProps) => {
                     <div className="overflow-hidden">
                         <img src={`${router.basePath}/assets/images/footer_mountain_primary_top.svg`} alt="" className="absolute top-0 left-0 right-0 h-14 md:h-auto object-cover md:w-full select-none pointer-events-none" />
                     </div>
-                    <div className="container tracking-wider text-sm opacity-80">© Copyright {new Date().getFullYear()} {AppConfig.title}</div>
+                    <div className="container tracking-wider text-sm opacity-80">Copyright {new Date().getFullYear()} &copy; {AppConfig.title}</div>
                 </div>
             </footer>
         </div>

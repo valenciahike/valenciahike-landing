@@ -22,6 +22,7 @@ export default () => {
                         <li> <Link href="/" className={`block hover:text-primary-light text-stone-800 uppercase font-title rounded-full px-4 py-2 text-sm ${router.pathname == '/' ? '!bg-primary !text-white' : ''}`}>Home</Link> </li>
                         <li> <Link href="/about" className={`block hover:text-primary-light text-stone-800 uppercase font-title rounded-full px-4 py-2 text-sm ${router.pathname == '/about' ? '!bg-primary !text-white' : ''}`}>Nosotros</Link> </li>
                         <li> <Link href="/faqs" className={`block hover:text-primary-light text-stone-800 uppercase font-title rounded-full px-4 py-2 text-sm ${router.pathname == '/faqs' ? '!bg-primary !text-white' : ''}`}>FAQs</Link> </li>
+                        <li> <Link href="/tienda" className={`block hover:text-primary-light text-stone-800 uppercase font-title rounded-full px-4 py-2 text-sm ${router.pathname == '/tienda' ? '!bg-primary !text-white' : ''}`}>Tienda</Link> </li>
                     </ul>
                 </div>
             </div>

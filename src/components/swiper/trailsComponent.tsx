@@ -46,7 +46,7 @@ export default () => {
                   slidesOffsetAfter: 48,
               }
             }}
-            wrapperClass={'swiper-wrapper py-4'}
+            wrapperClass={'swiper-wrapper py-6'}
         >
             <SwiperSlide>
                 <div className="group block relative rounded-2xl aspect-[4/3] overflow-hidden hover:scale-105 hover:shadow-xl transition-all duration-500 ease-out">
