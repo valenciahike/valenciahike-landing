@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Candal&family=Permanent+Marker&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 
 .swiper {
     --swiper-theme-color: #005B2D;
