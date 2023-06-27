@@ -36,7 +36,7 @@ const About = () => {
                         <div>
                             <h1 className="text-3xl lg:text-5xl font-title font-bold mb-4">¿Quiénes somos?</h1>
                             <h6 className="text-xl lg:text-2xl font-subtitle text-primary-light">Una organización sin fines de lucro</h6>
-                            <div className="font-serif text-stone-500 text-lg mt-6">
+                            <div className="font-serif text-stone-500 md:text-lg mt-6">
                                 <p className="mb-4">Valencia Hike es una organización sin fines de lucro fundada en 2019 que promueve el senderismo y el ecoturismo en el Estado Carabobo y en todo el territorio nacional.</p>
                                 <p>Entre sus objetivos están: mostrar la diversidad de rutas y destinos naturales, crear y educar una comunidad de senderistas y montañistas responsables, reforestar y sanear el ecosistema de montaña, beneficiar a las comunidades locales, colaborar con otros proyectos ecológicos o turísticos y exhibir el montañismo como una actividad deportiva, recreativa y terapéutica.</p>
                             </div>
@@ -59,7 +59,7 @@ const About = () => {
                     <div className="grid grid-cols-12 items-center gap-6">
                         <div className="col-span-12 md:col-span-6 lg:col-span-5">
                             <h3 className='text-2xl lg:text-3xl font-title font-bold mb-4'>Rutas habituales de fin de semana</h3>
-                            <div className="font-serif text-stone-500 text-lg space-y-4">
+                            <div className="font-serif text-stone-500 md:text-lg space-y-4">
                                 <p>Se realizan rutas en las montañas locales todos los fines de semana para los distintos niveles de nuestra organización, donde disfrutamos de la naturaleza y pasamos un rato agradable compartiendo con las demás personas.</p>
                                 <p>En la mayoria de estas rutas definimos un sitio en la montaña para comer y disfrutar de un buen café preparado en el momento.</p>
                             </div>
@@ -77,7 +77,7 @@ const About = () => {
                         </div>
                         <div className='col-span-12 md:col-span-6 lg:col-span-5 lg:col-start-8'>
                             <h3 className='text-2xl lg:text-3xl font-title font-bold mb-4'>Caminamos a la costa desde nuestra ciudad</h3>
-                            <div className="font-serif text-stone-500 text-lg space-y-4">
+                            <div className="font-serif text-stone-500 md:text-lg space-y-4">
                                 <p>Caminatas desde el pueblo de Vigirima hasta la Bahia de Patanemo, y desde Naguanagua hasta San Esteban Pueblo en Puerto Cabello, atravesando varios kilometros del Parque Nacional San Esteban.</p>
                             </div>
                         </div>
@@ -88,7 +88,7 @@ const About = () => {
                     <div className="grid grid-cols-12 items-center gap-6">
                         <div className="col-span-12 md:col-span-6 lg:col-span-5">
                             <h3 className='text-2xl lg:text-3xl font-title font-bold mb-4'>Rutas foráneas</h3>
-                            <div className="font-serif text-stone-500 text-lg space-y-4">
+                            <div className="font-serif text-stone-500 md:text-lg space-y-4">
                                 <p>Realizamos rutas fuera de la ciudad de Valencia con cierta regularidad. Hemos visitado en varias ocasiones el Parque Nacional Henri Pittier en Aragua y el grandioso Waraira Repano (El Ávila) en nuestra ciudad capital.</p>
                             </div>
                         </div>
@@ -105,7 +105,7 @@ const About = () => {
                         </div>
                         <div className='col-span-12 md:col-span-6 lg:col-span-5 lg:col-start-8'>
                             <h3 className='text-2xl lg:text-3xl font-title font-bold mb-4'>Excursiones a los picos más altos de Venezuela</h3>
-                            <div className="font-serif text-stone-500 text-lg space-y-4">
+                            <div className="font-serif text-stone-500 md:text-lg space-y-4">
                                 <p>Viajes que se organizan regularmente a los picos de importante altura en nuestro país.</p>
                             </div>
                         </div>
@@ -126,7 +126,7 @@ const About = () => {
             <div className="container max-w-4xl">
                 <h6 className="text-xl lg:text-2xl font-subtitle text-yellow-400 mb-5">¡Valencia Hike es aún más!</h6>
                 <h1 className="text-4xl md:text-5xl font-title font-bold mb-4">Otras modalidades</h1>
-                <p className="font-serif text-lg text-white/75">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation .</p>
+                <p className="font-serif md:text-lg text-white/75">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation .</p>
 
                 <div className="grid grid-cols-12 gap-y-12 md:gap-12 lg:gap-20 mt-8">
                     <div className='col-span-12 md:col-span-6'>
@@ -159,7 +159,7 @@ const About = () => {
                     <div className="grid grid-cols-12 items-center gap-6">
                         <div className="col-span-12 md:col-span-5">
                             <h3 className='text-2xl lg:text-3xl font-title font-bold mb-4'>Valen de Viaje</h3>
-                            <div className="font-serif text-stone-500 text-lg space-y-4">
+                            <div className="font-serif text-stone-500 md:text-lg space-y-4">
                                 <p>Tuvimos la oportunidad de recibir a <b>Valentina Quintero</b> para la grabación de un segmento de su programa "Valen de Viaje" en el Estado Carabobo, el cual es transmitido por el canal IVC.</p>
                             </div>
                         </div>
@@ -178,8 +178,8 @@ const About = () => {
                     <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-6 lg:gap-8">
                         <div className="lg:border-r lg:pr-12 lg:mr-6">
                             <h1 className="text-2xl lg:text-3xl font-title font-bold mb-4">Otras organizaciones con quienes hemos trabajado</h1>
-                            <div className="font-serif text-stone-500 mt-6">
-                                <p className="text-lg mb-4">Distintas organizaciones que han conocido nuestro trabajo nos han contactado para la realización de actividades en conjunto, por ejemplo, rutas en alianza con tiendas deportivas, tiendas de alimentos saludables, inclusión de senderismo en actividades de yoga al aire libre, entre otros.</p>
+                            <div className="font-serif text-stone-500 md:text-lg mt-6">
+                                <p>Distintas organizaciones que han conocido nuestro trabajo nos han contactado para la realización de actividades en conjunto, por ejemplo, rutas en alianza con tiendas deportivas, tiendas de alimentos saludables, inclusión de senderismo en actividades de yoga al aire libre, entre otros.</p>
                             </div>
                         </div>
 
