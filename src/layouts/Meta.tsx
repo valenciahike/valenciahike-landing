@@ -30,7 +30,11 @@ const Meta = (props: IMetaProps) => {
                 <meta property="og:discription" content={props.description} />
                 <meta property="og:site_name" content={AppConfig.site_name} />
                 <meta property="og:type" content="website" />
-                <meta property="og:image" content={`${router.basePath}/assets/images/meta_image.png`} />
+                <meta property="og:image" content={`${router.basePath}/assets/images/meta_image.jpg`} />
+                <meta property="og:image:secure_url" content={`${router.basePath}/assets/images/meta_image.jpg`} />
+                <meta property="og:image:type" content="image/jpeg" />
+                <meta property="og:image:width" content="1200" />
+                <meta property="og:image:height" content="627" />
             </Head>
             <NextSeo
                 title={props.title}
