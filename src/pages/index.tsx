@@ -232,24 +232,10 @@ const Index = () => {
                     </div>
                     <div className="group bg-white rounded-2xl text-center p-2 md:p-4">
                         <div className="mb-4">
-                            <img src={`${router.basePath}/assets/images/team/02.png`} alt="" className="aspect-square object-cover rounded-lg" />
+                            <img src={`${router.basePath}/assets/images/team/06.png`} alt="" className="aspect-square object-cover rounded-lg" />
                         </div>
-                        <div className="font-title mb-1 lg:mb-3 !leading-tight text-sm xl:text-base">Andrea Rodriguez</div>
-                        <div className="text-stone-400 font-serif text-sm leading-tight">Colaborador</div>
-                    </div>
-                    <div className="group bg-white rounded-2xl text-center p-2 md:p-4">
-                        <div className="mb-4">
-                            <img src={`${router.basePath}/assets/images/team/03.png`} alt="" className="aspect-square object-cover rounded-lg" />
-                        </div>
-                        <div className="font-title mb-1 lg:mb-3 !leading-tight text-sm xl:text-base">Erick Duarte</div>
-                        <div className="text-stone-400 font-serif text-sm leading-tight">Colaborador</div>
-                    </div>
-                    <div className="group bg-white rounded-2xl text-center p-2 md:p-4">
-                        <div className="mb-4">
-                            <img src={`${router.basePath}/assets/images/team/04.png`} alt="" className="aspect-square object-cover rounded-lg" />
-                        </div>
-                        <div className="font-title mb-1 lg:mb-3 !leading-tight text-sm xl:text-base">Carlos Torrealba</div>
-                        <div className="text-stone-400 font-serif text-sm leading-tight">Colaborador</div>
+                        <div className="font-title mb-1 lg:mb-3 !leading-tight text-sm xl:text-base">José Santana</div>
+                        <div className="text-stone-400 font-serif text-sm leading-tight">Médico</div>
                     </div>
                     <div className="group bg-white rounded-2xl text-center p-2 md:p-4">
                         <div className="mb-4">
@@ -260,17 +246,10 @@ const Index = () => {
                     </div>
                     <div className="group bg-white rounded-2xl text-center p-2 md:p-4">
                         <div className="mb-4">
-                            <img src={`${router.basePath}/assets/images/team/06.png`} alt="" className="aspect-square object-cover rounded-lg" />
+                            <img src={`${router.basePath}/assets/images/team/04.png`} alt="" className="aspect-square object-cover rounded-lg" />
                         </div>
-                        <div className="font-title mb-1 lg:mb-3 !leading-tight text-sm xl:text-base">José Santana</div>
-                        <div className="text-stone-400 font-serif text-sm leading-tight">Médico</div>
-                    </div>
-                    <div className="group bg-white rounded-2xl text-center p-2 md:p-4">
-                        <div className="mb-4">
-                            <img src={`${router.basePath}/assets/images/team/07.png`} alt="" className="aspect-square object-cover rounded-lg" />
-                        </div>
-                        <div className="font-title mb-1 lg:mb-3 !leading-tight text-sm xl:text-base">Ling Hung</div>
-                        <div className="text-stone-400 font-serif text-sm leading-tight">Colaborador</div>
+                        <div className="font-title mb-1 lg:mb-3 !leading-tight text-sm xl:text-base">Carlos Torrealba</div>
+                        <div className="text-stone-400 font-serif text-sm leading-tight">Médico Veterinario</div>
                     </div>
                     <div className="group bg-white rounded-2xl text-center p-2 md:p-4">
                         <div className="mb-4">
@@ -285,6 +264,27 @@ const Index = () => {
                         </div>
                         <div className="font-title mb-1 lg:mb-3 !leading-tight text-sm xl:text-base">Juan Miguel Paolini</div>
                         <div className="text-stone-400 font-serif text-sm leading-tight">Rescatista</div>
+                    </div>
+                    <div className="group bg-white rounded-2xl text-center p-2 md:p-4">
+                        <div className="mb-4">
+                            <img src={`${router.basePath}/assets/images/team/02.png`} alt="" className="aspect-square object-cover rounded-lg" />
+                        </div>
+                        <div className="font-title mb-1 lg:mb-3 !leading-tight text-sm xl:text-base">Andrea Rodriguez</div>
+                        <div className="text-stone-400 font-serif text-sm leading-tight">Colaborador</div>
+                    </div>
+                    <div className="group bg-white rounded-2xl text-center p-2 md:p-4">
+                        <div className="mb-4">
+                            <img src={`${router.basePath}/assets/images/team/07.png`} alt="" className="aspect-square object-cover rounded-lg" />
+                        </div>
+                        <div className="font-title mb-1 lg:mb-3 !leading-tight text-sm xl:text-base">Ling Hung</div>
+                        <div className="text-stone-400 font-serif text-sm leading-tight">Colaborador</div>
+                    </div>
+                    <div className="group bg-white rounded-2xl text-center p-2 md:p-4">
+                        <div className="mb-4">
+                            <img src={`${router.basePath}/assets/images/team/03.png`} alt="" className="aspect-square object-cover rounded-lg" />
+                        </div>
+                        <div className="font-title mb-1 lg:mb-3 !leading-tight text-sm xl:text-base">Erick Duarte</div>
+                        <div className="text-stone-400 font-serif text-sm leading-tight">Colaborador</div>
                     </div>
                     <div className="group bg-white rounded-2xl text-center p-2 md:p-4">
                         <div className="mb-4">
