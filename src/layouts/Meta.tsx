@@ -19,6 +19,7 @@ const Meta = (props: IMetaProps) => {
                 <meta charSet="UTF-8" key="charset" />
                 <meta name="viewport" content="width=device-width,initial-scale=1" key="viewport" />
                 <meta name="robots" content="index, follow" />
+                <meta name="keywords" content="valencia, carabobo, venezuela, maracay, hiking, caracas, senderismo, trail running, montañas, cerros, selva, rutas de montaña, organización, parque nacional san esteban, casupo" />
 
                 <link rel="apple-touch-icon" href={`${router.basePath}/apple-touch-icon.png`} key="apple" />
                 <link rel="icon" type="image/png" sizes="32x32" href={`${router.basePath}/favicon-32x32.png`} key="icon32" />
@@ -28,13 +29,15 @@ const Meta = (props: IMetaProps) => {
                 <meta property="og:url" content="https://valenciahike.com" />
                 <meta property="og:title" content={props.title} />
                 <meta property="og:discription" content={props.description} />
-                <meta property="og:site_name" content={AppConfig.site_name} />
+                <meta property="og:site_name" content={AppConfig.title} />
                 <meta property="og:type" content="website" />
                 <meta property="og:image" content={`${router.basePath}/assets/images/meta_image.jpg`} />
                 <meta property="og:image:secure_url" content={`${router.basePath}/assets/images/meta_image.jpg`} />
                 <meta property="og:image:type" content="image/jpeg" />
                 <meta property="og:image:width" content="1200" />
-                <meta property="og:image:height" content="627" />
+                <meta property="og:image:height" content="630" />
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:site" content="@valenciahike"></meta>
             </Head>
             <NextSeo
                 title={props.title}
