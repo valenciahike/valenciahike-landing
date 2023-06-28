@@ -17,35 +17,20 @@ const Meta = (props: IMetaProps) => {
         <>
             <Head>
                 <meta charSet="UTF-8" key="charset" />
-                <meta
-                    name="viewport"
-                    content="width=device-width,initial-scale=1"
-                    key="viewport"
-                />
-                <link
-                    rel="apple-touch-icon"
-                    href={`${router.basePath}/apple-touch-icon.png`}
-                    key="apple"
-                />
-                <link
-                    rel="icon"
-                    type="image/png"
-                    sizes="32x32"
-                    href={`${router.basePath}/favicon-32x32.png`}
-                    key="icon32"
-                />
-                <link
-                    rel="icon"
-                    type="image/png"
-                    sizes="16x16"
-                    href={`${router.basePath}/favicon-16x16.png`}
-                    key="icon16"
-                />
-                <link
-                    rel="icon"
-                    href={`${router.basePath}/favicon.ico`}
-                    key="favicon"
-                />
+                <meta name="viewport" content="width=device-width,initial-scale=1" key="viewport" />
+                <meta name="robots" content="index, follow" />
+
+                <link rel="apple-touch-icon" href={`${router.basePath}/apple-touch-icon.png`} key="apple" />
+                <link rel="icon" type="image/png" sizes="32x32" href={`${router.basePath}/favicon-32x32.png`} key="icon32" />
+                <link rel="icon" type="image/png" sizes="16x16" href={`${router.basePath}/favicon-16x16.png`} key="icon16" />
+                <link rel="icon" href={`${router.basePath}/favicon.ico`} key="favicon" />
+
+                <meta property="og:url" content="https://valenciahike.com" />
+                <meta property="og:title" content={props.title} />
+                <meta property="og:discription" content={props.description} />
+                <meta property="og:site_name" content={AppConfig.site_name} />
+                <meta property="og:type" content="website" />
+                <meta property="og:image" content={`${router.basePath}/assets/images/meta_image.png`} />
             </Head>
             <NextSeo
                 title={props.title}

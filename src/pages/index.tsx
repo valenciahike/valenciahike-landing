@@ -7,7 +7,7 @@ import { Main } from '@/templates/Main';
 const Index = () => {
   const router = useRouter();
 
-    return (<Main meta={<Meta title="Bienvenido a Valencia Hike" description="Inicio de pagina" />}>
+    return (<Main meta={<Meta title="Bienvenido a Valencia Hike" description="Organización dedicados a formar una comunidad de montañistas y mostrar las rutas de montaña que ofrece el estado Carabobo y Venezuela." />}>
         {/* hero */}
         <header className="relative flex items-center z-10 bg-slate-900 text-white text-center py-20 min-h-[85vh] bg-no-repeat bg-cover" style={{ backgroundImage: `url(${router.basePath}/assets/images/hero-bg.png)` }}>
 

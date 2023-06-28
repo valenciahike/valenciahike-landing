@@ -7,7 +7,7 @@ import { Main } from '@/templates/Main';
 const About = () => {
     const router = useRouter();
 
-    return (<Main meta={<Meta title="Nosotros - Valencia Hike" description="Sobre nosotros pagina" />}>
+    return (<Main meta={<Meta title="Sobre nosotros - Valencia Hike" description="Es una organización sin fines de lucro fundada en 2019 que promueve el senderismo y el ecoturismo en el Estado Carabobo y en todo el territorio nacional." />}>
         {/* hero */}
         <section className="relative flex items-center z-10 bg-slate-900 text-white text-center py-32 bg-no-repeat bg-cover" style={{ backgroundImage: `url(${router.basePath}/assets/images/hero-bg.png)` }}>
 
