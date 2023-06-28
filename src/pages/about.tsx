@@ -1,7 +1,8 @@
+import { useRouter } from 'next/router';
+
 import KidzComponent from '@/components/swiper/KidzComponent';
 import { Meta } from '@/layouts/Meta';
 import { Main } from '@/templates/Main';
-import { useRouter } from 'next/router';
 
 const About = () => {
     const router = useRouter();
@@ -11,8 +12,8 @@ const About = () => {
         <section className="relative flex items-center z-10 bg-slate-900 text-white text-center py-32 bg-no-repeat bg-cover" style={{ backgroundImage: `url(${router.basePath}/assets/images/hero-bg.png)` }}>
 
             <div className="overflow-hidden">
-                <img src={`${router.basePath}/assets/images/mountain-white-top.svg`} alt="" className="absolute top-0 left-0 right-0 h-14 md:h-auto object-cover md:w-full select-none pointer-events-none" />
-                <img src={`${router.basePath}/assets/images/mountain-cream-bottom.svg`} alt="" className="absolute bottom-0 left-0 right-0 h-14 md:h-auto object-cover md:w-full select-none pointer-events-none" />
+                <img src={`${router.basePath}/assets/images/mountain-white-top.svg`} alt="" className="absolute top-0 inset-x-0 h-14 md:h-auto object-cover md:w-full select-none pointer-events-none" />
+                <img src={`${router.basePath}/assets/images/mountain-cream-bottom.svg`} alt="" className="absolute bottom-0 inset-x-0 h-14 md:h-auto object-cover md:w-full select-none pointer-events-none" />
             </div>
 
             <div className="absolute bg-black/30 inset-0 -z-10"></div>
@@ -26,8 +27,8 @@ const About = () => {
         {/* about us */}
         <section id="about" className="relative z-10 bg-cream-yellow py-20 lg:py-24">
             <div className="overflow-hidden">
-                <img src={`${router.basePath}/assets/images/mountain_cream_dark_bottom.svg`} alt="" className="absolute bottom-0 left-0 right-0 h-1/2 md:h-auto object-cover md:w-full -z-[5] select-none pointer-events-none" />
-                <img src={`${router.basePath}/assets/images/mountain-white-bottom.svg`} alt="" className="absolute bottom-0 left-0 right-0 h-14 md:h-auto object-cover md:w-full select-none pointer-events-none" />
+                <img src={`${router.basePath}/assets/images/mountain_cream_dark_bottom.svg`} alt="" className="absolute bottom-0 inset-x-0 h-1/2 md:h-auto object-cover md:w-full -z-10 select-none pointer-events-none" />
+                <img src={`${router.basePath}/assets/images/mountain-white-bottom.svg`} alt="" className="absolute bottom-0 inset-x-0 h-14 md:h-auto object-cover md:w-full select-none pointer-events-none" />
             </div>
 
             <div className="mb-12">
@@ -58,13 +59,13 @@ const About = () => {
                 <div className="py-8">
                     <div className="grid grid-cols-12 items-center gap-6">
                         <div className="col-span-12 md:col-span-6 lg:col-span-5">
-                            <h3 className='text-2xl lg:text-3xl font-title font-bold mb-4'>Rutas habituales de fin de semana</h3>
+                            <h3 className="text-2xl lg:text-3xl font-title font-bold mb-4">Rutas habituales de fin de semana</h3>
                             <div className="font-serif text-stone-500 md:text-lg space-y-4">
                                 <p>Se realizan rutas en las montañas locales todos los fines de semana para los distintos niveles de nuestra organización, donde disfrutamos de la naturaleza y pasamos un rato agradable compartiendo con las demás personas.</p>
                                 <p>En la mayoria de estas rutas definimos un sitio en la montaña para comer y disfrutar de un buen café preparado en el momento.</p>
                             </div>
                         </div>
-                        <div className='col-span-12 md:col-span-6 lg:col-start-7'>
+                        <div className="col-span-12 md:col-span-6 lg:col-start-7">
                             <img src={`${router.basePath}/assets/images/img-ew8grbd.png`} className="rounded-3xl" alt="" />
                         </div>
                     </div>
@@ -75,8 +76,8 @@ const About = () => {
                         <div className="col-span-12 md:col-span-6 lg:col-span-6">
                             <img src={`${router.basePath}/assets/images/img-f9s3kkj.png`} className="rounded-3xl" alt="" />
                         </div>
-                        <div className='col-span-12 md:col-span-6 lg:col-span-5 lg:col-start-8'>
-                            <h3 className='text-2xl lg:text-3xl font-title font-bold mb-4'>Caminamos a la costa desde nuestra ciudad</h3>
+                        <div className="col-span-12 md:col-span-6 lg:col-span-5 lg:col-start-8">
+                            <h3 className="text-2xl lg:text-3xl font-title font-bold mb-4">Caminamos a la costa desde nuestra ciudad</h3>
                             <div className="font-serif text-stone-500 md:text-lg space-y-4">
                                 <p>Caminatas desde el pueblo de Vigirima hasta la Bahia de Patanemo, y desde Naguanagua hasta San Esteban Pueblo en Puerto Cabello, atravesando varios kilometros del Parque Nacional San Esteban.</p>
                             </div>
@@ -87,12 +88,12 @@ const About = () => {
                 <div className="py-8">
                     <div className="grid grid-cols-12 items-center gap-6">
                         <div className="col-span-12 md:col-span-6 lg:col-span-5">
-                            <h3 className='text-2xl lg:text-3xl font-title font-bold mb-4'>Rutas foráneas</h3>
+                            <h3 className="text-2xl lg:text-3xl font-title font-bold mb-4">Rutas foráneas</h3>
                             <div className="font-serif text-stone-500 md:text-lg space-y-4">
                                 <p>Realizamos rutas fuera de la ciudad de Valencia con cierta regularidad. Hemos visitado en varias ocasiones el Parque Nacional Henri Pittier en Aragua y el grandioso Waraira Repano (El Ávila) en nuestra ciudad capital.</p>
                             </div>
                         </div>
-                        <div className='col-span-12 md:col-span-6 lg:col-start-7'>
+                        <div className="col-span-12 md:col-span-6 lg:col-start-7">
                             <img src={`${router.basePath}/assets/images/img-qwr8gw7.png`} className="rounded-3xl" alt="" />
                         </div>
                     </div>
@@ -103,8 +104,8 @@ const About = () => {
                         <div className="col-span-12 md:col-span-6 lg:col-span-6">
                             <img src={`${router.basePath}/assets/images/img-9th5vc4.png`} className="rounded-3xl" alt="" />
                         </div>
-                        <div className='col-span-12 md:col-span-6 lg:col-span-5 lg:col-start-8'>
-                            <h3 className='text-2xl lg:text-3xl font-title font-bold mb-4'>Excursiones a los picos más altos de Venezuela</h3>
+                        <div className="col-span-12 md:col-span-6 lg:col-span-5 lg:col-start-8">
+                            <h3 className="text-2xl lg:text-3xl font-title font-bold mb-4">Excursiones a los picos más altos de Venezuela</h3>
                             <div className="font-serif text-stone-500 md:text-lg space-y-4">
                                 <p>Viajes que se organizan regularmente a los picos de importante altura en nuestro país.</p>
                             </div>
@@ -117,8 +118,8 @@ const About = () => {
         <section className="relative flex items-center z-10 bg-slate-900 text-white text-center py-20 min-h-[85vh] bg-no-repeat bg-cover bg-center" style={{ backgroundImage: `url(${router.basePath}/assets/images/sec-g8sfd.jpg)` }}>
 
             <div className="overflow-hidden">
-                <img src={`${router.basePath}/assets/images//mountain-white-top.svg`} alt="" className="absolute top-0 left-0 right-0 h-14 md:h-auto object-cover md:w-full select-none pointer-events-none" />
-                <img src={`${router.basePath}/assets/images//mountain-cream-bottom.svg`} alt="" className="absolute bottom-0 left-0 right-0 h-14 md:h-auto object-cover md:w-full select-none pointer-events-none" />
+                <img src={`${router.basePath}/assets/images//mountain-white-top.svg`} alt="" className="absolute top-0 inset-x-0 h-14 md:h-auto object-cover md:w-full select-none pointer-events-none" />
+                <img src={`${router.basePath}/assets/images//mountain-cream-bottom.svg`} alt="" className="absolute bottom-0 inset-x-0 h-14 md:h-auto object-cover md:w-full select-none pointer-events-none" />
             </div>
 
             <div className="absolute bg-gradient-to-br from-secondary/50 to-primary-dark/90 inset-0 -z-10"></div>
@@ -129,14 +130,14 @@ const About = () => {
                 <p className="font-serif md:text-lg text-white/75">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation .</p>
 
                 <div className="grid grid-cols-12 gap-y-12 md:gap-12 lg:gap-20 mt-8">
-                    <div className='col-span-12 md:col-span-6'>
-                        <h5 className='text-tertiary text-2xl font-subtitle mb-3'>VH Kidz</h5>
-                        <div className='font-serif text-white/75 mb-6'>Una modalidad creada para el disfrute y concientización de los más pequeños de la casa junto a sus representantes</div>
+                    <div className="col-span-12 md:col-span-6">
+                        <h5 className="text-tertiary text-2xl font-subtitle mb-3">VH Kidz</h5>
+                        <div className="font-serif text-white/75 mb-6">Una modalidad creada para el disfrute y concientización de los más pequeños de la casa junto a sus representantes</div>
                         <KidzComponent />
                     </div>
-                    <div className='col-span-12 md:col-span-6'>
-                        <h5 className='text-tertiary text-2xl font-subtitle mb-3'>VH Trail Running</h5>
-                        <div className='font-serif text-white/75 mb-6'>Una variante creada para aquellos que quieren exigirse un poco más, e incluso medirse en carreras. Una modalidad donde la finalidad es la exigencia física y la competitividad</div>
+                    <div className="col-span-12 md:col-span-6">
+                        <h5 className="text-tertiary text-2xl font-subtitle mb-3">VH Trail Running</h5>
+                        <div className="font-serif text-white/75 mb-6">Una variante creada para aquellos que quieren exigirse un poco más, e incluso medirse en carreras. Una modalidad donde la finalidad es la exigencia física y la competitividad</div>
                         <KidzComponent />
                     </div>
                 </div>
@@ -145,9 +146,9 @@ const About = () => {
 
         <section className="relative z-10 bg-cream-yellow py-20 lg:pb-40 lg:pt-24">
             <div className="overflow-hidden">
-                <img src={`${router.basePath}/assets/images/mountain-big-white-bottom.svg`} alt="" className="absolute bottom-0 left-0 right-0 h-14 md:h-auto object-cover md:w-full select-none pointer-events-none" />
-                <img src={`${router.basePath}/assets/images/mountain_primary_bottom.svg`} alt="" className="absolute bottom-0 left-0 right-0 h-14 md:h-auto object-cover md:w-full select-none pointer-events-none" />
-                <img src={`${router.basePath}/assets/images/mountain_cream_dark_bottom.svg`} alt="" className="absolute bottom-0 left-0 right-0 h-1/2 md:h-auto object-cover md:w-full -z-[5] select-none pointer-events-none" />
+                <img src={`${router.basePath}/assets/images/mountain-big-white-bottom.svg`} alt="" className="absolute bottom-0 inset-x-0 h-14 md:h-auto object-cover md:w-full select-none pointer-events-none" />
+                <img src={`${router.basePath}/assets/images/mountain_primary_bottom.svg`} alt="" className="absolute bottom-0 inset-x-0 h-14 md:h-auto object-cover md:w-full select-none pointer-events-none" />
+                <img src={`${router.basePath}/assets/images/mountain_cream_dark_bottom.svg`} alt="" className="absolute bottom-0 inset-x-0 h-1/2 md:h-auto object-cover md:w-full -z-10 select-none pointer-events-none" />
             </div>
 
             <div className="container">
@@ -158,12 +159,12 @@ const About = () => {
                 <div className="py-8">
                     <div className="grid grid-cols-12 items-center gap-6">
                         <div className="col-span-12 md:col-span-5">
-                            <h3 className='text-2xl lg:text-3xl font-title font-bold mb-4'>Valen de Viaje</h3>
+                            <h3 className="text-2xl lg:text-3xl font-title font-bold mb-4">Valen de Viaje</h3>
                             <div className="font-serif text-stone-500 md:text-lg space-y-4">
                                 <p>Tuvimos la oportunidad de recibir a <b>Valentina Quintero</b> para la grabación de un segmento de su programa "Valen de Viaje" en el Estado Carabobo, el cual es transmitido por el canal IVC.</p>
                             </div>
                         </div>
-                        <div className='col-span-12 md:col-span-6 md:col-start-7'>
+                        <div className="col-span-12 md:col-span-6 md:col-start-7">
                             <a href="#!" className="relative group" title="Abrir video en Youtube">
                                 <img src={`${router.basePath}/assets/images/img-q8ewtjyk.png`} className="group-hover:-translate-y-2 transition-all duration-500" alt="" />
                                 <div className="absolute inline-flex items-center justify-center top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 text-white rounded-full w-16 h-16 shadow-lg shadow-red-600/50 bg-gradient-to-b from-red-500 to-red-700 group-hover:scale-125 transition-all">

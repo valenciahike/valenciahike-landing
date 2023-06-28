@@ -1,5 +1,3 @@
-const defaultTheme = require('tailwindcss/defaultTheme');
-
 /** @type {import('tailwindcss').Config} */
 module.exports = {
     content: ['./src/**/*.{js,ts,jsx,tsx}'],
@@ -8,13 +6,13 @@ module.exports = {
             fontFamily: {
                 serif: ['Bree Serif', 'serif'],
                 title: ['Candal', 'sans-serif'],
-                subtitle: ['Permanent Marker', 'cursive']
+                subtitle: ['Permanent Marker', 'cursive'],
             },
             colors: {
                 primary: {
                     DEFAULT: '#005B2D',
                     light: '#5B9A42',
-                    dark: '#003029'
+                    dark: '#003029',
                 },
                 secondary: {
                     DEFAULT: '#F2682A',
@@ -27,7 +25,7 @@ module.exports = {
                 cream: {
                     yellow: '#EFEEEA',
                     green: '#E1EAE2',
-                }
+                },
             },
             // screens: {
             //     'sm': '640px',
@@ -46,8 +44,8 @@ module.exports = {
                     lg: '984px',
                     xl: '1240px',
                     '2xl': '1366px',
-                }
-            }
+                },
+            },
         },
     },
     plugins: [],
