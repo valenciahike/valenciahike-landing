@@ -44,6 +44,7 @@
         "tailwindcss/classnames-order": "off",
         "tailwindcss/no-custom-classname": "off",
         "jsx-a11y/anchor-is-valid": "off",
+        "consistent-return": "off",
         "no-restricted-syntax": [
           "error",
           "ForInStatement",
