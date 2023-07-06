@@ -36,13 +36,14 @@ const Main = (props: IMainProps) => {
                             <h6 className="inline-block font-subtitle text-primary-light uppercase mb-4">Sobre nosotros</h6>
                             <ul className="space-y-1">
                                 <li><a href="" className="hover:text-tertiary hover:underline">Nosotros</a></li>
-                                <li><a href="" className="hover:text-tertiary hover:underline">Nuestro equipo</a></li>
-                                <li><a href="" className="hover:text-tertiary hover:underline">Valores</a></li>
+                                <li><a href="" className="hover:text-tertiary hover:underline">Aspectos Legales</a></li>
+                                <li><a href="" className="hover:text-tertiary hover:underline">Estatutos y Lineamientos</a></li>
                                 <li><a href="" className="hover:text-tertiary hover:underline">Nuestros aliados</a></li>
+                                <li><a href="" className="hover:text-tertiary hover:underline">FAQs</a></li>
                             </ul>
                         </div>
                         <div>
-                            <h6 className="inline-block font-subtitle text-primary-light uppercase mb-4">Actividades</h6>
+                            <h6 className="inline-block font-subtitle text-primary-light uppercase mb-4">Otras modalidades</h6>
                             <ul className="space-y-1">
                                 <li><a href="" className="hover:text-tertiary hover:underline">VH Kidz</a></li>
                                 <li><a href="" className="hover:text-tertiary hover:underline">VH Trail running</a></li>

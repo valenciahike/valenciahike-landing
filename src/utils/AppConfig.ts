@@ -8,10 +8,10 @@ export const AppConfig = {
     locale: 'es',
     contact: {
         whatsapp: {
-            text: '(+58) 414 123 4567',
-            formatted: '584141234567',
+            text: '(+58) 414 5915153',
+            formatted: '584145915153',
         },
-        email: 'hola@valenciahike.com',
+        email: 'hikevalencia@gmail.com',
     },
     rrss: {
         instagram: 'valenciahike',

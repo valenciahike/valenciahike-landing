@@ -19,8 +19,8 @@ const Index = () => {
             <div className="absolute bg-black/30 inset-0 -z-10"></div>
 
             <div className="container max-w-4xl">
-                <h1 className="text-3xl md:text-5xl font-title mb-6">Una Ruta <span className="text-primary-light">Hacia La Aventura</span></h1>
-                <h6 className="text-lg md:text-2xl font-serif mb-5">Somos una organización dedicados a formar una comunidad de montañistas y mostrar las rutas de montaña que ofrece el estado Carabobo y Venezuela</h6>
+                <h1 className="text-3xl md:text-5xl font-title mb-6">Recorramos <span className="text-primary-light">La Ciudad</span> Desde Las Alturas</h1>
+                <h6 className="text-lg md:text-2xl font-serif mb-5">Somos una organización dedicada a formar una comunidad de montañistas y mostrar las rutas de montaña que ofrece el estado Carabobo y Venezuela</h6>
 
                 <a href="" className="inline-block bg-green-700 text-white hover:text-white/80 font-bold rounded-2xl bg-gradient-to-b from-primary-light to-primary-dark px-6 py-3 hover:-translate-y-px">Unirse a Valencia Hike</a>
             </div>
@@ -40,8 +40,8 @@ const Index = () => {
                             <h1 className="text-3xl lg:text-5xl font-title font-bold mb-4">¿Quiénes somos?</h1>
                             <h6 className="text-xl lg:text-2xl font-subtitle text-primary-light">Conoce las montañas de Carabobo</h6>
                             <div className="font-serif text-stone-500 md:text-lg mt-6">
-                                <p className="mb-4">Somos una organización sin fines de lucro de voluntarios apasionados por el senderismo.</p>
-                                <p className="mb-4">Valencia Hike fue fundada casualmente en el año 2019 y formalmente a inicios de 2022, de mano de dos montañistas con ganas de mostrar esas bondades que ofrece la naturaleza y las montañas de Carabobo. Luego se fueron uniendo más compañeros senderistas y montañistas creando así un equipo de trabajo multidisciplinario que hoy por hoy conforman el staff de guías. </p>
+                                <p className="mb-4">Somos una organización sin fines de lucro de voluntarios apasionados por el montañismo.</p>
+                                <p className="mb-4">Valencia Hike fue fundada casualmente en el año 2019 y formalizada en el 2022, de mano de dos montañistas con ganas de mostrar esas bondades que ofrece la naturaleza y las montañas de Carabobo, a quienes se le fueron uniendo más compañeros montañistas creando así un equipo de trabajo multidisciplinario que hoy por hoy conforman el staff de guías.</p>
                             </div>
                         </div>
                         <div>
@@ -228,7 +228,7 @@ const Index = () => {
                             <img src={`${router.basePath}/assets/images/team/01.png`} alt="" className="aspect-square object-cover rounded-lg" />
                         </div>
                         <div className="font-title mb-1 lg:mb-3 !leading-tight text-sm xl:text-base">Fernando Gómez</div>
-                        <div className="text-stone-400 font-serif text-sm leading-tight">Coordinador</div>
+                        <div className="text-stone-400 font-serif text-sm leading-tight">Coordinador / Guía Turístico</div>
                     </div>
                     <div className="group bg-white rounded-2xl text-center p-2 md:p-4">
                         <div className="mb-4">
@@ -253,10 +253,10 @@ const Index = () => {
                     </div>
                     <div className="group bg-white rounded-2xl text-center p-2 md:p-4">
                         <div className="mb-4">
-                            <img src={`${router.basePath}/assets/images/team/08.png`} alt="" className="aspect-square object-cover rounded-lg" />
+                            <img src={`${router.basePath}/assets/images/team/07.png`} alt="" className="aspect-square object-cover rounded-lg" />
                         </div>
-                        <div className="font-title mb-1 lg:mb-3 !leading-tight text-sm xl:text-base">"Juancho" Nuñez</div>
-                        <div className="text-stone-400 font-serif text-sm leading-tight">Runner Montañista</div>
+                        <div className="font-title mb-1 lg:mb-3 !leading-tight text-sm xl:text-base">Ling Hung</div>
+                        <div className="text-stone-400 font-serif text-sm leading-tight">Psicólogo</div>
                     </div>
                     <div className="group bg-white rounded-2xl text-center p-2 md:p-4">
                         <div className="mb-4">
@@ -267,18 +267,19 @@ const Index = () => {
                     </div>
                     <div className="group bg-white rounded-2xl text-center p-2 md:p-4">
                         <div className="mb-4">
+                            <img src={`${router.basePath}/assets/images/team/08.png`} alt="" className="aspect-square object-cover rounded-lg" />
+                        </div>
+                        <div className="font-title mb-1 lg:mb-3 !leading-tight text-sm xl:text-base">"Juancho" Nuñez</div>
+                        <div className="text-stone-400 font-serif text-sm leading-tight">Montañista / Trail Runner</div>
+                    </div>
+                    <div className="group bg-white rounded-2xl text-center p-2 md:p-4">
+                        <div className="mb-4">
                             <img src={`${router.basePath}/assets/images/team/02.png`} alt="" className="aspect-square object-cover rounded-lg" />
                         </div>
                         <div className="font-title mb-1 lg:mb-3 !leading-tight text-sm xl:text-base">Andrea Rodriguez</div>
                         <div className="text-stone-400 font-serif text-sm leading-tight">Colaborador</div>
                     </div>
-                    <div className="group bg-white rounded-2xl text-center p-2 md:p-4">
-                        <div className="mb-4">
-                            <img src={`${router.basePath}/assets/images/team/07.png`} alt="" className="aspect-square object-cover rounded-lg" />
-                        </div>
-                        <div className="font-title mb-1 lg:mb-3 !leading-tight text-sm xl:text-base">Ling Hung</div>
-                        <div className="text-stone-400 font-serif text-sm leading-tight">Colaborador</div>
-                    </div>
+
                     <div className="group bg-white rounded-2xl text-center p-2 md:p-4">
                         <div className="mb-4">
                             <img src={`${router.basePath}/assets/images/team/03.png`} alt="" className="aspect-square object-cover rounded-lg" />
@@ -291,7 +292,7 @@ const Index = () => {
                             <img src={`${router.basePath}/assets/images/team/04.png`} alt="" className="aspect-square object-cover rounded-lg" />
                         </div>
                         <div className="font-title mb-1 lg:mb-3 !leading-tight text-sm xl:text-base">Jose Dionisio Morales</div>
-                        <div className="text-stone-400 font-serif text-sm leading-tight">Colaborador</div>
+                        <div className="text-stone-400 font-serif text-sm leading-tight">Colaborador / Abogado</div>
                     </div>
                     <div className="group bg-white rounded-2xl text-center p-2 md:p-4">
                         <div className="mb-4">
@@ -305,7 +306,7 @@ const Index = () => {
                             <img src={`${router.basePath}/assets/images/team/05.png`} alt="" className="aspect-square object-cover rounded-lg" />
                         </div>
                         <div className="font-title mb-1 lg:mb-3 !leading-tight text-sm xl:text-base">Lina Carpico</div>
-                        <div className="text-stone-400 font-serif text-sm leading-tight">Colaborador</div>
+                        <div className="text-stone-400 font-serif text-sm leading-tight">Colaborador / Diseñadora</div>
                     </div>
                 </div>
             </div>

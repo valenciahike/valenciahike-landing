@@ -38,8 +38,10 @@ const About = () => {
                             <h1 className="text-3xl lg:text-5xl font-title font-bold mb-4">¿Quiénes somos?</h1>
                             <h6 className="text-xl lg:text-2xl font-subtitle text-primary-light">Una organización sin fines de lucro</h6>
                             <div className="font-serif text-stone-500 md:text-lg mt-6">
-                                <p className="mb-4">Valencia Hike es una organización sin fines de lucro fundada en 2019 que promueve el senderismo y el ecoturismo en el Estado Carabobo y en todo el territorio nacional.</p>
-                                <p>Entre sus objetivos están: mostrar la diversidad de rutas y destinos naturales, crear y educar una comunidad de senderistas y montañistas responsables, reforestar y sanear el ecosistema de montaña, beneficiar a las comunidades locales, colaborar con otros proyectos ecológicos o turísticos y exhibir el montañismo como una actividad deportiva, recreativa y terapéutica.</p>
+                                <p className="mb-4">Valencia Hike es una organización sin fines de lucro fundada en 2019 que promueve el montañismo y el ecoturismo en el Estado Carabobo y en todo el territorio nacional.</p>
+                                <p className="mb-4">Que las personas puedan recorrer junto a nosotros para conocer sus distintas rutas. Queremos expandir el conocimiento más allá de los senderos más comunes.</p>
+                                <p className="mb-4">Formamos una comunidad de montañistas de distintos niveles, que asistan a recorrer las diversas rutas que ofrecemos de la mano de nuestros guías.</p>
+
                             </div>
                         </div>
                         <div>
@@ -77,9 +79,9 @@ const About = () => {
                             <img src={`${router.basePath}/assets/images/img-f9s3kkj.png`} className="rounded-3xl" alt="" />
                         </div>
                         <div className="col-span-12 md:col-span-6 lg:col-span-5 lg:col-start-8">
-                            <h3 className="text-2xl lg:text-3xl font-title font-bold mb-4">Caminamos a la costa desde nuestra ciudad</h3>
+                            <h3 className="text-2xl lg:text-3xl font-title font-bold mb-4">Rutas de mayor complejidad</h3>
                             <div className="font-serif text-stone-500 md:text-lg space-y-4">
-                                <p>Caminatas desde el pueblo de Vigirima hasta la Bahia de Patanemo, y desde Naguanagua hasta San Esteban Pueblo en Puerto Cabello, atravesando varios kilometros del Parque Nacional San Esteban.</p>
+                                <p>Rutas donde el principal objetivo además del disfrute, es cumplir con el desarrollo total de la misma dentro de un tiempo prudencial evitando horas tardías, como largas caminatas de la ciudad a la costa, que en nuestro estado pueden ser desde Vigirima a Patanemo, o El Camino de Carabobo conocido como Camino de Los Españoles, o tambien cumbres importantes como los puntos más altos del estado entre los que tenemos el Cobalonga (Villalonga), el Cerro El Diablo (Picacho del Diablo), Pico Hilaria, entre otros.</p>
                             </div>
                         </div>
                     </div>
@@ -105,9 +107,37 @@ const About = () => {
                             <img src={`${router.basePath}/assets/images/img-9th5vc4.png`} className="rounded-3xl" alt="" />
                         </div>
                         <div className="col-span-12 md:col-span-6 lg:col-span-5 lg:col-start-8">
-                            <h3 className="text-2xl lg:text-3xl font-title font-bold mb-4">Excursiones a los picos más altos de Venezuela</h3>
+                            <h3 className="text-2xl lg:text-3xl font-title font-bold mb-4">Montañas más importantes de Venezuela</h3>
                             <div className="font-serif text-stone-500 md:text-lg space-y-4">
-                                <p>Viajes que se organizan regularmente a los picos de importante altura en nuestro país.</p>
+                                <p>Viajes que se realizan con cierta regularidad a las montañas de mayor importancia de nuestro país, como pueden serlo nuestros tepuyes, la Cordillera de la Costa incluyendo su punto más alto el Pico Naiguatá y Los Andes venezolanos incluyendo los Picos más altos del país como El Pico Bolívar, El Pico Humboldt, entre otros del Parque Nacional Sierra Nevada y El Parque Nacional Sierra de La Culata.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="py-8">
+                    <div className="grid grid-cols-12 items-center gap-6">
+                        <div className="col-span-12 md:col-span-6 lg:col-span-5">
+                            <h3 className="text-2xl lg:text-3xl font-title font-bold mb-4">Canyoning</h3>
+                            <div className="font-serif text-stone-500 md:text-lg space-y-4">
+                                <p>Practica de rapel por cascadas bajo las medidas de seguridad necesarias, equipos certificados y personal calificado. En cascadas como La Manilla en Morón, Los Gavilanes en el P.N. San Esteban, Los Aguacates en San Joaquín, entre otros.</p>
+                            </div>
+                        </div>
+                        <div className="col-span-12 md:col-span-6 lg:col-start-7">
+                            <img src={`${router.basePath}/assets/images/img-qwr8gw7.png`} className="rounded-3xl" alt="" />
+                        </div>
+                    </div>
+                </div>
+
+                <div className="py-16">
+                    <div className="grid grid-cols-12 items-center gap-6">
+                        <div className="col-span-12 md:col-span-6 lg:col-span-6">
+                            <img src={`${router.basePath}/assets/images/img-9th5vc4.png`} className="rounded-3xl" alt="" />
+                        </div>
+                        <div className="col-span-12 md:col-span-6 lg:col-span-5 lg:col-start-8">
+                            <h3 className="text-2xl lg:text-3xl font-title font-bold mb-4">Camping</h3>
+                            <div className="font-serif text-stone-500 md:text-lg space-y-4">
+                                <p>Viajes que se realizan con cierta regularidad a las montañas de mayor importancia de nuestro país, como pueden serlo nuestros tepuyes, la Cordillera de la Costa incluyendo su punto más alto el Pico Naiguatá y Los Andes venezolanos incluyendo los Picos más altos del país como El Pico Bolívar, El Pico Humboldt, entre otros del Parque Nacional Sierra Nevada y El Parque Nacional Sierra de La Culata.</p>
                             </div>
                         </div>
                     </div>
@@ -132,12 +162,12 @@ const About = () => {
                 <div className="grid grid-cols-12 gap-y-12 md:gap-12 lg:gap-20 mt-8">
                     <div className="col-span-12 md:col-span-6">
                         <h5 className="text-tertiary text-2xl font-subtitle mb-3">VH Kidz</h5>
-                        <div className="font-serif text-white/75 mb-6">Una modalidad creada para el disfrute y concientización de los más pequeños de la casa junto a sus representantes</div>
+                        <div className="font-serif text-white/75 mb-6">El deporte y la actividad física en general, han demostrado ser un excelente aliado para el sano crecimiento y desarrollo de los niños. En este sentido, el montañismo se presenta como una gran oportunidad para adentrar a los más pequeños al ambito deportivo, ya que es la combinación perfecta de actividad física y cercanía con la naturaleza.</div>
                         <KidzComponent />
                     </div>
                     <div className="col-span-12 md:col-span-6">
                         <h5 className="text-tertiary text-2xl font-subtitle mb-3">VH Trail Running</h5>
-                        <div className="font-serif text-white/75 mb-6">Una variante creada para aquellos que quieren exigirse un poco más, e incluso medirse en carreras. Una modalidad donde la finalidad es la exigencia física y la competitividad</div>
+                        <div className="font-serif text-white/75 mb-6">VH & Trail Running es una extensión de Valencia Hike, enfocada en la autonomia del participante y trabajo de ritmo donde la finalidad es entrenar, realizar rutas de forma esporádica que sirvan de entrenamiento para mejora de ritmo y resistencia.</div>
                         <KidzComponent />
                     </div>
                 </div>
