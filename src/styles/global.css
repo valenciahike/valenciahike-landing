@@ -1,9 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Candal&family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Montserrat:ital,wght@0,700;0,800;0,900;1,700;1,800;1,900&family=Permanent+Marker&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+    h1.font-title, h2.font-title, h3.font-title, h4.font-title, h5.font-title, h6.font-title {
+        @apply font-black;
+    }
+}
 
 .swiper {
     --swiper-theme-color: #005B2D;

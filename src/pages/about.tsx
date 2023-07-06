@@ -20,7 +20,6 @@ const About = () => {
 
             <div className="container max-w-4xl">
                 <h1 className="text-3xl md:text-5xl font-title mb-6">Sobre nosotros</h1>
-
             </div>
         </section>
 
@@ -52,16 +51,17 @@ const About = () => {
             </div>
         </section>
 
+        {/* what we do */}
         <section className="relative py-20">
             <div className="container">
                 <div className="text-center max-w-3xl mx-auto mb-20">
-                    <h1 className="text-4xl md:text-5xl font-title font-bold mb-4">¿Qué <span className="text-primary-light">hacemos</span>?</h1>
+                    <h1 className="text-4xl md:text-5xl font-title mb-4">¿Qué <span className="text-primary-light">hacemos</span>?</h1>
                 </div>
 
                 <div className="py-8">
                     <div className="grid grid-cols-12 items-center gap-6">
                         <div className="col-span-12 md:col-span-6 lg:col-span-5">
-                            <h3 className="text-2xl lg:text-3xl font-title font-bold mb-4">Rutas habituales de fin de semana</h3>
+                            <h3 className="text-2xl lg:text-3xl font-title mb-4">Rutas habituales de fin de semana</h3>
                             <div className="font-serif text-stone-500 md:text-lg space-y-4">
                                 <p>Se realizan rutas en las montañas locales todos los fines de semana para los distintos niveles de nuestra organización, donde disfrutamos de la naturaleza y pasamos un rato agradable compartiendo con las demás personas.</p>
                                 <p>En la mayoria de estas rutas definimos un sitio en la montaña para comer y disfrutar de un buen café preparado en el momento.</p>
@@ -79,7 +79,7 @@ const About = () => {
                             <img src={`${router.basePath}/assets/images/img-f9s3kkj.png`} className="rounded-3xl" alt="" />
                         </div>
                         <div className="col-span-12 md:col-span-6 lg:col-span-5 lg:col-start-8">
-                            <h3 className="text-2xl lg:text-3xl font-title font-bold mb-4">Rutas de mayor complejidad</h3>
+                            <h3 className="text-2xl lg:text-3xl font-title mb-4">Rutas de mayor complejidad</h3>
                             <div className="font-serif text-stone-500 md:text-lg space-y-4">
                                 <p>Rutas donde el principal objetivo además del disfrute, es cumplir con el desarrollo total de la misma dentro de un tiempo prudencial evitando horas tardías, como largas caminatas de la ciudad a la costa, que en nuestro estado pueden ser desde Vigirima a Patanemo, o El Camino de Carabobo conocido como Camino de Los Españoles, o tambien cumbres importantes como los puntos más altos del estado entre los que tenemos el Cobalonga (Villalonga), el Cerro El Diablo (Picacho del Diablo), Pico Hilaria, entre otros.</p>
                             </div>
@@ -90,7 +90,7 @@ const About = () => {
                 <div className="py-8">
                     <div className="grid grid-cols-12 items-center gap-6">
                         <div className="col-span-12 md:col-span-6 lg:col-span-5">
-                            <h3 className="text-2xl lg:text-3xl font-title font-bold mb-4">Rutas foráneas</h3>
+                            <h3 className="text-2xl lg:text-3xl font-title mb-4">Rutas foráneas</h3>
                             <div className="font-serif text-stone-500 md:text-lg space-y-4">
                                 <p>Realizamos rutas fuera de la ciudad de Valencia con cierta regularidad. Hemos visitado en varias ocasiones el Parque Nacional Henri Pittier en Aragua y el grandioso Waraira Repano (El Ávila) en nuestra ciudad capital.</p>
                             </div>
@@ -107,7 +107,7 @@ const About = () => {
                             <img src={`${router.basePath}/assets/images/img-9th5vc4.png`} className="rounded-3xl" alt="" />
                         </div>
                         <div className="col-span-12 md:col-span-6 lg:col-span-5 lg:col-start-8">
-                            <h3 className="text-2xl lg:text-3xl font-title font-bold mb-4">Montañas más importantes de Venezuela</h3>
+                            <h3 className="text-2xl lg:text-3xl font-title mb-4">Montañas más importantes de Venezuela</h3>
                             <div className="font-serif text-stone-500 md:text-lg space-y-4">
                                 <p>Viajes que se realizan con cierta regularidad a las montañas de mayor importancia de nuestro país, como pueden serlo nuestros tepuyes, la Cordillera de la Costa incluyendo su punto más alto el Pico Naiguatá y Los Andes venezolanos incluyendo los Picos más altos del país como El Pico Bolívar, El Pico Humboldt, entre otros del Parque Nacional Sierra Nevada y El Parque Nacional Sierra de La Culata.</p>
                             </div>
@@ -118,7 +118,7 @@ const About = () => {
                 <div className="py-8">
                     <div className="grid grid-cols-12 items-center gap-6">
                         <div className="col-span-12 md:col-span-6 lg:col-span-5">
-                            <h3 className="text-2xl lg:text-3xl font-title font-bold mb-4">Canyoning</h3>
+                            <h3 className="text-2xl lg:text-3xl font-title mb-4">Canyoning</h3>
                             <div className="font-serif text-stone-500 md:text-lg space-y-4">
                                 <p>Practica de rapel por cascadas bajo las medidas de seguridad necesarias, equipos certificados y personal calificado. En cascadas como La Manilla en Morón, Los Gavilanes en el P.N. San Esteban, Los Aguacates en San Joaquín, entre otros.</p>
                             </div>
@@ -135,7 +135,7 @@ const About = () => {
                             <img src={`${router.basePath}/assets/images/img-9th5vc4.png`} className="rounded-3xl" alt="" />
                         </div>
                         <div className="col-span-12 md:col-span-6 lg:col-span-5 lg:col-start-8">
-                            <h3 className="text-2xl lg:text-3xl font-title font-bold mb-4">Camping</h3>
+                            <h3 className="text-2xl lg:text-3xl font-title mb-4">Camping</h3>
                             <div className="font-serif text-stone-500 md:text-lg space-y-4">
                                 <p>Viajes que se realizan con cierta regularidad a las montañas de mayor importancia de nuestro país, como pueden serlo nuestros tepuyes, la Cordillera de la Costa incluyendo su punto más alto el Pico Naiguatá y Los Andes venezolanos incluyendo los Picos más altos del país como El Pico Bolívar, El Pico Humboldt, entre otros del Parque Nacional Sierra Nevada y El Parque Nacional Sierra de La Culata.</p>
                             </div>
@@ -145,6 +145,7 @@ const About = () => {
             </div>
         </section>
 
+        {/* other activities */}
         <section className="relative flex items-center z-10 bg-slate-900 text-white text-center py-20 min-h-[85vh] bg-no-repeat bg-cover bg-center" style={{ backgroundImage: `url(${router.basePath}/assets/images/sec-g8sfd.jpg)` }}>
 
             <div className="overflow-hidden">
@@ -174,6 +175,7 @@ const About = () => {
             </div>
         </section>
 
+        {/* they trust */}
         <section className="relative z-10 bg-cream-yellow py-20 lg:pb-40 lg:pt-24">
             <div className="overflow-hidden">
                 <img src={`${router.basePath}/assets/images/mountain-big-white-bottom.svg`} alt="" className="absolute bottom-0 inset-x-0 h-14 md:h-auto object-cover md:w-full select-none pointer-events-none" />
@@ -183,13 +185,13 @@ const About = () => {
 
             <div className="container">
                 <div className="text-center mb-20">
-                    <h1 className="text-4xl md:text-5xl font-title font-bold mb-4">Ellos han confiado <span className="text-primary-light">en nosotros</span></h1>
+                    <h1 className="text-4xl md:text-5xl font-title mb-4">Ellos han confiado <span className="text-primary-light">en nosotros</span></h1>
                 </div>
 
                 <div className="py-8">
                     <div className="grid grid-cols-12 items-center gap-6">
                         <div className="col-span-12 md:col-span-5">
-                            <h3 className="text-2xl lg:text-3xl font-title font-bold mb-4">Valen de Viaje</h3>
+                            <h3 className="text-2xl lg:text-3xl font-title mb-4">Valen de Viaje</h3>
                             <div className="font-serif text-stone-500 md:text-lg space-y-4">
                                 <p>Tuvimos la oportunidad de recibir a <b>Valentina Quintero</b> para la grabación de un segmento de su programa "Valen de Viaje" en el Estado Carabobo, el cual es transmitido por el canal IVC.</p>
                             </div>
@@ -208,7 +210,7 @@ const About = () => {
                 <div className="relative pt-20">
                     <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-6 lg:gap-8">
                         <div className="lg:border-r lg:pr-12 lg:mr-6">
-                            <h1 className="text-2xl lg:text-3xl font-title font-bold mb-4">Otras organizaciones con quienes hemos trabajado</h1>
+                            <h1 className="text-2xl lg:text-3xl font-title mb-4">Otras organizaciones con quienes hemos trabajado</h1>
                             <div className="font-serif text-stone-500 md:text-lg mt-6">
                                 <p>Distintas organizaciones que han conocido nuestro trabajo nos han contactado para la realización de actividades en conjunto, por ejemplo, rutas en alianza con tiendas deportivas, tiendas de alimentos saludables, inclusión de senderismo en actividades de yoga al aire libre, entre otros.</p>
                             </div>

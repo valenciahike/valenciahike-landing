@@ -38,7 +38,7 @@ const Main = (props: IMainProps) => {
                                 <li><a href="" className="hover:text-tertiary hover:underline">Nosotros</a></li>
                                 <li><a href="" className="hover:text-tertiary hover:underline">Aspectos Legales</a></li>
                                 <li><a href="" className="hover:text-tertiary hover:underline">Estatutos y Lineamientos</a></li>
-                                <li><a href="" className="hover:text-tertiary hover:underline">Nuestros aliados</a></li>
+                                <li><a href="" className="hover:text-tertiary hover:underline">Nuestros Aliados</a></li>
                                 <li><a href="" className="hover:text-tertiary hover:underline">FAQs</a></li>
                             </ul>
                         </div>
@@ -46,7 +46,7 @@ const Main = (props: IMainProps) => {
                             <h6 className="inline-block font-subtitle text-primary-light uppercase mb-4">Otras modalidades</h6>
                             <ul className="space-y-1">
                                 <li><a href="" className="hover:text-tertiary hover:underline">VH Kidz</a></li>
-                                <li><a href="" className="hover:text-tertiary hover:underline">VH Trail running</a></li>
+                                <li><a href="" className="hover:text-tertiary hover:underline">VH Trail Running</a></li>
                             </ul>
                         </div>
                         <div className="col-span-2 sm:col-auto">
@@ -84,7 +84,7 @@ const Main = (props: IMainProps) => {
                     </div>
                 </div>
 
-                <div className="relative bg-white/10 text-center mt-20 pb-10 pt-20">
+                <div className="relative font-title bg-white/10 text-center mt-20 pb-10 pt-20">
                     <div className="overflow-hidden">
                         <img src={`${router.basePath}/assets/images/footer_mountain_primary_top.svg`} alt="" className="absolute top-0 inset-x-0 h-14 md:h-auto object-cover md:w-full select-none pointer-events-none" />
                     </div>

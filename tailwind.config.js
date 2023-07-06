@@ -5,7 +5,7 @@ module.exports = {
         extend: {
             fontFamily: {
                 serif: ['Bree Serif', 'serif'],
-                title: ['Candal', 'sans-serif'],
+                title: ['Montserrat', 'sans-serif'],
                 subtitle: ['Permanent Marker', 'cursive'],
             },
             colors: {

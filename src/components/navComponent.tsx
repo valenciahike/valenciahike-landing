@@ -27,19 +27,19 @@ export default function NavComponent() {
                 <div id="menu-collapse" className={`basis-full lg:ml-auto lg:!block lg:basis-auto ${clicked ? "!block" : ""}`} style={{ display: "none" }}>
                     <ul className="flex flex-col items-center gap-1 lg:flex-row">
                         <li>
-                            <Link href="/" className={`block rounded-full px-4 py-2 font-title text-sm uppercase text-stone-800 hover:text-primary-light ${router.pathname === "/" ? "!bg-primary !text-white" : ""}`}> Home </Link>
+                            <Link href="/" className={`block rounded-full font-title font-extrabold text-sm uppercase text-stone-800 hover:text-primary-light px-4 py-2 ${router.pathname === "/" ? "!bg-primary !text-white" : ""}`}> Home </Link>
                         </li>
                         <li>
-                            <Link href="/about" className={`block rounded-full px-4 py-2 font-title text-sm uppercase text-stone-800 hover:text-primary-light ${router.pathname === "/about" ? "!bg-primary !text-white" : ""}`}> Nosotros </Link>
+                            <Link href="/about" className={`block rounded-full font-title font-extrabold text-sm uppercase text-stone-800 hover:text-primary-light px-4 py-2 ${router.pathname === "/about" ? "!bg-primary !text-white" : ""}`}> Nosotros </Link>
                         </li>
                         <li>
-                            <Link href="/faqs" className={`block rounded-full px-4 py-2 font-title text-sm uppercase text-stone-800 hover:text-primary-light ${router.pathname === "/faqs" ? "!bg-primary !text-white" : ""}`}> FAQs </Link>
+                            <Link href="/faqs" className={`block rounded-full font-title font-extrabold text-sm uppercase text-stone-800 hover:text-primary-light px-4 py-2 ${router.pathname === "/faqs" ? "!bg-primary !text-white" : ""}`}> FAQs </Link>
                         </li>
                         <li>
-                            <Link href="/tienda" className={`block rounded-full px-4 py-2 font-title text-sm uppercase text-stone-800 hover:text-primary-light ${router.pathname === "/tienda" ? "!bg-primary !text-white" : ""}`}> Tienda </Link>
+                            <Link href="/tienda" className={`block rounded-full font-title font-extrabold text-sm uppercase text-stone-800 hover:text-primary-light px-4 py-2 ${router.pathname === "/tienda" ? "!bg-primary !text-white" : ""}`}> Tienda </Link>
                         </li>
                         <li>
-                            <Link href="/contact" className={`block rounded-full px-4 py-2 font-title text-sm uppercase text-stone-800 hover:text-primary-light ${router.pathname === "/contact" ? "!bg-primary !text-white" : ""}`}> Contacto </Link>
+                            <Link href="/contact" className={`block rounded-full font-title font-extrabold text-sm uppercase text-stone-800 hover:text-primary-light px-4 py-2 ${router.pathname === "/contact" ? "!bg-primary !text-white" : ""}`}> Contacto </Link>
                         </li>
                     </ul>
                 </div>
