@@ -12,11 +12,11 @@ export default function NavComponent() {
     };
 
     return (
-        <nav className="py-2">
+        <nav className="py-4 md:py-6">
             <div className="container flex flex-wrap items-center justify-between gap-4">
                 <div className="flex grow items-center">
-                    <Link href="/" className="inline-block">
-                        <img src={`${router.basePath}/assets/images/logo_original.png`} className="w-24" alt="Valencia Hike" />
+                    <Link href="/" className="inline-block h-6">
+                        <img src={`${router.basePath}/assets/images/logo-simple.svg`} className="h-full w-auto" alt="Valencia Hike" />
                     </Link>
                     <div className="ml-auto flex flex-nowrap items-center gap-2 lg:hidden">
                         <button type="button" className="flex h-10 w-10 items-center justify-center rounded-full bg-cream-yellow p-1 text-center" onClick={toggleMenu}>
