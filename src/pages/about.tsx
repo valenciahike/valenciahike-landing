@@ -34,7 +34,7 @@ const About = () => {
                 <div className="container">
                     <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-y-6 lg:gap-12 xl:gap-20">
                         <div>
-                            <h1 className="text-3xl lg:text-5xl font-title font-bold mb-4">¿Quiénes somos?</h1>
+                            <h1 className="text-3xl lg:text-5xl font-title mb-4">¿Quiénes somos?</h1>
                             <h6 className="text-xl lg:text-2xl font-subtitle text-primary-light">Una organización sin fines de lucro</h6>
                             <div className="font-serif text-stone-500 md:text-lg mt-6">
                                 <p className="mb-4">Valencia Hike es una organización sin fines de lucro fundada en 2019 que promueve el montañismo y el ecoturismo en el Estado Carabobo y en todo el territorio nacional.</p>
@@ -46,6 +46,24 @@ const About = () => {
                         <div>
                             <img src={`${router.basePath}/assets/images//sec-g8sfd.jpg`} className="rounded-2xl shadow-xl shadow-stone-300" alt="" />
                         </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className='pt-12'>
+                <div className="container">
+                    <div className="text-center mb-8">
+                        <h3 className="text-2xl lg:text-3xl font-title mb-4">Nuestros objetivos</h3>
+                    </div>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 lg:gap-x-6 lg:gap-y-8">
+                        {goals.map(goal => (
+                            <div className="text-stone-500 text-center font-serif">
+                                <div className="flex items-center justify-center text-center bg-primary-light/10 h-16 w-16 text-4xl p-2 rounded-full mx-auto mb-2">
+                                    <img src={`${router.basePath}/assets/images/goals/${goal.icon}`} className="inline-block h-[1em]" alt="" />
+                                </div>
+                                <div>{goal.content}</div>
+                            </div>
+                        ))}
                     </div>
                 </div>
             </div>
@@ -157,7 +175,7 @@ const About = () => {
 
             <div className="container max-w-4xl">
                 <h6 className="text-xl lg:text-2xl font-subtitle text-yellow-400 mb-5">¡Valencia Hike es aún más!</h6>
-                <h1 className="text-4xl md:text-5xl font-title font-bold mb-4">Otras modalidades</h1>
+                <h1 className="text-4xl md:text-5xl font-title mb-4">Otras modalidades</h1>
                 <p className="font-serif md:text-lg text-white/75">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation .</p>
 
                 <div className="grid grid-cols-12 gap-y-12 md:gap-12 lg:gap-20 mt-8">
@@ -255,6 +273,53 @@ const About = () => {
 
   </Main>);
 }
+
+const goals = [
+    {
+        content: 'Mostrar la cantidad de rutas de montaña que ofrece nuestro país, principal y especialmente el estado Carabobo, al igual que sus destinos ecoturísticos tanto para los carabobeños como a quienes nos visiten.',
+        icon: 'mountains-thin.svg'
+    },
+    {
+        content: 'Crear y concientizar una comunidad de senderistas y montañistas.',
+        icon: 'boot-thin.svg'
+    },
+    {
+        content: 'Acercar la ciudadanía a la naturaleza de forma responsable segura y confiable.',
+        icon: 'tree-thin.svg'
+    },
+    {
+        content: 'Concientizar a los pequeños de casa en materia ambientalista y esparcimiento en la montaña como método alterno de recreación saludable y sustentable.',
+        icon: 'plant-thin.svg'
+    },
+    {
+        content: 'Exhibir el montañismo como una disciplina deportiva, de esparcimiento, de limpieza y como una actividad terapéutica.',
+        icon: 'users-three-thin.svg'
+    },
+    {
+        content: 'Incluir programas de reforestación y saneamiento del ecosistema de montaña.',
+        icon: 'leaf-thin.svg'
+    },
+    {
+        content: 'Crear cultura de que la montaña es más que subir un cerro por ejercitarse o por lograr un tiempo, y que en ellas hay un mundo por descubrir.',
+        icon: 'backpack-thin.svg'
+    },
+    {
+        content: 'Incluir de cualquier forma a las comunidades aledañas o que geográficamente conformen las rutas de montaña, generando un beneficio para ellos con nuestra visita.',
+        icon: 'handshake-thin.svg'
+    },
+    {
+        content: 'Colaborar con otros proyectos ecológicos o turísticos que se desarrollen en la montaña y otros ambientes naturales.',
+        icon: 'globe-hemisphere-west-thin.svg'
+    },
+    {
+        content: 'Mostrar tambien los destinos y/o rutas de montaña en todo el territorio nacional, entre los que tenemos nuestros Andes y nuestros Tepuyes.',
+        icon: 'flag-thin.svg'
+    },
+    {
+        content: 'Somos un canal de apoyo para la escuela de surf de Patanemo.',
+        icon: 'waves-thin.svg'
+    },
+]
 
 
 export default About;
