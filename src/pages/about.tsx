@@ -93,10 +93,10 @@ const About = () => {
 
                 <div className="py-16">
                     <div className="grid grid-cols-12 items-center gap-6">
-                        <div className="col-span-12 md:col-span-6 lg:col-span-6">
+                        <div className="col-span-12 md:col-span-6 lg:col-span-6 order-last md:order-none">
                             <img src={`${router.basePath}/assets/images/img-f9s3kkj.png`} className="rounded-3xl" alt="" />
                         </div>
-                        <div className="col-span-12 md:col-span-6 lg:col-span-5 lg:col-start-8">
+                        <div className="col-span-12 md:col-span-6 lg:col-span-5 lg:col-start-8 order-first md:order-last">
                             <h3 className="text-2xl lg:text-3xl font-title mb-4">Rutas de mayor complejidad</h3>
                             <div className="font-serif text-stone-500 md:text-lg space-y-4">
                                 <p>Rutas donde el principal objetivo además del disfrute, es cumplir con el desarrollo total de la misma dentro de un tiempo prudencial evitando horas tardías, como largas caminatas de la ciudad a la costa, que en nuestro estado pueden ser desde Vigirima a Patanemo, o El Camino de Carabobo conocido como Camino de Los Españoles, o tambien cumbres importantes como los puntos más altos del estado entre los que tenemos el Cobalonga (Villalonga), el Cerro El Diablo (Picacho del Diablo), Pico Hilaria, entre otros.</p>
@@ -121,10 +121,10 @@ const About = () => {
 
                 <div className="py-16">
                     <div className="grid grid-cols-12 items-center gap-6">
-                        <div className="col-span-12 md:col-span-6 lg:col-span-6">
+                        <div className="col-span-12 md:col-span-6 lg:col-span-6 order-last md:order-none">
                             <img src={`${router.basePath}/assets/images/img-9th5vc4.png`} className="rounded-3xl" alt="" />
                         </div>
-                        <div className="col-span-12 md:col-span-6 lg:col-span-5 lg:col-start-8">
+                        <div className="col-span-12 md:col-span-6 lg:col-span-5 lg:col-start-8 order-first md:order-last">
                             <h3 className="text-2xl lg:text-3xl font-title mb-4">Montañas más importantes de Venezuela</h3>
                             <div className="font-serif text-stone-500 md:text-lg space-y-4">
                                 <p>Viajes que se realizan con cierta regularidad a las montañas de mayor importancia de nuestro país, como pueden serlo nuestros tepuyes, la Cordillera de la Costa incluyendo su punto más alto el Pico Naiguatá y Los Andes venezolanos incluyendo los Picos más altos del país como El Pico Bolívar, El Pico Humboldt, entre otros del Parque Nacional Sierra Nevada y El Parque Nacional Sierra de La Culata.</p>
@@ -149,10 +149,10 @@ const About = () => {
 
                 <div className="py-16">
                     <div className="grid grid-cols-12 items-center gap-6">
-                        <div className="col-span-12 md:col-span-6 lg:col-span-6">
+                        <div className="col-span-12 md:col-span-6 lg:col-span-6 order-last md:order-none">
                             <img src={`${router.basePath}/assets/images/img-9th5vc4.png`} className="rounded-3xl" alt="" />
                         </div>
-                        <div className="col-span-12 md:col-span-6 lg:col-span-5 lg:col-start-8">
+                        <div className="col-span-12 md:col-span-6 lg:col-span-5 lg:col-start-8 order-first md:order-last">
                             <h3 className="text-2xl lg:text-3xl font-title mb-4">Camping</h3>
                             <div className="font-serif text-stone-500 md:text-lg space-y-4">
                                 <p>Viajes que se realizan con cierta regularidad a las montañas de mayor importancia de nuestro país, como pueden serlo nuestros tepuyes, la Cordillera de la Costa incluyendo su punto más alto el Pico Naiguatá y Los Andes venezolanos incluyendo los Picos más altos del país como El Pico Bolívar, El Pico Humboldt, entre otros del Parque Nacional Sierra Nevada y El Parque Nacional Sierra de La Culata.</p>
