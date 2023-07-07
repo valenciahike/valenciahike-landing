@@ -10,17 +10,17 @@ const Index = () => {
 
     return (<Main meta={<Meta title="Bienvenido a Valencia Hike" description="Organización sin fines de lucro dedicada a mostrar las rutas de montaña que ofrece el estado Carabobo y Venezuela." />}>
         {/* hero */}
-        <header className="relative flex items-center z-10 bg-slate-900 text-white text-center py-20 min-h-[85vh] bg-no-repeat bg-cover" style={{ backgroundImage: `url(${router.basePath}/assets/images/hero-bg.png)` }}>
+        <header className="relative flex items-center z-10 bg-slate-900 text-white text-center py-20 min-h-[85vh] bg-no-repeat bg-cover bg-center" style={{ backgroundImage: `url(${router.basePath}/assets/images/hero-img.jpg)` }}>
 
             <div className="overflow-hidden">
                 <img src={`${router.basePath}/assets/images/mountain-white-top.svg`} alt="" className="absolute top-0 inset-x-0 h-14 md:h-auto object-cover md:w-full select-none pointer-events-none" />
                 <img src={`${router.basePath}/assets/images/mountain-cream-bottom.svg`} alt="" className="absolute bottom-0 inset-x-0 h-14 md:h-auto object-cover md:w-full select-none pointer-events-none" />
             </div>
 
-            <div className="absolute bg-black/30 inset-0 -z-10"></div>
+            <div className="absolute bg-primary-dark/20 inset-0 -z-10"></div>
 
-            <div className="container max-w-4xl">
-                <h1 className="text-3xl md:text-5xl font-title mb-6">Recorramos <span className="text-primary-light">La Ciudad</span> Desde Las Alturas</h1>
+            <div className="container max-w-3xl">
+                <h1 className="text-3xl md:text-5xl font-title mb-6">¡Recorramos <span className="text-tertiary">Valencia</span> Desde Las Alturas!</h1>
                 <h6 className="text-lg md:text-2xl font-serif mb-5">Somos una organización dedicada a formar una comunidad de montañistas y mostrar las rutas de montaña que ofrece el estado Carabobo y Venezuela</h6>
 
                 <a href="" className="inline-block bg-green-700 text-white hover:text-white/80 font-bold rounded-2xl bg-gradient-to-b from-primary-light to-primary-dark px-6 py-3 hover:-translate-y-px">Unirse a Valencia Hike</a>
