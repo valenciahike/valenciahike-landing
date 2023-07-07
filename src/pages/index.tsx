@@ -1,9 +1,102 @@
 import { useRouter } from 'next/router';
 
+import TestimonialComponent from '@/components/swiper/TestimonialComponent';
 import TrailsComponent from '@/components/swiper/trailsComponent';
 import { Meta } from '@/layouts/Meta';
 import { Main } from '@/templates/Main';
-import TestimonialComponent from '@/components/swiper/TestimonialComponent';
+
+const team = [
+    {
+        name: 'Fernando Gómez',
+        description: 'Coordinador / Guía Turístico',
+        rrss: {
+            instagram: 'fernandodropy'
+        },
+        photo: 'fernando.png'
+    },
+    {
+        name: 'José Santana',
+        description: 'Médico',
+        rrss: {
+            instagram: 'santanajd96'
+        },
+        photo: 'santana.png'
+    },
+    {
+        name: 'Alejandra Burgos',
+        description: 'Médico',
+        rrss: {
+            instagram: 'alejaburg'
+        },
+        photo: 'alejandra.png'
+    },
+    {
+        name: 'Carlos Torrealba',
+        description: 'Médico Veterinario',
+        photo: 'carlos.png'
+    },
+    {
+        name: 'Ling Hung',
+        description: 'Psicólogo',
+        rrss: {
+            instagram: 'lingcita'
+        },
+        photo: 'ling.png'
+    },
+    {
+        name: 'Juan Miguel Paolini',
+        description: 'Rescatista',
+        rrss: {
+            instagram: 'juanmihlf'
+        },
+        photo: 'juanmi.png'
+    },
+    {
+        name: '"Juancho" Nuñez',
+        description: 'Montañista / Trail Runner',
+        rrss: {
+            instagram: 'juanchonz'
+        },
+        photo: 'juancho.png'
+    },
+    {
+        name: 'José Dionisio Morales',
+        description: 'Abogado',
+        photo: 'josemorales.png'
+    },
+    {
+        name: 'Tirso Lecointere',
+        description: 'Fotógrafo / Programador web',
+        rrss: {
+            instagram: 'tirsolecointere'
+        },
+        photo: 'tirso.png'
+    },
+    {
+        name: 'Lina Carpico',
+        description: 'Diseñadora',
+        rrss: {
+            instagram: 'linacarpico'
+        },
+        photo: 'lina.png'
+    },
+    {
+        name: 'Andrea Rodriguez',
+        description: 'Colaborador',
+        rrss: {
+            instagram: 'deastef'
+        },
+        photo: 'andrea.png'
+    },
+    {
+        name: 'Erick Duarte',
+        description: 'Colaborador',
+        rrss: {
+            twitter: 'erick_algo'
+        },
+        photo: 'erick.png'
+    },
+];
 
 const Index = () => {
   const router = useRouter();
@@ -257,98 +350,5 @@ const Index = () => {
         </section>
     </Main>)
 }
-
-const team = [
-    {
-        name: 'Fernando Gómez',
-        description: 'Coordinador / Guía Turístico',
-        rrss: {
-            instagram: 'fernandodropy'
-        },
-        photo: 'fernando.png'
-    },
-    {
-        name: 'José Santana',
-        description: 'Médico',
-        rrss: {
-            instagram: 'santanajd96'
-        },
-        photo: 'santana.png'
-    },
-    {
-        name: 'Alejandra Burgos',
-        description: 'Médico',
-        rrss: {
-            instagram: 'alejaburg'
-        },
-        photo: 'alejandra.png'
-    },
-    {
-        name: 'Carlos Torrealba',
-        description: 'Médico Veterinario',
-        photo: 'carlos.png'
-    },
-    {
-        name: 'Ling Hung',
-        description: 'Psicólogo',
-        rrss: {
-            instagram: 'lingcita'
-        },
-        photo: 'ling.png'
-    },
-    {
-        name: 'Juan Miguel Paolini',
-        description: 'Rescatista',
-        rrss: {
-            instagram: 'juanmihlf'
-        },
-        photo: 'juanmi.png'
-    },
-    {
-        name: '"Juancho" Nuñez',
-        description: 'Montañista / Trail Runner',
-        rrss: {
-            instagram: 'juanchonz'
-        },
-        photo: 'juancho.png'
-    },
-    {
-        name: 'José Dionisio Morales',
-        description: 'Abogado',
-        photo: 'josemorales.png'
-    },
-    {
-        name: 'Tirso Lecointere',
-        description: 'Fotógrafo / Programador web',
-        rrss: {
-            instagram: 'tirsolecointere'
-        },
-        photo: 'tirso.png'
-    },
-    {
-        name: 'Lina Carpico',
-        description: 'Diseñadora',
-        rrss: {
-            instagram: 'linacarpico'
-        },
-        photo: 'lina.png'
-    },
-    {
-        name: 'Andrea Rodriguez',
-        description: 'Colaborador',
-        rrss: {
-            instagram: 'deastef'
-        },
-        photo: 'andrea.png'
-    },
-    {
-        name: 'Erick Duarte',
-        description: 'Colaborador',
-        rrss: {
-            twitter: 'erick_algo'
-        },
-        photo: 'erick.png'
-    },
-];
 
 export default Index;

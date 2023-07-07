@@ -6,7 +6,59 @@ import 'swiper/css/pagination';
 
 import { A11y, Autoplay, Navigation, Pagination } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
+
 import TestimonialItemComponent from '../testimonialItemComponent';
+
+const testimonials = [
+    {
+        name: 'Juan Pedro',
+        content: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus explicabo voluptates optio hic fuga, asperiores officia corrupti ipsum rem, mollitia libero esse illo dolor inventore corporis suscipit cum doloribus similique nihil id adipisci. '
+    },
+    {
+        name: 'Juan Pedro',
+        content: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus explicabo voluptates optio hic fuga, asperiores officia corrupti ipsum rem, mollitia libero esse illo dolor inventore corporis suscipit cum doloribus similique nihil id adipisci. Expedita alias odit, qui sint consequatur accusamus dolor numquam, deserunt ex soluta exercitationem fugiat adipisci inventore dignissimos.'
+    },
+    {
+        name: 'Juan Pedro',
+        content: 'Asperiores officia corrupti ipsum rem, mollitia libero esse illo dolor inventore corporis suscipit cum doloribus similique nihil id adipisci. Expedita alias odit, qui sint consequatur accusamus dolor numquam, deserunt ex soluta exercitationem fugiat adipisci inventore dignissimos.'
+    },
+    {
+        name: 'Juan Pedro',
+        content: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus explicabo voluptates optio hic fuga, asperiores officia corrupti ipsum rem, mollitia libero esse illo dolor inventore corporis suscipit cum doloribus similique nihil id adipisci. Expedita alias odit, qui sint consequatur accusamus dolor numquam.'
+    },
+    {
+        name: 'Juan Pedro',
+        content: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus explicabo voluptates optio hic fuga, asperiores officia corrupti ipsum rem, mollitia libero esse illo dolor inventore corporis suscipit cum doloribus similique nihil id adipisci. '
+    },
+    {
+        name: 'Juan Pedro',
+        content: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus explicabo voluptates optio hic fuga, asperiores officia corrupti ipsum rem, mollitia libero esse illo dolor inventore corporis suscipit cum doloribus similique nihil id adipisci. Expedita alias odit, qui sint consequatur accusamus dolor numquam, deserunt ex soluta exercitationem fugiat adipisci inventore dignissimos.'
+    },
+    {
+        name: 'Juan Pedro',
+        content: 'Asperiores officia corrupti ipsum rem, mollitia libero esse illo dolor inventore corporis suscipit cum doloribus similique nihil id adipisci. Expedita alias odit, qui sint consequatur accusamus dolor numquam, deserunt ex soluta exercitationem fugiat adipisci inventore dignissimos.'
+    },
+    {
+        name: 'Juan Pedro',
+        content: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus explicabo voluptates optio hic fuga, asperiores officia corrupti ipsum rem, mollitia libero esse illo dolor inventore corporis suscipit cum doloribus similique nihil id adipisci. Expedita alias odit, qui sint consequatur accusamus dolor numquam.'
+    },
+    {
+        name: 'Juan Pedro',
+        content: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus explicabo voluptates optio hic fuga, asperiores officia corrupti ipsum rem, mollitia libero esse illo dolor inventore corporis suscipit cum doloribus similique nihil id adipisci. '
+    },
+    {
+        name: 'Juan Pedro',
+        content: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus explicabo voluptates optio hic fuga, asperiores officia corrupti ipsum rem, mollitia libero esse illo dolor inventore corporis suscipit cum doloribus similique nihil id adipisci. Expedita alias odit, qui sint consequatur accusamus dolor numquam, deserunt ex soluta exercitationem fugiat adipisci inventore dignissimos.'
+    },
+    {
+        name: 'Juan Pedro',
+        content: 'Asperiores officia corrupti ipsum rem, mollitia libero esse illo dolor inventore corporis suscipit cum doloribus similique nihil id adipisci. Expedita alias odit, qui sint consequatur accusamus dolor numquam, deserunt ex soluta exercitationem fugiat adipisci inventore dignissimos.'
+    },
+    {
+        name: 'Juan Pedro',
+        content: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus explicabo voluptates optio hic fuga, asperiores officia corrupti ipsum rem, mollitia libero esse illo dolor inventore corporis suscipit cum doloribus similique nihil id adipisci. Expedita alias odit, qui sint consequatur accusamus dolor numquam.'
+    },
+]
 
 export default function FeaturesComponent() {
     return (
@@ -61,54 +113,3 @@ export default function FeaturesComponent() {
         </Swiper>
     );
 };
-
-const testimonials = [
-    {
-        name: 'Juan Pedro',
-        content: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus explicabo voluptates optio hic fuga, asperiores officia corrupti ipsum rem, mollitia libero esse illo dolor inventore corporis suscipit cum doloribus similique nihil id adipisci. '
-    },
-    {
-        name: 'Juan Pedro',
-        content: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus explicabo voluptates optio hic fuga, asperiores officia corrupti ipsum rem, mollitia libero esse illo dolor inventore corporis suscipit cum doloribus similique nihil id adipisci. Expedita alias odit, qui sint consequatur accusamus dolor numquam, deserunt ex soluta exercitationem fugiat adipisci inventore dignissimos.'
-    },
-    {
-        name: 'Juan Pedro',
-        content: 'Asperiores officia corrupti ipsum rem, mollitia libero esse illo dolor inventore corporis suscipit cum doloribus similique nihil id adipisci. Expedita alias odit, qui sint consequatur accusamus dolor numquam, deserunt ex soluta exercitationem fugiat adipisci inventore dignissimos.'
-    },
-    {
-        name: 'Juan Pedro',
-        content: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus explicabo voluptates optio hic fuga, asperiores officia corrupti ipsum rem, mollitia libero esse illo dolor inventore corporis suscipit cum doloribus similique nihil id adipisci. Expedita alias odit, qui sint consequatur accusamus dolor numquam.'
-    },
-    {
-        name: 'Juan Pedro',
-        content: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus explicabo voluptates optio hic fuga, asperiores officia corrupti ipsum rem, mollitia libero esse illo dolor inventore corporis suscipit cum doloribus similique nihil id adipisci. '
-    },
-    {
-        name: 'Juan Pedro',
-        content: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus explicabo voluptates optio hic fuga, asperiores officia corrupti ipsum rem, mollitia libero esse illo dolor inventore corporis suscipit cum doloribus similique nihil id adipisci. Expedita alias odit, qui sint consequatur accusamus dolor numquam, deserunt ex soluta exercitationem fugiat adipisci inventore dignissimos.'
-    },
-    {
-        name: 'Juan Pedro',
-        content: 'Asperiores officia corrupti ipsum rem, mollitia libero esse illo dolor inventore corporis suscipit cum doloribus similique nihil id adipisci. Expedita alias odit, qui sint consequatur accusamus dolor numquam, deserunt ex soluta exercitationem fugiat adipisci inventore dignissimos.'
-    },
-    {
-        name: 'Juan Pedro',
-        content: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus explicabo voluptates optio hic fuga, asperiores officia corrupti ipsum rem, mollitia libero esse illo dolor inventore corporis suscipit cum doloribus similique nihil id adipisci. Expedita alias odit, qui sint consequatur accusamus dolor numquam.'
-    },
-    {
-        name: 'Juan Pedro',
-        content: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus explicabo voluptates optio hic fuga, asperiores officia corrupti ipsum rem, mollitia libero esse illo dolor inventore corporis suscipit cum doloribus similique nihil id adipisci. '
-    },
-    {
-        name: 'Juan Pedro',
-        content: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus explicabo voluptates optio hic fuga, asperiores officia corrupti ipsum rem, mollitia libero esse illo dolor inventore corporis suscipit cum doloribus similique nihil id adipisci. Expedita alias odit, qui sint consequatur accusamus dolor numquam, deserunt ex soluta exercitationem fugiat adipisci inventore dignissimos.'
-    },
-    {
-        name: 'Juan Pedro',
-        content: 'Asperiores officia corrupti ipsum rem, mollitia libero esse illo dolor inventore corporis suscipit cum doloribus similique nihil id adipisci. Expedita alias odit, qui sint consequatur accusamus dolor numquam, deserunt ex soluta exercitationem fugiat adipisci inventore dignissimos.'
-    },
-    {
-        name: 'Juan Pedro',
-        content: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus explicabo voluptates optio hic fuga, asperiores officia corrupti ipsum rem, mollitia libero esse illo dolor inventore corporis suscipit cum doloribus similique nihil id adipisci. Expedita alias odit, qui sint consequatur accusamus dolor numquam.'
-    },
-]

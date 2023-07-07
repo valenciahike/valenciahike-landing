@@ -41,6 +41,7 @@
         "@typescript-eslint/consistent-type-imports": "error", // Ensure `import type` is used when it's necessary
         "react/self-closing-comp": "off", // Turn off self closing HTML tags error
         "react/no-unescaped-entities": "off",
+        "react/no-array-index-key": "off",
         "tailwindcss/classnames-order": "off",
         "tailwindcss/no-custom-classname": "off",
         "jsx-a11y/anchor-is-valid": "off",

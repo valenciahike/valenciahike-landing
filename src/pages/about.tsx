@@ -4,6 +4,53 @@ import KidzComponent from '@/components/swiper/KidzComponent';
 import { Meta } from '@/layouts/Meta';
 import { Main } from '@/templates/Main';
 
+const goals = [
+    {
+        content: 'Mostrar la cantidad de rutas de montaña que ofrece nuestro país, principal y especialmente el estado Carabobo, al igual que sus destinos ecoturísticos tanto para los carabobeños como a quienes nos visiten.',
+        icon: 'mountains-thin.svg'
+    },
+    {
+        content: 'Crear y concientizar una comunidad de senderistas y montañistas.',
+        icon: 'boot-thin.svg'
+    },
+    {
+        content: 'Acercar la ciudadanía a la naturaleza de forma responsable segura y confiable.',
+        icon: 'tree-thin.svg'
+    },
+    {
+        content: 'Concientizar a los pequeños de casa en materia ambientalista y esparcimiento en la montaña como método alterno de recreación saludable y sustentable.',
+        icon: 'plant-thin.svg'
+    },
+    {
+        content: 'Exhibir el montañismo como una disciplina deportiva, de esparcimiento, de limpieza y como una actividad terapéutica.',
+        icon: 'users-three-thin.svg'
+    },
+    {
+        content: 'Incluir programas de reforestación y saneamiento del ecosistema de montaña.',
+        icon: 'leaf-thin.svg'
+    },
+    {
+        content: 'Crear cultura de que la montaña es más que subir un cerro por ejercitarse o por lograr un tiempo, y que en ellas hay un mundo por descubrir.',
+        icon: 'backpack-thin.svg'
+    },
+    {
+        content: 'Incluir de cualquier forma a las comunidades aledañas o que geográficamente conformen las rutas de montaña, generando un beneficio para ellos con nuestra visita.',
+        icon: 'handshake-thin.svg'
+    },
+    {
+        content: 'Colaborar con otros proyectos ecológicos o turísticos que se desarrollen en la montaña y otros ambientes naturales.',
+        icon: 'globe-hemisphere-west-thin.svg'
+    },
+    {
+        content: 'Mostrar tambien los destinos y/o rutas de montaña en todo el territorio nacional, entre los que tenemos nuestros Andes y nuestros Tepuyes.',
+        icon: 'flag-thin.svg'
+    },
+    {
+        content: 'Somos un canal de apoyo para la escuela de surf de Patanemo.',
+        icon: 'waves-thin.svg'
+    },
+]
+
 const About = () => {
     const router = useRouter();
 
@@ -39,8 +86,7 @@ const About = () => {
                             <div className="font-serif text-stone-500 md:text-lg mt-6">
                                 <p className="mb-4">Valencia Hike es una organización sin fines de lucro fundada en 2019 que promueve el montañismo y el ecoturismo en el Estado Carabobo y en todo el territorio nacional.</p>
                                 <p className="mb-4">Que las personas puedan recorrer junto a nosotros para conocer sus distintas rutas. Queremos expandir el conocimiento más allá de los senderos más comunes.</p>
-                                <p className="mb-4">Formamos una comunidad de montañistas de distintos niveles, que asistan a recorrer las diversas rutas que ofrecemos de la mano de nuestros guías.</p>
-
+                                <p className="mb-4">Formamos una comunidad de montañistas de distintos niveles, que asistan a recorrer las diversas rutas que ofrecemos de la mano de nuestros guías.</p>
                             </div>
                         </div>
                         <div>
@@ -56,8 +102,8 @@ const About = () => {
                         <h3 className="text-2xl lg:text-3xl font-title mb-4">Nuestros objetivos</h3>
                     </div>
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 lg:gap-x-6 lg:gap-y-8">
-                        {goals.map(goal => (
-                            <div className="text-stone-500 text-center font-serif">
+                        {goals.map((goal, i) => (
+                            <div className="text-stone-500 text-center font-serif" key={i}>
                                 <div className="flex items-center justify-center text-center bg-primary-light/10 h-16 w-16 text-4xl p-2 rounded-full mx-auto mb-2">
                                     <img src={`${router.basePath}/assets/images/goals/${goal.icon}`} className="inline-block h-[1em]" alt="" />
                                 </div>
@@ -273,53 +319,5 @@ const About = () => {
 
   </Main>);
 }
-
-const goals = [
-    {
-        content: 'Mostrar la cantidad de rutas de montaña que ofrece nuestro país, principal y especialmente el estado Carabobo, al igual que sus destinos ecoturísticos tanto para los carabobeños como a quienes nos visiten.',
-        icon: 'mountains-thin.svg'
-    },
-    {
-        content: 'Crear y concientizar una comunidad de senderistas y montañistas.',
-        icon: 'boot-thin.svg'
-    },
-    {
-        content: 'Acercar la ciudadanía a la naturaleza de forma responsable segura y confiable.',
-        icon: 'tree-thin.svg'
-    },
-    {
-        content: 'Concientizar a los pequeños de casa en materia ambientalista y esparcimiento en la montaña como método alterno de recreación saludable y sustentable.',
-        icon: 'plant-thin.svg'
-    },
-    {
-        content: 'Exhibir el montañismo como una disciplina deportiva, de esparcimiento, de limpieza y como una actividad terapéutica.',
-        icon: 'users-three-thin.svg'
-    },
-    {
-        content: 'Incluir programas de reforestación y saneamiento del ecosistema de montaña.',
-        icon: 'leaf-thin.svg'
-    },
-    {
-        content: 'Crear cultura de que la montaña es más que subir un cerro por ejercitarse o por lograr un tiempo, y que en ellas hay un mundo por descubrir.',
-        icon: 'backpack-thin.svg'
-    },
-    {
-        content: 'Incluir de cualquier forma a las comunidades aledañas o que geográficamente conformen las rutas de montaña, generando un beneficio para ellos con nuestra visita.',
-        icon: 'handshake-thin.svg'
-    },
-    {
-        content: 'Colaborar con otros proyectos ecológicos o turísticos que se desarrollen en la montaña y otros ambientes naturales.',
-        icon: 'globe-hemisphere-west-thin.svg'
-    },
-    {
-        content: 'Mostrar tambien los destinos y/o rutas de montaña en todo el territorio nacional, entre los que tenemos nuestros Andes y nuestros Tepuyes.',
-        icon: 'flag-thin.svg'
-    },
-    {
-        content: 'Somos un canal de apoyo para la escuela de surf de Patanemo.',
-        icon: 'waves-thin.svg'
-    },
-]
-
 
 export default About;
