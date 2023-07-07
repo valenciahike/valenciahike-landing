@@ -16,6 +16,7 @@ export default function KidzComponent() {
             spaceBetween={8}
             pagination={{ clickable: true }}
             autoplay
+            speed={1250}
             centerInsufficientSlides
             breakpoints={{
                 640: {

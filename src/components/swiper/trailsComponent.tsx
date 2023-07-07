@@ -17,6 +17,7 @@ export default function TrailsComponent() {
             spaceBetween={16}
             navigation
             autoplay
+            speed={1250}
             slidesOffsetBefore={16}
             slidesOffsetAfter={16}
             breakpoints={{

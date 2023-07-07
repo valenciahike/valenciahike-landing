@@ -3,6 +3,7 @@ import { useRouter } from 'next/router';
 import TrailsComponent from '@/components/swiper/trailsComponent';
 import { Meta } from '@/layouts/Meta';
 import { Main } from '@/templates/Main';
+import TestimonialComponent from '@/components/swiper/TestimonialComponent';
 
 const Index = () => {
   const router = useRouter();
@@ -124,8 +125,8 @@ const Index = () => {
             </div>
         </section>
 
-        {/* as service */}
-        <section className="relative flex items-center z-10 bg-slate-900 text-white text-center py-20 min-h-[85vh] bg-no-repeat bg-cover bg-center" style={{ backgroundImage: `url(${router.basePath}/assets/images/sec-g8sfd.jpg)` }}>
+        {/* testimonials */}
+        <section className="relative z-10 bg-slate-900 py-20 lg:py-32 bg-no-repeat bg-cover bg-center" style={{ backgroundImage: `url(${router.basePath}/assets/images/sec-g8sfd.jpg)` }}>
 
             <div className="overflow-hidden">
                 <img src={`${router.basePath}/assets/images//mountain-white-top.svg`} alt="" className="absolute top-0 inset-x-0 h-14 md:h-auto object-cover md:w-full select-none pointer-events-none" />
@@ -134,18 +135,14 @@ const Index = () => {
 
             <div className="absolute bg-gradient-to-br from-primary/70 to-primary-dark/50 inset-0 -z-10"></div>
 
-            <div className="container max-w-4xl">
-                <h6 className="text-xl lg:text-2xl font-subtitle text-yellow-400 mb-5">¡Lleva Tu Equipo a La Montaña!</h6>
-                <h1 className="text-3xl lg:text-5xl font-title font-black mb-6">Organiza Una Ruta de Montaña Para Tu Organización</h1>
-                <p className="font-serif md:text-lg text-white/75">Hemos apoyado a grandes entidades del Estado Carabobo organizando actividades recreativas sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.</p>
-
-                <div className="mt-8">
-                    <a href="" className="inline-block bg-tertiary hover:text-white/80 font-bold rounded-2xl bg-gradient-to-b from-tertiary to-tertiary-dark px-6 py-3 hover:-translate-y-px">
-                        <svg className="inline w-6 h-6 mr-2 align-bottom" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor"> <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" /> </svg>
-                        Contactar
-                    </a>
+            <div className="container">
+                <div className="mx-auto max-w-4xl text-center text-white mb-12">
+                    <h6 className="text-xl lg:text-2xl font-subtitle text-yellow-400 mb-5">Testimonios</h6>
+                    <h1 className="text-3xl lg:text-5xl font-title mb-6">Ellos lo dicen...</h1>
                 </div>
             </div>
+
+            <TestimonialComponent />
         </section>
 
         {/* products */}
@@ -157,7 +154,7 @@ const Index = () => {
             <div className="container">
                 <div className="grid items-center grid-cols-1 lg:grid-cols-12 gap-y-8 lg:gap-6 xl:gap-12">
                     <div className="col-span-12 lg:col-span-3">
-                        <h1 className="text-3xl xl:text-5xl font-title font-black mb-4">Nuestros <span className="text-primary-light">Productos</span></h1>
+                        <h1 className="text-3xl xl:text-5xl font-title mb-4">Nuestros <span className="text-primary-light">Productos</span></h1>
                         <div className="font-serif text-stone-500 mt-6 mb-4">
                             <p>Comprando nuestros productos estas apoyando de a sit amet, adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         </div>
@@ -216,24 +213,24 @@ const Index = () => {
 
             <div className="container">
                 <div className="text-center max-w-3xl mx-auto mb-12">
-                    <h1 className="text-3xl lg:text-5xl font-title font-black mb-4">Conoce <span className="text-primary-light">Nuestro Equipo</span></h1>
+                    <h1 className="text-3xl lg:text-5xl font-title mb-4">Conoce <span className="text-primary-light">Nuestro Equipo</span></h1>
                     <div className="font-serif text-stone-500 mt-6">
                         <p className="md:text-lg mb-4">Nuestro equipo está conformado por 12 montañistas para las distintas tareas que se pueden manejar en una actividad. Entre ellos tenemos guías turísticos certificados, médicos, rescatista, médico veterinario, psicólogo y personal de apoyo con experiencia en senderismo de montaña.</p>
                     </div>
                 </div>
 
                 <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3 xl:gap-8">
-                    {team.map(person => (
-                        <div className="group bg-white rounded-2xl text-center p-2 md:p-4">
+                    {team.map((person, i) => (
+                        <div className="group bg-white rounded-2xl text-center p-2 md:p-4" key={i}>
                             <div className="relative mb-4">
                                 <img src={`${router.basePath}/assets/images/team/${person.photo}`} alt="" className="aspect-square object-cover rounded-lg" />
 
                                 {/* rrss */}
                                 {person.rrss ?
-                                    <ul className='absolute left-0 -bottom-2 w-full flex items-center justify-center px-1 gap-1' key="">
+                                    <ul className='absolute left-0 -bottom-3 w-full flex items-center justify-center px-1 gap-1'>
                                         {person.rrss.instagram ?
                                             <li>
-                                                <a href={`https://www.instagram.com/${person.rrss.instagram}`} className="inline-flex items-center justify-center rounded-full text-xs h-6 w-6 bg-primary-light text-white shadow-lg shadow-primary/25 transition-transform hover:translate-y-1" title="Ver Instagram" target="_blank">
+                                                <a href={`https://www.instagram.com/${person.rrss.instagram}`} className="inline-flex items-center justify-center rounded-full text-xs h-7 w-7 bg-primary-light text-white shadow-lg shadow-primary/25 transition-transform hover:-translate-y-0.5" title="Abrir en Instagram" target="_blank">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" className="bi bi-instagram" viewBox="0 0 16 16"> <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/> </svg>
                                                 </a>
                                             </li>
@@ -241,7 +238,7 @@ const Index = () => {
                                         }
                                         {person.rrss.twitter ?
                                             <li>
-                                                <a href={`https://www.twitter.com/${person.rrss.twitter}`} className="inline-flex items-center justify-center rounded-full text-xs h-6 w-6 bg-primary-light text-white shadow-lg shadow-primary/25 transition-transform hover:translate-y-1" title="Ver Twitter" target="_blank">
+                                                <a href={`https://www.twitter.com/${person.rrss.twitter}`} className="inline-flex items-center justify-center rounded-full text-xs h-7 w-7 bg-primary-light text-white shadow-lg shadow-primary/25 transition-transform hover:-translate-y-0.5" title="Abrir en Twitter" target="_blank">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" className="bi bi-twitter" viewBox="0 0 16 16"> <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/> </svg>
                                                 </a>
                                             </li>
