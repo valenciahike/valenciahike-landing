@@ -11,12 +11,12 @@ import TestimonialItemComponent from '../testimonialItemComponent';
 
 const testimonials = [
     {
-        name: 'Juan Pedro',
-        content: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus explicabo voluptates optio hic fuga, asperiores officia corrupti ipsum rem, mollitia libero esse illo dolor inventore corporis suscipit cum doloribus similique nihil id adipisci. '
+        name: 'Adriana Sánchez',
+        content: 'La vida es un constante cambio y cuando perdemos muchas cosas de golpe nos queda el corazón vacío y comenzamos a buscar. Así me sentí hace unos años… Sabia que me encantaba la montaña pero no tenía ni idea de cómo manejarme en ella. Recorrí muchos caminos pero un día supe de VH y desde ese día me enamoré de la extraordinaria organización y del amor a la montaña y a la amorosa y desinteresada labor de todo el equipo de apoyo para que todos podamos disfrutar de nuestras amadas montañas. Valencia Hike es una familia.'
     },
     {
-        name: 'Juan Pedro',
-        content: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus explicabo voluptates optio hic fuga, asperiores officia corrupti ipsum rem, mollitia libero esse illo dolor inventore corporis suscipit cum doloribus similique nihil id adipisci. Expedita alias odit, qui sint consequatur accusamus dolor numquam, deserunt ex soluta exercitationem fugiat adipisci inventore dignissimos.'
+        name: 'Ana Quintero',
+        content: 'Valencia Hike no solo es una fundación... Es un refugio y un estilo de vida. Llegué a ésta familia en el momento que más lo necesitaba. Quería hacer una actividad que me permitiera distraerme y no estuviese relacionada con lo que ya hacía en la semana. Lo que no sabía es que después se convertiría en parte esencial de mi rutina. Con ellos jamás te sentirás inseguro... Cada ruta es estudiada y supervisada a la perfección, con un staff increíble y preparado. Además, te impulsan a alcanzar nuevos objetivos y a creer en ti. Definitivamente, mi mejor elección o casualidad fue encontrarlos.'
     },
     {
         name: 'Juan Pedro',
