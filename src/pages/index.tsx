@@ -139,7 +139,7 @@ const Index = () => {
                             </div>
                         </div>
                         <div>
-                            <img src={`${router.basePath}/assets/images//sec-g8sfd.jpg`} className="rounded-2xl shadow-xl shadow-stone-300" alt="" />
+                            <img src={`${router.basePath}/assets/images/sec-g8sfd.jpg`} className="rounded-2xl shadow-xl shadow-stone-300" alt="" />
                         </div>
                     </div>
                 </div>
@@ -219,14 +219,15 @@ const Index = () => {
         </section>
 
         {/* testimonials */}
-        <section className="relative z-10 bg-slate-900 py-20 lg:py-32 bg-no-repeat bg-cover bg-center" style={{ backgroundImage: `url(${router.basePath}/assets/images/sec-g8sfd.jpg)` }}>
+        <section className="relative z-10 bg-slate-900 py-20 lg:py-32 bg-no-repeat bg-cover bg-center"
+                style={{ backgroundImage: `url(${router.basePath}/assets/images/img-ewgd5n.jpg)` }}>
 
             <div className="overflow-hidden">
                 <img src={`${router.basePath}/assets/images//mountain-white-top.svg`} alt="" className="absolute top-0 inset-x-0 h-14 md:h-auto object-cover md:w-full select-none pointer-events-none" />
                 <img src={`${router.basePath}/assets/images//mountain-white-bottom.svg`} alt="" className="absolute bottom-0 inset-x-0 h-14 md:h-auto object-cover md:w-full select-none pointer-events-none" />
             </div>
 
-            <div className="absolute bg-gradient-to-br from-primary/70 to-primary-dark/50 inset-0 -z-10"></div>
+            <div className="absolute bg-gradient-to-br from-primary/50 to-primary-dark/70 inset-0 -z-10"></div>
 
             <div className="container">
                 <div className="mx-auto max-w-4xl text-center text-white mb-12">
@@ -254,41 +255,43 @@ const Index = () => {
                         <a href="" className="inline-block bg-green-700 text-white hover:text-white/80 font-bold rounded-2xl bg-gradient-to-b from-primary-light to-primary-dark px-6 py-3 hover:-translate-y-px">Ver tienda</a>
                     </div>
                     <div className="col-span-12 lg:col-span-9 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 xl:gap-6">
-
-                        <div className="group bg-cream-yellow rounded-2xl hover:border-stone-800 hover:shadow-stone-900/10 hover:shadow-xl hover:scale-105 p-4 transition-all duration-300 ease-out">
-                            <div className="mb-4">
-                                <img src={`${router.basePath}/assets/images/products/product-01.png`} className="group-hover:scale-90 object-cover aspect-square rounded-lg w-full transition-transform duration-500 ease-out" alt="" />
+                        <div className="group bg-cream-yellow rounded-2xl hover:border-stone-800 p-4 transition-all duration-300 ease-out">
+                            <div className="relative overflow-hidden mb-4 group-hover:scale-95 group-hover:-rotate-2 transition-all duration-200 ease-out group-hover:shadow-xl">
+                                <img src={`${router.basePath}/assets/images/products/black-01.png`} className="object-cover aspect-square rounded-lg w-full" alt="" />
+                                <img src={`${router.basePath}/assets/images/products/black-02.png`} className="absolute inset-0 z-10 opacity-0 group-hover:opacity-100 object-cover aspect-square rounded-lg w-full transition-opacity duration-100" alt="" />
                             </div>
                             <div className="font-title font-extrabold text-center">
-                                <div className="text-sm mb-1">Aislante Térmico</div>
+                                <div className="text-sm mb-1">Camisa Negra</div>
                                 <div className="text-primary-light">USD 25.00</div>
                             </div>
                         </div>
-
-                        <div className="group bg-cream-yellow rounded-2xl hover:border-stone-800 hover:shadow-stone-900/10 hover:shadow-xl hover:scale-105 p-4 transition-all duration-300 ease-out">
-                            <div className="mb-4">
-                                <img src={`${router.basePath}/assets/images/products/product-02.png`} className="group-hover:scale-90 object-cover aspect-square rounded-lg w-full transition-transform duration-500 ease-out" alt="" />
+                        <div className="group bg-cream-yellow rounded-2xl hover:border-stone-800 p-4 transition-all duration-300 ease-out">
+                            <div className="relative overflow-hidden mb-4 group-hover:scale-95 group-hover:-rotate-2 transition-all duration-200 ease-out group-hover:shadow-xl">
+                                <img src={`${router.basePath}/assets/images/products/green-01.png`} className="object-cover aspect-square rounded-lg w-full" alt="" />
+                                <img src={`${router.basePath}/assets/images/products/green-02.png`} className="absolute inset-0 z-10 opacity-0 group-hover:opacity-100 object-cover aspect-square rounded-lg w-full transition-opacity duration-100" alt="" />
                             </div>
                             <div className="font-title font-extrabold text-center">
-                                <div className="text-sm mb-1">Aislante Térmico</div>
+                                <div className="text-sm mb-1">Camisa Verde</div>
                                 <div className="text-primary-light">USD 25.00</div>
                             </div>
                         </div>
-                        <div className="group bg-cream-yellow rounded-2xl hover:border-stone-800 hover:shadow-stone-900/10 hover:shadow-xl hover:scale-105 p-4 transition-all duration-300 ease-out">
-                            <div className="mb-4">
-                                <img src={`${router.basePath}/assets/images/products/product-03.png`} className="group-hover:scale-90 object-cover aspect-square rounded-lg w-full transition-transform duration-500 ease-out" alt="" />
+                        <div className="group bg-cream-yellow rounded-2xl hover:border-stone-800 p-4 transition-all duration-300 ease-out">
+                            <div className="relative overflow-hidden mb-4 group-hover:scale-95 group-hover:-rotate-2 transition-all duration-200 ease-out group-hover:shadow-xl">
+                                <img src={`${router.basePath}/assets/images/products/gray-01.png`} className="object-cover aspect-square rounded-lg w-full" alt="" />
+                                <img src={`${router.basePath}/assets/images/products/gray-02.png`} className="absolute inset-0 z-10 opacity-0 group-hover:opacity-100 object-cover aspect-square rounded-lg w-full transition-opacity duration-100" alt="" />
                             </div>
                             <div className="font-title font-extrabold text-center">
-                                <div className="text-sm mb-1">Aislante Térmico</div>
+                                <div className="text-sm mb-1">Camisa Gris</div>
                                 <div className="text-primary-light">USD 25.00</div>
                             </div>
                         </div>
-                        <div className="group bg-cream-yellow rounded-2xl hover:border-stone-800 hover:shadow-stone-900/10 hover:shadow-xl hover:scale-105 p-4 transition-all duration-300 ease-out">
-                            <div className="mb-4">
-                                <img src={`${router.basePath}/assets/images/products/product-01.png`} className="group-hover:scale-90 object-cover aspect-square rounded-lg w-full transition-transform duration-500 ease-out" alt="" />
+                        <div className="group bg-cream-yellow rounded-2xl hover:border-stone-800 p-4 transition-all duration-300 ease-out">
+                            <div className="relative overflow-hidden mb-4 group-hover:scale-95 group-hover:-rotate-2 transition-all duration-200 ease-out group-hover:shadow-xl">
+                                <img src={`${router.basePath}/assets/images/products/macomaco-01.png`} className="object-cover aspect-square rounded-lg w-full" alt="" />
+                                <img src={`${router.basePath}/assets/images/products/macomaco-02.png`} className="absolute inset-0 z-10 opacity-0 group-hover:opacity-100 object-cover aspect-square rounded-lg w-full transition-opacity duration-100" alt="" />
                             </div>
                             <div className="font-title font-extrabold text-center">
-                                <div className="text-sm mb-1">Aislante Térmico</div>
+                                <div className="text-sm mb-1">Camisa Maco Maco</div>
                                 <div className="text-primary-light">USD 25.00</div>
                             </div>
                         </div>
