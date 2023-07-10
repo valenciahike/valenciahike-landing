@@ -30,16 +30,15 @@ const Main = (props: IMainProps) => {
                             <Link href="/" className="inline-block mb-4">
                                 <img className="inline-block w-32 md:w-40" src={`${router.basePath}/assets/images/logo.svg`} alt="" />
                             </Link>
-                            {/* <div>Somos una organización dedicados a formar una comunidad de montañistas y mostrar las rutas de montaña que ofrece el estado Carabobo y Venezuela</div> */}
                         </div>
                         <div>
                             <h6 className="inline-block font-subtitle text-primary-light uppercase mb-4">Sobre nosotros</h6>
                             <ul className="space-y-1">
-                                <li><a href="" className="hover:text-tertiary hover:underline">Nosotros</a></li>
-                                <li><a href="" className="hover:text-tertiary hover:underline">Aspectos Legales</a></li>
-                                <li><a href="" className="hover:text-tertiary hover:underline">Estatutos y Lineamientos</a></li>
-                                <li><a href="" className="hover:text-tertiary hover:underline">Nuestros Aliados</a></li>
-                                <li><a href="" className="hover:text-tertiary hover:underline">FAQs</a></li>
+                                <li><Link href={`${router.basePath}/about`} className="hover:text-tertiary hover:underline">Nosotros</Link></li>
+                                <li><Link href="" className="hover:text-tertiary hover:underline">Aspectos Legales</Link></li>
+                                <li><Link href={`${router.basePath}/lineamientos-y-estatutos`} className="hover:text-tertiary hover:underline">Lineamientos y Estatutos</Link></li>
+                                <li><Link href="" className="hover:text-tertiary hover:underline">Nuestros Aliados</Link></li>
+                                <li><Link href={`${router.basePath}/faqs`} className="hover:text-tertiary hover:underline">FAQs</Link></li>
                             </ul>
                         </div>
                         <div>

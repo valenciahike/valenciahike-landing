@@ -26,3 +26,25 @@
 .swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled {
     @apply !hidden;
 }
+
+
+.format p {
+    @apply mb-4;
+}
+
+.format ul {
+    @apply list-disc pl-8 mb-6
+}
+.format ol {
+    @apply list-decimal pl-8 mb-6
+}
+
+.format li {
+    @apply mb-2
+}
+
+.format h5 { @apply text-lg text-stone-900 font-title my-8 }
+.format h4 { @apply text-xl text-stone-900 font-title my-8 }
+.format h3 { @apply text-2xl text-stone-900 font-title my-8 }
+.format h2 { @apply text-3xl text-stone-900 font-title my-8 }
+.format h1 { @apply text-4xl text-stone-900 font-title my-8 }
