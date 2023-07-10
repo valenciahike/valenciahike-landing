@@ -56,7 +56,7 @@ const About = () => {
 
     return (<Main meta={<Meta title="Sobre nosotros - Valencia Hike" description="Es una organización sin fines de lucro fundada en 2019 que promueve el senderismo y el ecoturismo en el Estado Carabobo y en todo el territorio nacional." />}>
         {/* hero */}
-        <section className="relative flex items-center z-10 bg-slate-900 text-white text-center py-32 bg-no-repeat bg-cover" style={{ backgroundImage: `url(${router.basePath}/assets/images/hero-bg.png)` }}>
+        <section className="relative flex items-center z-10 bg-slate-900 text-white text-center py-32 bg-no-repeat bg-cover bg-bottom" style={{ backgroundImage: `url(${router.basePath}/assets/images/bg/img-ewgd5n.jpg)` }}>
 
             <div className="overflow-hidden">
                 <img src={`${router.basePath}/assets/images/mountain-white-top.svg`} alt="" className="absolute top-0 inset-x-0 h-14 md:h-auto object-cover md:w-full select-none pointer-events-none" />
@@ -66,7 +66,7 @@ const About = () => {
             <div className="absolute bg-black/30 inset-0 -z-10"></div>
 
             <div className="container max-w-4xl">
-                <h1 className="text-3xl md:text-5xl font-title mb-6">Sobre nosotros</h1>
+                <h1 className="text-3xl md:text-5xl font-title">Sobre nosotros</h1>
             </div>
         </section>
 
@@ -85,12 +85,12 @@ const About = () => {
                             <h6 className="text-xl lg:text-2xl font-subtitle text-primary-light">Una organización sin fines de lucro</h6>
                             <div className="font-serif text-stone-500 md:text-lg mt-6">
                                 <p className="mb-4">Valencia Hike es una organización sin fines de lucro fundada en 2019 que promueve el montañismo y el ecoturismo en el Estado Carabobo y en todo el territorio nacional.</p>
-                                <p className="mb-4">Que las personas puedan recorrer junto a nosotros para conocer sus distintas rutas. Queremos expandir el conocimiento más allá de los senderos más comunes.</p>
+                                <p className="mb-4">Queremos que las personas puedan recorrer las montañas junto a nosotros para conocer sus distintas rutas, y expandir el conocimiento más allá de los senderos más comunes.</p>
                                 <p className="mb-4">Formamos una comunidad de montañistas de distintos niveles, que asistan a recorrer las diversas rutas que ofrecemos de la mano de nuestros guías.</p>
                             </div>
                         </div>
                         <div>
-                            <img src={`${router.basePath}/assets/images//sec-g8sfd.jpg`} className="rounded-2xl shadow-xl shadow-stone-300" alt="" />
+                            <img src={`${router.basePath}/assets/images/sec-g8sfd.jpg`} className="rounded-2xl shadow-xl shadow-stone-300" alt="" />
                         </div>
                     </div>
                 </div>
@@ -101,7 +101,7 @@ const About = () => {
                     <div className="text-center mb-8">
                         <h3 className="text-2xl lg:text-3xl font-title mb-4">Nuestros objetivos</h3>
                     </div>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 lg:gap-x-6 lg:gap-y-8">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 xl:grid-cols-6 gap-6 lg:gap-x-6 lg:gap-y-8">
                         {goals.map((goal, i) => (
                             <div className="text-stone-500 text-center font-serif" key={i}>
                                 <div className="flex items-center justify-center text-center bg-primary-light/10 h-16 w-16 text-4xl p-2 rounded-full mx-auto mb-2">
@@ -132,7 +132,11 @@ const About = () => {
                             </div>
                         </div>
                         <div className="col-span-12 md:col-span-6 lg:col-start-7">
-                            <img src={`${router.basePath}/assets/images/img-ew8grbd.png`} className="rounded-3xl" alt="" />
+                            <div className="grid grid-cols-3 gap-2">
+                                <img src={`${router.basePath}/assets/images/img-9f87gbfxc.jpg`} className="rounded-xl lg:rounded-3xl aspect-[9/16] object-cover" alt="" />
+                                <img src={`${router.basePath}/assets/images/img-9hjrtjhehn.jpg`} className="rounded-xl lg:rounded-3xl aspect-[9/16] object-cover" alt="" />
+                                <img src={`${router.basePath}/assets/images/img-8ef5bfhj.jpg`} className="rounded-xl lg:rounded-3xl aspect-[9/16] object-cover" alt="" />
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -140,7 +144,11 @@ const About = () => {
                 <div className="py-16">
                     <div className="grid grid-cols-12 items-center gap-6">
                         <div className="col-span-12 md:col-span-6 lg:col-span-6 order-last md:order-none">
-                            <img src={`${router.basePath}/assets/images/img-f9s3kkj.png`} className="rounded-3xl" alt="" />
+                            <div className="grid grid-cols-3 gap-2">
+                                <img src={`${router.basePath}/assets/images/img-y8e7thhn.jpg`} className="rounded-xl lg:rounded-3xl aspect-[9/16] object-cover" alt="" />
+                                <img src={`${router.basePath}/assets/images/img-qw8t7gag.jpg`} className="rounded-xl lg:rounded-3xl aspect-[9/16] object-cover" alt="" />
+                                <img src={`${router.basePath}/assets/images/img-9wty7ej.jpg`} className="rounded-xl lg:rounded-3xl aspect-[9/16] object-cover" alt="" />
+                            </div>
                         </div>
                         <div className="col-span-12 md:col-span-6 lg:col-span-5 lg:col-start-8 order-first md:order-last">
                             <h3 className="text-2xl lg:text-3xl font-title mb-4">Rutas de mayor complejidad</h3>
@@ -160,15 +168,24 @@ const About = () => {
                             </div>
                         </div>
                         <div className="col-span-12 md:col-span-6 lg:col-start-7">
-                            <img src={`${router.basePath}/assets/images/img-qwr8gw7.png`} className="rounded-3xl" alt="" />
+                            <div className="relative grid grid-cols-1 gap-2">
+                                <img src={`${router.basePath}/assets/images/img-9h8er7ndf.jpg`} className="rounded-xl lg:rounded-3xl aspect-[30/10] object-cover" alt="" />
+                                <img src={`${router.basePath}/assets/images/img-m65fjdhf.jpg`} className="rounded-xl lg:rounded-2xl aspect-[30/10] object-cover" alt="" />
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <div className="py-16">
                     <div className="grid grid-cols-12 items-center gap-6">
-                        <div className="col-span-12 md:col-span-6 lg:col-span-6 order-last md:order-none">
-                            <img src={`${router.basePath}/assets/images/img-9th5vc4.png`} className="rounded-3xl" alt="" />
+                        <div className="col-span-12 md:col-span-6 lg:col-span-6 order-last md:order-none self-stretch">
+                            <div className="grid grid-cols-3 gap-2">
+                                <img src={`${router.basePath}/assets/images/img-tweyr5j2n.jpg`} className="rounded-xl lg:rounded-3xl aspect-[9/16] object-cover h-full" alt="" />
+                                <div className="col-span-2 grid gap-2">
+                                    <img src={`${router.basePath}/assets/images/img-b2nehjrt.jpg`} className="rounded-xl lg:rounded-3xl aspect-[16/9] object-cover" alt="" />
+                                    <img src={`${router.basePath}/assets/images/img-q87yheb.jpg`} className="rounded-xl lg:rounded-3xl aspect-[16/9] object-cover" alt="" />
+                                </div>
+                            </div>
                         </div>
                         <div className="col-span-12 md:col-span-6 lg:col-span-5 lg:col-start-8 order-first md:order-last">
                             <h3 className="text-2xl lg:text-3xl font-title mb-4">Montañas más importantes de Venezuela</h3>
@@ -188,7 +205,11 @@ const About = () => {
                             </div>
                         </div>
                         <div className="col-span-12 md:col-span-6 lg:col-start-7">
-                            <img src={`${router.basePath}/assets/images/img-qwr8gw7.png`} className="rounded-3xl" alt="" />
+                            <div className="grid grid-cols-3 gap-2">
+                                <img src={`${router.basePath}/assets/images/img-1e5thfgn.jpg`} className="rounded-xl lg:rounded-3xl aspect-[9/16] object-cover" alt="" />
+                                <img src={`${router.basePath}/assets/images/img-6y5jtndn.jpg`} className="rounded-xl lg:rounded-3xl aspect-[9/16] object-cover" alt="" />
+                                <img src={`${router.basePath}/assets/images/img-bnm3hgs.jpg`} className="rounded-xl lg:rounded-3xl aspect-[9/16] object-cover" alt="" />
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -196,7 +217,11 @@ const About = () => {
                 <div className="py-16">
                     <div className="grid grid-cols-12 items-center gap-6">
                         <div className="col-span-12 md:col-span-6 lg:col-span-6 order-last md:order-none">
-                            <img src={`${router.basePath}/assets/images/img-9th5vc4.png`} className="rounded-3xl" alt="" />
+                            <div className="grid grid-cols-3 gap-2">
+                                <img src={`${router.basePath}/assets/images/img-h6kg4h.jpg`} className="rounded-xl lg:rounded-3xl aspect-[9/16] object-cover" alt="" />
+                                <img src={`${router.basePath}/assets/images/img-q9wrt8yr.jpg`} className="rounded-xl lg:rounded-3xl aspect-[9/16] object-cover" alt="" />
+                                <img src={`${router.basePath}/assets/images/img-w9erhd5nf.jpg`} className="rounded-xl lg:rounded-3xl aspect-[9/16] object-cover" alt="" />
+                            </div>
                         </div>
                         <div className="col-span-12 md:col-span-6 lg:col-span-5 lg:col-start-8 order-first md:order-last">
                             <h3 className="text-2xl lg:text-3xl font-title mb-4">Camping</h3>
@@ -210,14 +235,14 @@ const About = () => {
         </section>
 
         {/* other activities */}
-        <section className="relative flex items-center z-10 bg-slate-900 text-white text-center py-20 min-h-[85vh] bg-no-repeat bg-cover bg-center" style={{ backgroundImage: `url(${router.basePath}/assets/images/sec-g8sfd.jpg)` }}>
+        <section className="relative flex items-center z-10 bg-slate-900 text-white text-center py-20 min-h-[85vh] bg-no-repeat bg-cover bg-center" style={{ backgroundImage: `url(${router.basePath}/assets/images/bg/img-95yhd9n.jpg)` }}>
 
             <div className="overflow-hidden">
                 <img src={`${router.basePath}/assets/images//mountain-white-top.svg`} alt="" className="absolute top-0 inset-x-0 h-14 md:h-auto object-cover md:w-full select-none pointer-events-none" />
                 <img src={`${router.basePath}/assets/images//mountain-cream-bottom.svg`} alt="" className="absolute bottom-0 inset-x-0 h-14 md:h-auto object-cover md:w-full select-none pointer-events-none" />
             </div>
 
-            <div className="absolute bg-gradient-to-br from-secondary/50 to-primary-dark/90 inset-0 -z-10"></div>
+            <div className="absolute bg-gradient-to-br from-primary-light/50 to-primary-dark/80 inset-0 -z-10"></div>
 
             <div className="container max-w-4xl">
                 <h6 className="text-xl lg:text-2xl font-subtitle text-yellow-400 mb-5">¡Valencia Hike es aún más!</h6>
@@ -261,12 +286,11 @@ const About = () => {
                             </div>
                         </div>
                         <div className="col-span-12 md:col-span-6 md:col-start-7">
-                            <a href="#!" className="relative group" title="Abrir video en Youtube">
-                                <img src={`${router.basePath}/assets/images/img-q8ewtjyk.png`} className="group-hover:-translate-y-2 transition-all duration-500" alt="" />
-                                <div className="absolute inline-flex items-center justify-center top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 text-white rounded-full w-16 h-16 shadow-lg shadow-red-600/50 bg-gradient-to-b from-red-500 to-red-700 group-hover:scale-125 transition-all">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 256 256"><path d="M240,128a15.74,15.74,0,0,1-7.6,13.51L88.32,229.65a16,16,0,0,1-16.2.3A15.86,15.86,0,0,1,64,216.13V39.87a15.86,15.86,0,0,1,8.12-13.82,16,16,0,0,1,16.2.3L232.4,114.49A15.74,15.74,0,0,1,240,128Z"></path></svg>
-                                </div>
-                            </a>
+                            <div className="grid grid-cols-3 gap-2">
+                                <img src={`${router.basePath}/assets/images/img-qwr98gb5.jpg`} className="rounded-xl lg:rounded-3xl aspect-[9/16] object-cover" alt="" />
+                                <img src={`${router.basePath}/assets/images/img-f3gh5rge.jpg`} className="rounded-xl lg:rounded-3xl aspect-[9/16] object-cover" alt="" />
+                                <img src={`${router.basePath}/assets/images/img-9hbs52fg3.jpg`} className="rounded-xl lg:rounded-3xl aspect-[9/16] object-cover" alt="" />
+                            </div>
                         </div>
                     </div>
                 </div>

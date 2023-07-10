@@ -220,17 +220,17 @@ const Index = () => {
 
         {/* testimonials */}
         <section className="relative z-10 bg-slate-900 py-20 lg:py-32 bg-no-repeat bg-cover bg-center"
-                style={{ backgroundImage: `url(${router.basePath}/assets/images/img-ewgd5n.jpg)` }}>
+                style={{ backgroundImage: `url(${router.basePath}/assets/images/bg/img-6b2nhrh.jpg)` }}>
 
             <div className="overflow-hidden">
                 <img src={`${router.basePath}/assets/images//mountain-white-top.svg`} alt="" className="absolute top-0 inset-x-0 h-14 md:h-auto object-cover md:w-full select-none pointer-events-none" />
                 <img src={`${router.basePath}/assets/images//mountain-white-bottom.svg`} alt="" className="absolute bottom-0 inset-x-0 h-14 md:h-auto object-cover md:w-full select-none pointer-events-none" />
             </div>
 
-            <div className="absolute bg-gradient-to-br from-primary/50 to-primary-dark/70 inset-0 -z-10"></div>
+            <div className="absolute bg-primary/20 inset-0 -z-10"></div>
 
             <div className="container">
-                <div className="mx-auto max-w-4xl text-center text-white mb-12">
+                <div className="mx-auto max-w-4xl text-center text-white">
                     <h6 className="text-xl lg:text-2xl font-subtitle text-yellow-400 mb-5">Testimonios</h6>
                     <h1 className="text-3xl lg:text-5xl font-title mb-6">Ellos lo dicen...</h1>
                 </div>

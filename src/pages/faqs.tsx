@@ -10,7 +10,7 @@ const data = [
     {
         id: 1,
         question: '¿Cómo puedo pertenecer a la comunidad?',
-        answer: 'Puedes unirte a nuestra comunidad completando el formulario de registro que se encuentra en el inicio de nuestra pagina web, en el botón "Unirse a Valencia Hike" o también en el link de nuestro bio del perfil de Instagram <a href="">@valenciahike</a> , copiando esta dirección URL, o haciendo “click aquí”.'
+        answer: 'Puedes unirte a nuestra comunidad completando el formulario de registro que se encuentra en el inicio de nuestra pagina web, en el botón "Unirse a Valencia Hike" o también en el link de nuestro bio del perfil de Instagram <a href="" class="text-primary underline">@valenciahike</a> , copiando esta dirección URL, o haciendo “click aquí”.'
     },
     {
         id: 2,
@@ -76,7 +76,8 @@ const Faqs = () => {
 
     return (<Main meta={<Meta title="Preguntas frecuentes - Valencia Hike" description="Todo lo que necesitas saber sobre nosotros, nuestra organización y nuestras actividades." />}>
         {/* hero */}
-        <section className="relative flex items-center z-10 bg-slate-900 text-white text-center py-32 bg-no-repeat bg-cover" style={{ backgroundImage: `url(${router.basePath}/assets/images/hero-bg.png)` }}>
+        <section className="relative flex items-center z-10 bg-slate-900 text-white text-center py-32 bg-no-repeat bg-cover bg-center"
+                style={{ backgroundImage: `url(${router.basePath}/assets/images/bg/img-9eghd4f.jpg)` }}>
 
             <div className="overflow-hidden">
                 <img src={`${router.basePath}/assets/images/mountain-white-top.svg`} alt="" className="absolute top-0 inset-x-0 h-14 md:h-auto object-cover md:w-full select-none pointer-events-none" />
@@ -86,7 +87,7 @@ const Faqs = () => {
             <div className="absolute bg-black/30 inset-0 -z-10"></div>
 
             <div className="container max-w-4xl">
-                <h1 className="text-3xl md:text-5xl font-title mb-6">Preguntas frecuentes</h1>
+                <h1 className="text-3xl md:text-5xl font-title">Preguntas frecuentes</h1>
             </div>
         </section>
 

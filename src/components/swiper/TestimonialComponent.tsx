@@ -72,7 +72,7 @@ export default function FeaturesComponent() {
             speed={1250}
             slidesOffsetBefore={16}
             slidesOffsetAfter={16}
-            wrapperClass="swiper-wrapper py-6"
+            wrapperClass="swiper-wrapper items-center py-6"
             breakpoints={{
                 640: {
                     slidesPerView: 2,
