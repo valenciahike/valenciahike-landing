@@ -33,6 +33,9 @@ const team = [
     {
         name: 'Carlos Torrealba',
         description: 'Médico Veterinario',
+        rrss: {
+            instagram: 'carloscate1209'
+        },
         photo: 'carlos.png'
     },
     {
@@ -62,6 +65,9 @@ const team = [
     {
         name: 'José Dionisio Morales',
         description: 'Abogado',
+        rrss: {
+            instagram: 'josedionisioml'
+        },
         photo: 'josemorales.png'
     },
     {
