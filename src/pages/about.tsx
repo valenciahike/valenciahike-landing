@@ -247,7 +247,7 @@ const About = () => {
             <div className="container max-w-4xl">
                 <h6 className="text-xl lg:text-2xl font-subtitle text-yellow-400 mb-5">¡Valencia Hike es aún más!</h6>
                 <h1 className="text-4xl md:text-5xl font-title mb-4">Otras modalidades</h1>
-                <p className="font-serif md:text-lg text-white/75">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation .</p>
+                <p className="font-serif md:text-lg text-white/75">Buscando adaptarnos a los distintos intereses de nuestra comunidad, hemos desarrollado diferentes formas de recorrer nuestras montañas.</p>
 
                 <div className="grid grid-cols-12 gap-y-12 md:gap-12 lg:gap-20 mt-8">
                     <div className="col-span-12 md:col-span-6">

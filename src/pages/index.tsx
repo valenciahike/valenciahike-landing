@@ -256,7 +256,7 @@ const Index = () => {
                     <div className="col-span-12 lg:col-span-3">
                         <h1 className="text-3xl xl:text-5xl font-title mb-4">Nuestros <span className="text-primary-light">Productos</span></h1>
                         <div className="font-serif text-stone-500 mt-6 mb-4">
-                            <p>Comprando nuestros productos estas apoyando de a sit amet, adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <p>Con la compra de cualquiera de estos productos estás colaborando con una mejor experiencia para los participantes de nuestras rutas, dichos fondos son destinados a la compra de distintos equipos necesarios para el desarrollo de nuestras actividades.</p>
                         </div>
                         <a href="" className="inline-block bg-green-700 text-white hover:text-white/80 font-bold rounded-2xl bg-gradient-to-b from-primary-light to-primary-dark px-6 py-3 hover:-translate-y-px">Ver tienda</a>
                     </div>
@@ -268,7 +268,7 @@ const Index = () => {
                             </div>
                             <div className="font-title font-extrabold text-center">
                                 <div className="text-sm mb-1">Camisa Negra</div>
-                                <div className="text-primary-light">USD 25.00</div>
+                                <div className="text-primary-light">USD 30.00</div>
                             </div>
                         </div>
                         <div className="group bg-cream-yellow rounded-2xl hover:border-stone-800 p-4 transition-all duration-300 ease-out">
@@ -278,7 +278,7 @@ const Index = () => {
                             </div>
                             <div className="font-title font-extrabold text-center">
                                 <div className="text-sm mb-1">Camisa Verde</div>
-                                <div className="text-primary-light">USD 25.00</div>
+                                <div className="text-primary-light">USD 30.00</div>
                             </div>
                         </div>
                         <div className="group bg-cream-yellow rounded-2xl hover:border-stone-800 p-4 transition-all duration-300 ease-out">
@@ -288,7 +288,7 @@ const Index = () => {
                             </div>
                             <div className="font-title font-extrabold text-center">
                                 <div className="text-sm mb-1">Camisa Gris</div>
-                                <div className="text-primary-light">USD 25.00</div>
+                                <div className="text-primary-light">USD 30.00</div>
                             </div>
                         </div>
                         <div className="group bg-cream-yellow rounded-2xl hover:border-stone-800 p-4 transition-all duration-300 ease-out">
@@ -298,7 +298,7 @@ const Index = () => {
                             </div>
                             <div className="font-title font-extrabold text-center">
                                 <div className="text-sm mb-1">Camisa Maco Maco</div>
-                                <div className="text-primary-light">USD 25.00</div>
+                                <div className="text-primary-light">USD 30.00</div>
                             </div>
                         </div>
                     </div>
