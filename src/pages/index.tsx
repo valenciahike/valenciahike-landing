@@ -267,7 +267,7 @@ const Index = () => {
                                 <img src={`${router.basePath}/assets/images/products/black-02.png`} className="absolute inset-0 z-10 opacity-0 group-hover:opacity-100 object-cover aspect-square rounded-lg w-full transition-opacity duration-100" alt="" />
                             </div>
                             <div className="font-title font-extrabold text-center">
-                                <div className="text-sm mb-1">Camisa Negra</div>
+                                <div className="text-sm mb-1">Franela Negra</div>
                                 <div className="text-primary-light">USD 30.00</div>
                             </div>
                         </div>
@@ -277,7 +277,7 @@ const Index = () => {
                                 <img src={`${router.basePath}/assets/images/products/green-02.png`} className="absolute inset-0 z-10 opacity-0 group-hover:opacity-100 object-cover aspect-square rounded-lg w-full transition-opacity duration-100" alt="" />
                             </div>
                             <div className="font-title font-extrabold text-center">
-                                <div className="text-sm mb-1">Camisa Verde</div>
+                                <div className="text-sm mb-1">Franela Verde</div>
                                 <div className="text-primary-light">USD 30.00</div>
                             </div>
                         </div>
@@ -287,7 +287,7 @@ const Index = () => {
                                 <img src={`${router.basePath}/assets/images/products/gray-02.png`} className="absolute inset-0 z-10 opacity-0 group-hover:opacity-100 object-cover aspect-square rounded-lg w-full transition-opacity duration-100" alt="" />
                             </div>
                             <div className="font-title font-extrabold text-center">
-                                <div className="text-sm mb-1">Camisa Gris</div>
+                                <div className="text-sm mb-1">Franela Gris</div>
                                 <div className="text-primary-light">USD 30.00</div>
                             </div>
                         </div>
@@ -297,7 +297,7 @@ const Index = () => {
                                 <img src={`${router.basePath}/assets/images/products/macomaco-02.png`} className="absolute inset-0 z-10 opacity-0 group-hover:opacity-100 object-cover aspect-square rounded-lg w-full transition-opacity duration-100" alt="" />
                             </div>
                             <div className="font-title font-extrabold text-center">
-                                <div className="text-sm mb-1">Camisa Maco Maco</div>
+                                <div className="text-sm mb-1">Franela Maco Maco</div>
                                 <div className="text-primary-light">USD 30.00</div>
                             </div>
                         </div>
