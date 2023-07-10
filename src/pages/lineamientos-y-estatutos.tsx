@@ -6,7 +6,7 @@ import { Main } from '@/templates/Main';
 const Guidelines = () => {
     const router = useRouter()
 
-    return (<Main meta={<Meta title="Preguntas frecuentes - Valencia Hike" description="Todo lo que necesitas saber sobre nosotros, nuestra organización y nuestras actividades." />}>
+    return (<Main meta={<Meta title="Lineamientos y Estatutos - Valencia Hike" description="Valencia Hike es una organización registrada bajo la figura de Fundación con el RIF Nro J-502603492, lo que hace necesario la creación de estatutos y lineamientos a seguir para poder llevar un orden y control dentro de las actividades." />}>
         {/* hero */}
         <section className="relative flex items-center z-10 bg-slate-900 text-white text-center py-32 bg-no-repeat bg-cover bg-center"
                 style={{ backgroundImage: `url(${router.basePath}/assets/images/bg/img-lkhgl5n2.jpg)` }}>
