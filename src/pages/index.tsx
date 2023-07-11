@@ -315,7 +315,7 @@ const Index = () => {
 
             <div className="container">
                 <div className="text-center max-w-3xl mx-auto mb-12">
-                    <h1 className="text-3xl lg:text-5xl font-title mb-4">Conoce <span className="text-primary-light">Nuestro Equipo</span></h1>
+                    <h1 className="text-3xl lg:text-5xl font-title mb-4">Conoce a <span className="text-primary-light">Nuestro Equipo</span></h1>
                     <div className="font-serif text-stone-500 mt-6">
                         <p className="md:text-lg mb-4">Nuestro equipo está conformado por 12 montañistas para las distintas tareas que se pueden manejar en una actividad. Entre ellos tenemos guías turísticos certificados, médicos, rescatista, médico veterinario, psicólogo y personal de apoyo con experiencia en senderismo de montaña.</p>
                     </div>
