@@ -19,8 +19,8 @@ const testimonials = [
         content: 'Valencia Hike no solo es una fundación... Es un refugio y un estilo de vida. Llegué a ésta familia en el momento que más lo necesitaba. Quería hacer una actividad que me permitiera distraerme y no estuviese relacionada con lo que ya hacía en la semana. Lo que no sabía es que después se convertiría en parte esencial de mi rutina. Con ellos jamás te sentirás inseguro... Cada ruta es estudiada y supervisada a la perfección, con un staff increíble y preparado. Además, te impulsan a alcanzar nuevos objetivos y a creer en ti. Definitivamente, mi mejor elección o casualidad fue encontrarlos.'
     },
     {
-        name: 'Juan Pedro',
-        content: 'Asperiores officia corrupti ipsum rem, mollitia libero esse illo dolor inventore corporis suscipit cum doloribus similique nihil id adipisci. Expedita alias odit, qui sint consequatur accusamus dolor numquam, deserunt ex soluta exercitationem fugiat adipisci inventore dignissimos.'
+        name: 'Hector Platt',
+        content: 'Valencia Hike para mi ha sido la escuela para conocer las montañas de Valencia desde el 2019 con su manera divertida y profesional. Me ha llevado a agarrarle el gusto a las carreras de trail running porque definitivamente la montaña te llama y más a mi que la veo desde que abro la ventana de mi habitación, Valencia Hike es familia, trabajo en equipo, ayudar al prójimo y servir de una manera incondicional a cada persona que comienza desde cero y hacen que se enamore literalmente de nuestras queridas montañas. Gracias VH nos vemos en la montaña.'
     },
     {
         name: 'Juan Pedro',
