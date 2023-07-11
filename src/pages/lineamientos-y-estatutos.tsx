@@ -65,10 +65,11 @@ const Guidelines = () => {
 
                         <br />
 
-                        <h1>Política de pagos y "No Asistencia"</h1>
+                        <h1>Política de pagos y reembolsos</h1>
                         <p>Hay rutas donde pueden incurrir distintos tipos de costos, como puede serlo un transporte, estacionamiento, uso de algunas instalaciones, permisología, contratación de personal externo, alimentación y/o hidratación, entre otros. En dichos casos se establecerá un costo para la actividad y será necesario pagarlo para poder reservar el cupo, no se reservarán cupos a personas que confirmen verbalmente por WhatsApp, nos disculpamos de antemano si usted confirma vía WhatsApp, pero antes de realizar el pago se agotan los cupos.</p>
                         <p>Esperamos entiendan la necesidad de esta dinámica, pues de no ser así, estamos expuestos a que la persona cancele su participación con poco tiempo de anticipación y la organización deberá cubrir dicho costo ante el servicio contratado.</p>
-                        <p>Reembolsos: <b>No se realizan reembolsos de las actividades ya pagadas y tampoco podrá ser abonado para otras actividades</b>, la única situación donde podemos reembolsar será cuando el participante cancele su participación con un tiempo prudente que permita ceder su cupo y dicho costo ser cubierto por el nuevo participante. No se realizan reembolsos por llegar tarde a una actividad iniciada.</p>
+                        <h5>Reembolsos</h5>
+                        <p><b>No se realizan reembolsos de las actividades ya pagadas y tampoco podrá ser abonado para otras actividades</b>, la única situación donde podemos reembolsar será cuando el participante cancele su participación con un tiempo prudente que permita ceder su cupo y dicho costo ser cubierto por el nuevo participante. No se realizan reembolsos por llegar tarde a una actividad iniciada.</p>
                         <p>Si la ruta tiene un costo donde se incluya algún servicio (transporte, vigilancia de vehículo, entre otros) el cual usted no vaya a usar, igual se deberá cancelar dicho costo por medidas de organización, a pesar del ser libre el cerro, será muy mal visto aprovechar nuestra organización para hacer la misma ruta en el mismo momento por su cuenta.</p>
 
                         <br />
