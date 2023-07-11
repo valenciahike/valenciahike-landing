@@ -1,5 +1,6 @@
 import { useRouter } from 'next/router';
 
+import PartnersComponent from '@/components/swiper/PartnersComponent';
 import TestimonialComponent from '@/components/swiper/TestimonialComponent';
 import TrailsComponent from '@/components/swiper/trailsComponent';
 import { Meta } from '@/layouts/Meta';
@@ -309,8 +310,7 @@ const Index = () => {
         {/* our team */}
         <section className="relative z-10 bg-cream-yellow py-20 lg:pb-40 lg:pt-24">
             <div className="overflow-hidden">
-                <img src={`${router.basePath}/assets/images/mountain-big-white-bottom.svg`} alt="" className="absolute bottom-0 inset-x-0 h-14 md:h-auto object-cover md:w-full select-none pointer-events-none" />
-                <img src={`${router.basePath}/assets/images/mountain_primary_bottom.svg`} alt="" className="absolute bottom-0 inset-x-0 h-14 md:h-auto object-cover md:w-full select-none pointer-events-none" />
+                <img src={`${router.basePath}/assets/images/mountain-white-bottom.svg`} alt="" className="absolute bottom-0 inset-x-0 h-14 md:h-auto object-cover md:w-full select-none pointer-events-none" />
             </div>
 
             <div className="container">
@@ -354,6 +354,30 @@ const Index = () => {
                             <div className="text-stone-400 font-serif text-sm leading-tight">{person.description}</div>
                         </div>
                     ))}
+                </div>
+            </div>
+        </section>
+
+        {/* aliados */}
+        <section className="relative z-10 bg-white py-20 lg:pb-32 lg:pt-20">
+            <div className="overflow-hidden">
+                <img src={`${router.basePath}/assets/images/mountain-big-cream-bottom.svg`} alt="" className="absolute bottom-0 inset-x-0 h-14 md:h-auto object-cover md:w-full select-none pointer-events-none" />
+                <img src={`${router.basePath}/assets/images/mountain_primary_bottom.svg`} alt="" className="absolute bottom-0 inset-x-0 h-14 md:h-auto object-cover md:w-full select-none pointer-events-none" />
+            </div>
+
+            <div className="container">
+                <div className="text-center max-w-3xl mx-auto mb-6">
+                    <h1 className="text-3xl lg:text-5xl font-title mb-4">Nuestros <span className="text-primary-light">Aliados</span></h1>
+                    <div className="font-serif text-stone-500 mt-6">
+                        <p className="md:text-lg mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt porro id dolore dolor ullam magnam maxime voluptate, distinctio iure illum dolorum doloribus sint excepturi a incidunt nemo beatae assumenda doloremque rerum ratione quis expedita ab.</p>
+                    </div>
+                </div>
+
+                <PartnersComponent />
+
+                <div className="text-center mt-12">
+                    <p className="font-serif text-stone-500 mb-4">¿Quieres saber más?</p>
+                    <a href="" className="inline-block bg-green-700 text-white hover:text-white/80 font-bold rounded-2xl bg-gradient-to-b from-primary-light to-primary-dark px-6 py-3 hover:-translate-y-px">Contactar</a>
                 </div>
             </div>
         </section>
