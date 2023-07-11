@@ -60,7 +60,7 @@ const testimonials = [
     },
 ]
 
-export default function FeaturesComponent() {
+export default function TestimonialsComponent() {
     return (
         <Swiper
             modules={[Navigation, Pagination, A11y, Autoplay]}
