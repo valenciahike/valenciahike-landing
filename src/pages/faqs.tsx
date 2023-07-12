@@ -129,7 +129,7 @@ const Faqs = () => {
             </div>
         </section>
 
-  </Main>);
+    </Main>);
 }
 
 export default Faqs;

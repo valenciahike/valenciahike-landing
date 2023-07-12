@@ -122,7 +122,7 @@ const Guidelines = () => {
             </div>
         </section>
 
-  </Main>);
+    </Main>);
 }
 
 export default Guidelines;

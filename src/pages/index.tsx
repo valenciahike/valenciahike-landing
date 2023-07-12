@@ -369,14 +369,14 @@ const Index = () => {
                 <div className="text-center max-w-3xl mx-auto mb-6">
                     <h1 className="text-3xl lg:text-5xl font-title mb-4">Nuestros <span className="text-primary-light">Aliados</span></h1>
                     <div className="font-serif text-stone-500 mt-6">
-                        <p className="md:text-lg mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt porro id dolore dolor ullam magnam maxime voluptate, distinctio iure illum dolorum doloribus sint excepturi a incidunt nemo beatae assumenda doloremque rerum ratione quis expedita ab.</p>
+                        <p className="md:text-lg mb-4">Organizaciones con las que hemos llegado a acuerdos comerciales que generen un beneficio para ambas partes, donde nosotros podemos servir como canal de venta y publicidad ya sea por nuestra página web, nuestras redes sociales, uno de nuestros medios más valiosos que es la comunidad vía WhatsApp donde el contacto y la comunicación es directa con al menos 1.900 miembros que han mostrado interés en las actividades que realizamos, en la realización de viajes y rutas donde exhibamos el producto o marca e incluso en nuestros uniformes.</p>
                     </div>
                 </div>
 
                 <PartnersComponent />
 
                 <div className="text-center mt-12">
-                    <p className="font-serif text-stone-500 mb-4">¿Quieres saber más?</p>
+                    <p className="font-serif text-stone-500 mb-4">¿Estas interesado y quieres saber más?</p>
                     <a href="" className="inline-block bg-green-700 text-white hover:text-white/80 font-bold rounded-2xl bg-gradient-to-b from-primary-light to-primary-dark px-6 py-3 hover:-translate-y-px">Contactar</a>
                 </div>
             </div>
