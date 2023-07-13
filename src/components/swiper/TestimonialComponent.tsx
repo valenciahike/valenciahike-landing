@@ -23,41 +23,9 @@ const testimonials = [
         content: 'Valencia Hike para mi ha sido la escuela para conocer las montañas de Valencia desde el 2019 con su manera divertida y profesional. Me ha llevado a agarrarle el gusto a las carreras de trail running porque definitivamente la montaña te llama y más a mi que la veo desde que abro la ventana de mi habitación, Valencia Hike es familia, trabajo en equipo, ayudar al prójimo y servir de una manera incondicional a cada persona que comienza desde cero y hacen que se enamore literalmente de nuestras queridas montañas. Gracias VH nos vemos en la montaña.'
     },
     {
-        name: 'Juan Pedro',
-        content: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus explicabo voluptates optio hic fuga, asperiores officia corrupti ipsum rem, mollitia libero esse illo dolor inventore corporis suscipit cum doloribus similique nihil id adipisci. Expedita alias odit, qui sint consequatur accusamus dolor numquam.'
-    },
-    {
-        name: 'Juan Pedro',
-        content: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus explicabo voluptates optio hic fuga, asperiores officia corrupti ipsum rem, mollitia libero esse illo dolor inventore corporis suscipit cum doloribus similique nihil id adipisci. '
-    },
-    {
-        name: 'Juan Pedro',
-        content: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus explicabo voluptates optio hic fuga, asperiores officia corrupti ipsum rem, mollitia libero esse illo dolor inventore corporis suscipit cum doloribus similique nihil id adipisci. Expedita alias odit, qui sint consequatur accusamus dolor numquam, deserunt ex soluta exercitationem fugiat adipisci inventore dignissimos.'
-    },
-    {
-        name: 'Juan Pedro',
-        content: 'Asperiores officia corrupti ipsum rem, mollitia libero esse illo dolor inventore corporis suscipit cum doloribus similique nihil id adipisci. Expedita alias odit, qui sint consequatur accusamus dolor numquam, deserunt ex soluta exercitationem fugiat adipisci inventore dignissimos.'
-    },
-    {
-        name: 'Juan Pedro',
-        content: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus explicabo voluptates optio hic fuga, asperiores officia corrupti ipsum rem, mollitia libero esse illo dolor inventore corporis suscipit cum doloribus similique nihil id adipisci. Expedita alias odit, qui sint consequatur accusamus dolor numquam.'
-    },
-    {
-        name: 'Juan Pedro',
-        content: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus explicabo voluptates optio hic fuga, asperiores officia corrupti ipsum rem, mollitia libero esse illo dolor inventore corporis suscipit cum doloribus similique nihil id adipisci. '
-    },
-    {
-        name: 'Juan Pedro',
-        content: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus explicabo voluptates optio hic fuga, asperiores officia corrupti ipsum rem, mollitia libero esse illo dolor inventore corporis suscipit cum doloribus similique nihil id adipisci. Expedita alias odit, qui sint consequatur accusamus dolor numquam, deserunt ex soluta exercitationem fugiat adipisci inventore dignissimos.'
-    },
-    {
-        name: 'Juan Pedro',
-        content: 'Asperiores officia corrupti ipsum rem, mollitia libero esse illo dolor inventore corporis suscipit cum doloribus similique nihil id adipisci. Expedita alias odit, qui sint consequatur accusamus dolor numquam, deserunt ex soluta exercitationem fugiat adipisci inventore dignissimos.'
-    },
-    {
-        name: 'Juan Pedro',
-        content: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus explicabo voluptates optio hic fuga, asperiores officia corrupti ipsum rem, mollitia libero esse illo dolor inventore corporis suscipit cum doloribus similique nihil id adipisci. Expedita alias odit, qui sint consequatur accusamus dolor numquam.'
-    },
+        name: 'Cruz Ivan Castaño',
+        content: 'Con Valencia hike he vuelto a descubrir que un día nublado o una densa niebla, con una buena brisa también me revela el infinito azul del horizonte. Que los diferentes tonos de verde me pueden llevar por los mejores  caminos, laderas, rocas y toyotas. Que en un día soleado cada paso cuenta y que en un terreno húmedo, mojado o resbaloso el culi-cross también cuenta. Y esa es la magia de un sendero y la recompensa que recibe un senderista todo esto y muchos, sin olvidar el valor agregado de compartir la experiencia en una cola de café y las innumerables imágenes que nos llevamos en el baúl de la memoria.'
+    }
 ]
 
 export default function TestimonialsComponent() {
