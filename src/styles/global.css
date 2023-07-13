@@ -48,3 +48,5 @@
 .format h3 { @apply text-2xl text-stone-900 font-title my-8 }
 .format h2 { @apply text-3xl text-stone-900 font-title my-8 }
 .format h1 { @apply text-4xl text-stone-900 font-title my-8 }
+
+.format small { @apply text-sm }

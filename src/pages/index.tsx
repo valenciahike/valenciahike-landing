@@ -5,6 +5,8 @@ import TestimonialComponent from '@/components/swiper/TestimonialComponent';
 import TrailsComponent from '@/components/swiper/trailsComponent';
 import { Meta } from '@/layouts/Meta';
 import { Main } from '@/templates/Main';
+import { server } from 'config';
+import ProductCardComponent from '@/components/productCardComponent';
 
 const team = [
     {
@@ -105,7 +107,7 @@ const team = [
     },
 ];
 
-const Index = () => {
+const Index = ({products}: any) => {
   const router = useRouter();
 
     return (<Main meta={<Meta title="Bienvenido a Valencia Hike" description="Organización sin fines de lucro dedicada a mostrar las rutas de montaña que ofrece el estado Carabobo y Venezuela." />}>
@@ -262,46 +264,9 @@ const Index = () => {
                         <a href="" className="inline-block bg-green-700 text-white hover:text-white/80 font-bold rounded-2xl bg-gradient-to-b from-primary-light to-primary-dark px-6 py-3 hover:-translate-y-px">Ver tienda</a>
                     </div>
                     <div className="col-span-12 lg:col-span-9 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 xl:gap-6">
-                        <div className="group bg-cream-yellow rounded-2xl hover:border-stone-800 p-4 transition-all duration-300 ease-out">
-                            <div className="relative overflow-hidden mb-4 group-hover:scale-95 group-hover:-rotate-2 transition-all duration-200 ease-out group-hover:shadow-xl">
-                                <img src={`${router.basePath}/assets/images/products/black-01.png`} className="object-cover aspect-square rounded-lg w-full" alt="" />
-                                <img src={`${router.basePath}/assets/images/products/black-02.png`} className="absolute inset-0 z-10 opacity-0 group-hover:opacity-100 object-cover aspect-square rounded-lg w-full transition-opacity duration-100" alt="" />
-                            </div>
-                            <div className="font-title font-extrabold text-center">
-                                <div className="text-sm mb-1">Franela Negra</div>
-                                <div className="text-primary-light">USD 30.00</div>
-                            </div>
-                        </div>
-                        <div className="group bg-cream-yellow rounded-2xl hover:border-stone-800 p-4 transition-all duration-300 ease-out">
-                            <div className="relative overflow-hidden mb-4 group-hover:scale-95 group-hover:-rotate-2 transition-all duration-200 ease-out group-hover:shadow-xl">
-                                <img src={`${router.basePath}/assets/images/products/green-01.png`} className="object-cover aspect-square rounded-lg w-full" alt="" />
-                                <img src={`${router.basePath}/assets/images/products/green-02.png`} className="absolute inset-0 z-10 opacity-0 group-hover:opacity-100 object-cover aspect-square rounded-lg w-full transition-opacity duration-100" alt="" />
-                            </div>
-                            <div className="font-title font-extrabold text-center">
-                                <div className="text-sm mb-1">Franela Verde</div>
-                                <div className="text-primary-light">USD 30.00</div>
-                            </div>
-                        </div>
-                        <div className="group bg-cream-yellow rounded-2xl hover:border-stone-800 p-4 transition-all duration-300 ease-out">
-                            <div className="relative overflow-hidden mb-4 group-hover:scale-95 group-hover:-rotate-2 transition-all duration-200 ease-out group-hover:shadow-xl">
-                                <img src={`${router.basePath}/assets/images/products/gray-01.png`} className="object-cover aspect-square rounded-lg w-full" alt="" />
-                                <img src={`${router.basePath}/assets/images/products/gray-02.png`} className="absolute inset-0 z-10 opacity-0 group-hover:opacity-100 object-cover aspect-square rounded-lg w-full transition-opacity duration-100" alt="" />
-                            </div>
-                            <div className="font-title font-extrabold text-center">
-                                <div className="text-sm mb-1">Franela Gris</div>
-                                <div className="text-primary-light">USD 30.00</div>
-                            </div>
-                        </div>
-                        <div className="group bg-cream-yellow rounded-2xl hover:border-stone-800 p-4 transition-all duration-300 ease-out">
-                            <div className="relative overflow-hidden mb-4 group-hover:scale-95 group-hover:-rotate-2 transition-all duration-200 ease-out group-hover:shadow-xl">
-                                <img src={`${router.basePath}/assets/images/products/macomaco-01.png`} className="object-cover aspect-square rounded-lg w-full" alt="" />
-                                <img src={`${router.basePath}/assets/images/products/macomaco-02.png`} className="absolute inset-0 z-10 opacity-0 group-hover:opacity-100 object-cover aspect-square rounded-lg w-full transition-opacity duration-100" alt="" />
-                            </div>
-                            <div className="font-title font-extrabold text-center">
-                                <div className="text-sm mb-1">Franela Maco Maco</div>
-                                <div className="text-primary-light">USD 30.00</div>
-                            </div>
-                        </div>
+                        {products.map((product: any, i: any) => {
+                            return <ProductCardComponent product={product} key={i} />
+                        })}
                     </div>
                 </div>
             </div>
@@ -382,6 +347,15 @@ const Index = () => {
             </div>
         </section>
     </Main>)
+}
+
+export const getStaticProps = async () => {
+    const res = await fetch(`${server}/api/products`)
+    const products = await res.json()
+
+    return {
+        props: { products }
+    }
 }
 
 export default Index;
