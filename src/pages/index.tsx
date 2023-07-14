@@ -127,7 +127,7 @@ const Index = () => {
                 <h1 className="text-3xl md:text-5xl font-title mb-6">¡Recorramos <span className="text-tertiary">Valencia</span> Desde Las Alturas!</h1>
                 <h6 className="text-lg md:text-2xl font-serif mb-5">Somos una organización dedicada a formar una comunidad de montañistas y mostrar las rutas de montaña que ofrece el estado Carabobo y Venezuela</h6>
 
-                <a href="" className="inline-block bg-green-700 text-white hover:text-white/80 font-bold rounded-2xl bg-gradient-to-b from-primary-light to-primary-dark px-6 py-3 hover:-translate-y-px">Unirse a Valencia Hike</a>
+                <Link href={`${router.basePath}/registrarse`} className="inline-block bg-green-700 text-white hover:text-white/80 font-bold rounded-2xl bg-gradient-to-b from-primary-light to-primary-dark px-6 py-3 hover:-translate-y-px">Unirse a Valencia Hike</Link>
             </div>
         </header>
 
