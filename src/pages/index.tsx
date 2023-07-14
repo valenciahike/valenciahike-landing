@@ -344,7 +344,7 @@ const Index = () => {
 
                 <div className="text-center mt-12">
                     <p className="font-serif text-stone-500 mb-4">¿Estas interesado y quieres saber más?</p>
-                    <a href="" className="inline-block bg-green-700 text-white hover:text-white/80 font-bold rounded-2xl bg-gradient-to-b from-primary-light to-primary-dark px-6 py-3 hover:-translate-y-px">Contactar</a>
+                    <Link href={`${router.basePath}/contacto`} className="inline-block bg-green-700 text-white hover:text-white/80 font-bold rounded-2xl bg-gradient-to-b from-primary-light to-primary-dark px-6 py-3 hover:-translate-y-px">Contactar</Link>
                 </div>
             </div>
         </section>
