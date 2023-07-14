@@ -40,6 +40,18 @@ const Meta = (props: IMetaProps) => {
                 <meta name="twitter:card" content="summary_large_image" />
                 <meta name="twitter:site" content="@valenciahike"></meta>
             </Head>
+            <Script strategy="afterInteractive" src="https://www.googletagmanager.com/gtag/js?id=G-1H6P3VHPT3" />
+            <Script
+                id="google-analytics"
+                strategy="afterInteractive"
+                dangerouslySetInnerHTML={{__html: `
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+
+                    gtag('config', 'G-1H6P3VHPT3');
+                `}}
+            />
             <NextSeo
                 title={props.title}
                 description={props.description}
@@ -52,17 +64,6 @@ const Meta = (props: IMetaProps) => {
                     site_name: AppConfig.site_name,
                 }}
             />
-            {/* Google tag (gtag.js) */}
-            <Script async src="https://www.googletagmanager.com/gtag/js?id=G-1H6P3VHPT3" />
-            <Script id="google-analytics">
-                {`
-                    window.dataLayer = window.dataLayer || [];
-                    function gtag(){dataLayer.push(arguments);}
-                    gtag('js', new Date());
-
-                    gtag('config', 'G-1H6P3VHPT3');
-                `}
-            </Script>
         </>
     );
 };
