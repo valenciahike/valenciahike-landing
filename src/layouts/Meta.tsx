@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import { useRouter } from 'next/router';
+import Script from 'next/script';
 import { NextSeo } from 'next-seo';
 
 import { AppConfig } from '@/utils/AppConfig';
@@ -51,6 +52,17 @@ const Meta = (props: IMetaProps) => {
                     site_name: AppConfig.site_name,
                 }}
             />
+            {/* Google tag (gtag.js) */}
+            <Script async src="https://www.googletagmanager.com/gtag/js?id=G-1H6P3VHPT3" />
+            <Script id="google-analytics">
+                {`
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+
+                    gtag('config', 'G-1H6P3VHPT3');
+                `}
+            </Script>
         </>
     );
 };
