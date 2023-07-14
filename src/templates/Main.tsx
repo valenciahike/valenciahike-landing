@@ -34,7 +34,7 @@ const Main = (props: IMainProps) => {
                         <div>
                             <h6 className="inline-block font-subtitle text-primary-light uppercase mb-4">Sobre nosotros</h6>
                             <ul className="space-y-1">
-                                <li><Link href={`${router.basePath}/about`} className="hover:text-tertiary underline-offset-2 hover:underline">Nosotros</Link></li>
+                                <li><Link href={`${router.basePath}/nosotros`} className="hover:text-tertiary underline-offset-2 hover:underline">Nosotros</Link></li>
                                 {/* <li><Link href="" className="hover:text-tertiary underline-offset-2 hover:underline">Aspectos Legales</Link></li> */}
                                 <li><Link href={`${router.basePath}/lineamientos-y-estatutos`} className="hover:text-tertiary underline-offset-2 hover:underline">Lineamientos y Estatutos</Link></li>
                                 {/* <li><Link href="" className="hover:text-tertiary underline-offset-2 hover:underline">Nuestros Aliados</Link></li> */}
@@ -45,8 +45,8 @@ const Main = (props: IMainProps) => {
                             <h6 className="inline-block font-subtitle text-primary-light uppercase mb-4">Enlaces directos</h6>
                             <ul className="space-y-1">
                                 <li><Link href={`${router.basePath}/registrarse`} className="hover:text-tertiary underline-offset-2 hover:underline">Formulario de registro</Link></li>
-                                <li><Link href={`${router.basePath}/contacto`} className="hover:text-tertiary underline-offset-2 hover:underline">Contacto</Link></li>
                                 <li><Link href={`${router.basePath}/tienda`} className="hover:text-tertiary underline-offset-2 hover:underline">Tienda</Link></li>
+                                <li><Link href={`${router.basePath}/contacto`} className="hover:text-tertiary underline-offset-2 hover:underline">Contacto</Link></li>
                             </ul>
                         </div>
                         <div className="col-span-2 sm:col-auto">
