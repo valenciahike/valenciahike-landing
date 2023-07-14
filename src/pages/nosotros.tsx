@@ -304,36 +304,21 @@ const About = () => {
                             </div>
                         </div>
 
-                        <div className="grid grid-cols-4 lg:grid-cols-5 items-center gap-6 lg:gap-12">
-                            <div className="opacity-80 hover:opacity-100">
-                                <img src={`${router.basePath}/assets/images/brands/logo-01.svg`} className="w-full" alt="" />
+                        <div className="grid grid-cols-3 items-center gap-6 lg:gap-12">
+                            <div className="text-center grayscale opacity-80 hover:grayscale-0 hover:opacity-100">
+                                <img src={`${router.basePath}/assets/images/brands/greenconcept.png`} className="inline-block max-w-auto max-h-20" title="Green Concept" alt="Green Concept" />
                             </div>
-                            <div className="opacity-80 hover:opacity-100">
-                                <img src={`${router.basePath}/assets/images/brands/logo-02.svg`} className="w-full" alt="" />
+                            <div className="text-center grayscale opacity-80 hover:grayscale-0 hover:opacity-100">
+                                <img src={`${router.basePath}/assets/images/brands/athlos.png`} className="inline-block max-w-auto max-h-20" title="Athlos" alt="Athlos" />
                             </div>
-                            <div className="opacity-80 hover:opacity-100">
-                                <img src={`${router.basePath}/assets/images/brands/logo-03.svg`} className="w-full" alt="" />
+                            <div className="text-center grayscale opacity-80 hover:grayscale-0 hover:opacity-100">
+                                <img src={`${router.basePath}/assets/images/brands/ekam.png`} className="inline-block max-w-auto max-h-20" title="Ekam" alt="Ekam" />
                             </div>
-                            <div className="opacity-80 hover:opacity-100">
-                                <img src={`${router.basePath}/assets/images/brands/logo-04.svg`} className="w-full" alt="" />
+                            <div className="text-center grayscale opacity-80 hover:grayscale-0 hover:opacity-100">
+                                <img src={`${router.basePath}/assets/images/brands/andreashtanga.png`} className="inline-block max-w-auto max-h-20" title="Andreashtanga" alt="Andreashtanga" />
                             </div>
-                            <div className="opacity-80 hover:opacity-100">
-                                <img src={`${router.basePath}/assets/images/brands/logo-05.svg`} className="w-full" alt="" />
-                            </div>
-                            <div className="opacity-80 hover:opacity-100">
-                                <img src={`${router.basePath}/assets/images/brands/logo-04.svg`} className="w-full" alt="" />
-                            </div>
-                            <div className="opacity-80 hover:opacity-100">
-                                <img src={`${router.basePath}/assets/images/brands/logo-02.svg`} className="w-full" alt="" />
-                            </div>
-                            <div className="opacity-80 hover:opacity-100">
-                                <img src={`${router.basePath}/assets/images/brands/logo-05.svg`} className="w-full" alt="" />
-                            </div>
-                            <div className="opacity-80 hover:opacity-100">
-                                <img src={`${router.basePath}/assets/images/brands/logo-03.svg`} className="w-full" alt="" />
-                            </div>
-                            <div className="opacity-80 hover:opacity-100">
-                                <img src={`${router.basePath}/assets/images/brands/logo-01.svg`} className="w-full" alt="" />
+                            <div className="text-center grayscale opacity-80 hover:grayscale-0 hover:opacity-100">
+                                <img src={`${router.basePath}/assets/images/brands/camaradecomercio.png`} className="inline-block max-w-auto max-h-20" title="Camara de Comercio de Valencia" alt="Camara de Comercio de Valencia" />
                             </div>
                         </div>
                     </div>
