@@ -10,7 +10,12 @@ const data = [
     {
         id: 1,
         question: '¿Cómo puedo pertenecer a la comunidad?',
-        answer: 'Puedes unirte a nuestra comunidad completando el formulario de registro que se encuentra en el inicio de nuestra pagina web, en el botón "Unirse a Valencia Hike" o también en el link de nuestro bio del perfil de Instagram <a href="" class="text-primary underline">@valenciahike</a> , copiando esta dirección URL, o haciendo “click aquí”.'
+        answer: `Para nuestro control y seguridad, debes completar el formulario de registro con tu información, para luego contactarte vía WhatsApp y darte los lineamientos sobre el ingreso a nuestra comunidad. Es importante que coloques el número telefónico con el que usas WhatsApp.
+            <br><br>
+            <a href="" class="text-primary underline">
+                Formulario de registro
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="inline ml-1 bi bi-box-arrow-up-right" viewBox="0 0 16 16"> <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"/> <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"/> </svg>
+            </a>`
     },
     {
         id: 2,
@@ -45,19 +50,21 @@ const data = [
     },
     {
         id: 8,
-        question: '¿Por qué las rutas tienen capacidad máxima de asistentes?',
-        answer: `<p>Cada ruta tiene una cantidad máxima de asistentes, al llegar a dicha cantidad de participantes confirmados, no se recibirán más participantes. Hay varios factores que influyen en esta cantidad, como lo son la capacidad de carga del espacio, todos los espacios que se visitan tienen una capacidad de carga que hace referencia a la máxima cantidad de personas que pueden estar en un sitio sin convertirse en un daño o peligro, también se toma en cuenta la cantidad de personal de apoyo disponible, buscamos siempre tener un máximo de 10 participantes por cada persona de apoyo (varía según la ruta), y por último las características de la ruta, si tiene múltiples caminos o la falta de un camino marcado, la dificultad, distancia, entre otros.</p>
-                <p>Agradecemos respetar la capacidad máxima de ruta para beneficio de ustedes y de los lugares que visitamos.</p>`
+        question: '¿Cómo es la segmentación por niveles?',
+        answer: `<p>Definimos 5 niveles determinados principalmente por las respuestas dadas en el formulario de registro, al comenzar a asistir a las rutas se puede modificar dicho nivel según desempeño y sensaciones, tomando en cuenta la exigencia de la ruta (Distancia, desnivel, dificultad técnica, terreno, exposición, tiempo, entre otras), se determina los niveles a invitar.</p>
+                <ul>
+                    <li><b>Nivel 1:</b> Rutas cortas y de baja intensidad, para personas sedentarias que acostumbren a caminar en plano, tomando en cuenta que puede o no culminarla y tendrá siempre apoyo del equipo, éstas se realizan con poca frecuencia ya que son pocas las rutas de la ciudad que lo permitan.</li>
+                    <li><b>Nivel 2:</b> Se amplía un poco la gama de rutas, sumamos un poco de distancia o intensidad, para personas con poca o nula experiencia en senderismo/montañismo, pero con algo de actividad física que realice habitualmente.</li>
+                    <li><b>Nivel 3:</b> Gran mayoría de las rutas de la ciudad, para personas con experiencia en senderismo/montañismo, deportistas, o personas que practiquen deportes de intensidad habitualmente.</li>
+                    <li><b>Nivel 4:</b> La totalidad de las rutas, personas que ya hayan participado en actividades donde muestren un desempeño apto para este tipo de rutas.</li>
+                    <li><b>Nivel 5:</b> Personas que puedan desarrollar cualquier ruta de alta distancia o intensidad a ritmo rápido.</li>
+                </ul>`
     },
     {
         id: 9,
-        question: '¿Cómo es la segmentación por niveles?',
-        answer: `<p>Definimos 5 niveles determinados principalmente por las respuestas dadas en el formulario de registro, al comenzar a asistir a las rutas se puede modificar dicho nivel según desempeño y sensaciones, tomando en cuenta la exigencia de la ruta (Distancia, desnivel, dificultad técnica, terreno, exposición, tiempo, entre otras), se determina los niveles a invitar.</p>
-                <p><b>Nivel 1:</b> Rutas cortas y de baja intensidad, para personas sedentarias que acostumbren a caminar en plano, tomando en cuenta que puede o no culminarla y tendrá siempre apoyo del equipo, éstas se realizan con poca frecuencia ya que son pocas las rutas de la ciudad que lo permitan.</p>
-                <p><b>Nivel 2:</b> Se amplía un poco la gama de rutas, sumamos un poco de distancia o intensidad, para personas con poca o nula experiencia en senderismo/montañismo, pero con algo de actividad física que realice habitualmente.</p>
-                <p><b>Nivel 3:</b> Gran mayoría de las rutas de la ciudad, para personas con experiencia en senderismo/montañismo, deportistas, o personas que practiquen deportes de intensidad habitualmente.</p>
-                <p><b>Nivel 4:</b> La totalidad de las rutas, personas que ya hayan participado en actividades donde muestren un desempeño apto para este tipo de rutas.</p>
-                <p><b>Nivel 5:</b> Personas que puedan desarrollar cualquier ruta de alta distancia o intensidad a ritmo rápido.</p>`
+        question: '¿Por qué las rutas tienen capacidad máxima de asistentes?',
+        answer: `<p>Cada ruta tiene una cantidad máxima de asistentes, al llegar a dicha cantidad de participantes confirmados, no se recibirán más participantes. Hay varios factores que influyen en esta cantidad, como lo son la capacidad de carga del espacio, todos los espacios que se visitan tienen una capacidad de carga que hace referencia a la máxima cantidad de personas que pueden estar en un sitio sin convertirse en un daño o peligro, también se toma en cuenta la cantidad de personal de apoyo disponible, buscamos siempre tener un máximo de 10 participantes por cada persona de apoyo (varía según la ruta), y por último las características de la ruta, si tiene múltiples caminos o la falta de un camino marcado, la dificultad, distancia, entre otros.</p>
+                <p>Agradecemos respetar la capacidad máxima de ruta para beneficio de ustedes y de los lugares que visitamos.</p>`
     },
 ]
 
@@ -120,7 +127,7 @@ const Faqs = () => {
                                             <div className="font-title font-extrabold">{ item.question }</div>
                                         </div>
                                     </button>
-                                    <div className={`text-stone-500 font-serif px-4 pb-4 ${opened !== i ? 'hidden' : ''}`} dangerouslySetInnerHTML={{__html: item.answer}}></div>
+                                    <div className={`format text-stone-500 font-serif px-4 pb-4 ${opened !== i ? 'hidden' : ''}`} dangerouslySetInnerHTML={{__html: item.answer}}></div>
                                 </div>
                             ))}
                         </div>
