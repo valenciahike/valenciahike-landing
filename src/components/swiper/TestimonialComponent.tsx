@@ -29,6 +29,10 @@ const testimonials = [
     {
         name: 'Stephany Colorado',
         content: 'Solo tengo por decir que ha sido súper enriquecedora desde la primera ruta que realice con el team por allá en 2020, desde entonces se han convertido en mi familia de montaña, muchísimas experiencias compartidas y siempre disfrutadas, cada ruta completamente distinta una de otra así el recorrido sea el mismo, pero sin duda lo único que no cambia es la satisfacción de lograrlo acompañada de personas increíbles siempre con buena actitud, energía y disposición! Que sigamos sumando km juntos familia ❤️'
+    },
+    {
+        name: 'Paty Rodriguez',
+        content: 'Siempre hay que verle el lado positivo a todo en la vida, de la pandemia tuve aprendizajes: a trabajar online, a organizar mi tiempo, a manejar mis sombras y a conocer la montaña. El contacto con la naturaleza y enamorarme del senderismo fueron 2 razones poderosas de cambio en mi vida y la tercera fue estar en Valencia Hike, entrenando con un grupo de gente maravillosa que comparte la misma pasión, con respeto y organización somos una familia. Los amo!'
     }
 ]
 
