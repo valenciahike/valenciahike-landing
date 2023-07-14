@@ -1,6 +1,7 @@
 import { useRouter } from 'next/router';
 
 import KidzComponent from '@/components/swiper/KidzComponent';
+import TrailRComponent from '@/components/swiper/TrailRComponent';
 import { Meta } from '@/layouts/Meta';
 import { Main } from '@/templates/Main';
 
@@ -258,7 +259,7 @@ const About = () => {
                     <div className="col-span-12 md:col-span-6">
                         <h5 className="text-tertiary text-2xl font-subtitle mb-3">VH Trail Running</h5>
                         <div className="font-serif text-white/75 mb-6">VH & Trail Running es una extensión de Valencia Hike, enfocada en la autonomia del participante y trabajo de ritmo donde la finalidad es entrenar, realizar rutas de forma esporádica que sirvan de entrenamiento para mejora de ritmo y resistencia.</div>
-                        <KidzComponent />
+                        <TrailRComponent />
                     </div>
                 </div>
             </div>

@@ -38,48 +38,38 @@ export default function KidzComponent() {
             }}
         >
             <SwiperSlide>
-                <div className="group relative block aspect-[4/3] overflow-hidden rounded-lg transition-all duration-500 ease-out hover:scale-105 hover:shadow-xl">
-                    <img
-                        src={`${router.basePath}/assets/images/kidz/kidz_01.png`}
-                        className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
-                        alt=""
-                    />
+                <div className="group relative block aspect-[3/4] overflow-hidden rounded-lg transition-all duration-500 ease-out hover:scale-105 hover:shadow-xl">
+                    <img src={`${router.basePath}/assets/images/kidz/kidz_07.jpg`} className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110" alt="" />
                 </div>
             </SwiperSlide>
             <SwiperSlide>
-                <div className="group relative block aspect-[4/3] overflow-hidden rounded-lg transition-all duration-500 ease-out hover:scale-105 hover:shadow-xl">
-                    <img
-                        src={`${router.basePath}/assets/images/kidz/kidz_02.png`}
-                        className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
-                        alt=""
-                    />
+                <div className="group relative block aspect-[3/4] overflow-hidden rounded-lg transition-all duration-500 ease-out hover:scale-105 hover:shadow-xl">
+                    <img src={`${router.basePath}/assets/images/kidz/kidz_01.jpg`} className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110" alt="" />
                 </div>
             </SwiperSlide>
             <SwiperSlide>
-                <div className="group relative block aspect-[4/3] overflow-hidden rounded-lg transition-all duration-500 ease-out hover:scale-105 hover:shadow-xl">
-                    <img
-                        src={`${router.basePath}/assets/images/kidz/kidz_03.png`}
-                        className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
-                        alt=""
-                    />
+                <div className="group relative block aspect-[3/4] overflow-hidden rounded-lg transition-all duration-500 ease-out hover:scale-105 hover:shadow-xl">
+                    <img src={`${router.basePath}/assets/images/kidz/kidz_02.jpg`} className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110" alt="" />
                 </div>
             </SwiperSlide>
             <SwiperSlide>
-                <div className="group relative block aspect-[4/3] overflow-hidden rounded-lg transition-all duration-500 ease-out hover:scale-105 hover:shadow-xl">
-                    <img
-                        src={`${router.basePath}/assets/images/kidz/kidz_02.png`}
-                        className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
-                        alt=""
-                    />
+                <div className="group relative block aspect-[3/4] overflow-hidden rounded-lg transition-all duration-500 ease-out hover:scale-105 hover:shadow-xl">
+                    <img src={`${router.basePath}/assets/images/kidz/kidz_03.jpg`} className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110" alt="" />
                 </div>
             </SwiperSlide>
             <SwiperSlide>
-                <div className="group relative block aspect-[4/3] overflow-hidden rounded-lg transition-all duration-500 ease-out hover:scale-105 hover:shadow-xl">
-                    <img
-                        src={`${router.basePath}/assets/images/kidz/kidz_03.png`}
-                        className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
-                        alt=""
-                    />
+                <div className="group relative block aspect-[3/4] overflow-hidden rounded-lg transition-all duration-500 ease-out hover:scale-105 hover:shadow-xl">
+                    <img src={`${router.basePath}/assets/images/kidz/kidz_04.jpg`} className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110" alt="" />
+                </div>
+            </SwiperSlide>
+            <SwiperSlide>
+                <div className="group relative block aspect-[3/4] overflow-hidden rounded-lg transition-all duration-500 ease-out hover:scale-105 hover:shadow-xl">
+                    <img src={`${router.basePath}/assets/images/kidz/kidz_05.jpg`} className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110" alt="" />
+                </div>
+            </SwiperSlide>
+            <SwiperSlide>
+                <div className="group relative block aspect-[3/4] overflow-hidden rounded-lg transition-all duration-500 ease-out hover:scale-105 hover:shadow-xl">
+                    <img src={`${router.basePath}/assets/images/kidz/kidz_06.jpg`} className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110" alt="" />
                 </div>
             </SwiperSlide>
         </Swiper>
