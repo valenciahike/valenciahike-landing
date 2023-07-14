@@ -39,7 +39,7 @@ export default function NavComponent() {
                             <Link href="/tienda" className={`block rounded-full font-title font-extrabold text-sm uppercase text-stone-800 hover:text-primary-light px-4 py-2 ${router.pathname === "/tienda" ? "!bg-primary !text-white" : ""}`}> Tienda </Link>
                         </li>
                         <li>
-                            <Link href="/contact" className={`block rounded-full font-title font-extrabold text-sm uppercase text-stone-800 hover:text-primary-light px-4 py-2 ${router.pathname === "/contact" ? "!bg-primary !text-white" : ""}`}> Contacto </Link>
+                            <Link href="/contacto" className={`block rounded-full font-title font-extrabold text-sm uppercase text-stone-800 hover:text-primary-light px-4 py-2 ${router.pathname === "/contacto" ? "!bg-primary !text-white" : ""}`}> Contacto </Link>
                         </li>
                     </ul>
                 </div>

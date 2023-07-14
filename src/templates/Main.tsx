@@ -45,8 +45,8 @@ const Main = (props: IMainProps) => {
                             <h6 className="inline-block font-subtitle text-primary-light uppercase mb-4">Enlaces directos</h6>
                             <ul className="space-y-1">
                                 <li><Link href={`${router.basePath}/registrarse`} className="hover:text-tertiary underline-offset-2 hover:underline">Formulario de registro</Link></li>
-                                <li><Link href={`${router.basePath}/about`} className="hover:text-tertiary underline-offset-2 hover:underline">VH Kidz</Link></li>
-                                <li><Link href={`${router.basePath}/about`} className="hover:text-tertiary underline-offset-2 hover:underline">VH Trail Running</Link></li>
+                                <li><Link href={`${router.basePath}/contacto`} className="hover:text-tertiary underline-offset-2 hover:underline">Contacto</Link></li>
+                                <li><Link href={`${router.basePath}/tienda`} className="hover:text-tertiary underline-offset-2 hover:underline">Tienda</Link></li>
                             </ul>
                         </div>
                         <div className="col-span-2 sm:col-auto">
