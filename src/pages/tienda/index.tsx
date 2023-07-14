@@ -1,14 +1,15 @@
-import { server } from 'config';
 import { useRouter } from 'next/router';
 
 import ProductCardComponent from '@/components/productCardComponent';
 import { Meta } from '@/layouts/Meta';
 import { Main } from '@/templates/Main';
 
-const Index = ({products}: any) => {
+import { products } from '../../../products';
+
+const Index = () => {
     const router = useRouter();
 
-    return (<Main meta={<Meta title="Tienda - Valencia Hike" description="Valencia Hike es una organización registrada bajo la figura de Fundación con el RIF Nro J-502603492, lo que hace necesario la creación de estatutos y lineamientos a seguir para poder llevar un orden y control dentro de las actividades." />}>
+    return (<Main meta={<Meta title="Tienda - Valencia Hike" description="Con la compra de cualquiera de estos productos estás colaborando con una mejor experiencia para los participantes de nuestras rutas, dichos fondos son destinados a la compra de distintos equipos necesarios para el desarrollo de nuestras actividades." />}>
         {/* hero */}
         <section className="relative flex items-center z-10 bg-slate-900 text-white text-center py-32 bg-no-repeat bg-cover bg-center"
                 style={{ backgroundImage: `url(${router.basePath}/assets/images/bg/img-lkhgl5n2.jpg)` }}>
@@ -43,7 +44,7 @@ const Index = ({products}: any) => {
             </div>
         </section>
 
-        {/* heading */}
+        {/* info */}
         <section className="relative z-10 bg-cream-yellow py-16 lg:py-16">
             <div className="overflow-hidden">
                 <img src={`${router.basePath}/assets/images/mountain-big-white-bottom.svg`} alt="" className="absolute bottom-0 inset-x-0 h-14 md:h-auto object-cover md:w-full select-none pointer-events-none" />
@@ -62,9 +63,6 @@ const Index = ({products}: any) => {
 }
 
 export const getStaticProps = async () => {
-    const res = await fetch(`${server}/api/products`)
-    const products = await res.json()
-
     return {
         props: { products }
     }

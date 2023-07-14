@@ -1,4 +1,3 @@
-import { server } from 'config';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 
@@ -7,10 +6,12 @@ import { Meta } from '@/layouts/Meta';
 import { Main } from '@/templates/Main';
 import { AppConfig } from '@/utils/AppConfig';
 
+import { products } from '../../../products';
+
 const Product = ({product}: any) => {
     const router = useRouter();
 
-    return (<Main meta={<Meta title={`${product.name} - Valencia Hike`} description="Todo lo que necesitas saber sobre nosotros, nuestra organización y nuestras actividades." />}>
+    return (<Main meta={<Meta title={`${product.name} - Valencia Hike`} description="Con la compra de cualquiera de estos productos estás colaborando con una mejor experiencia para los participantes de nuestras rutas, dichos fondos son destinados a la compra de distintos equipos necesarios para el desarrollo de nuestras actividades." />}>
         {/* product details */}
         <section className="relative z-10 bg-cream-yellow py-14 lg:py-24">
             <div className="overflow-hidden">
@@ -73,9 +74,8 @@ const Product = ({product}: any) => {
     </Main>);
 }
 
-export const getStaticProps = async (context: any) => {
-    const res = await fetch(`${server}/api/products/${context.params.slug}`)
-    const product = await res.json()
+export const getStaticProps = async ({params: {slug}}: any) => {
+    const product = products.filter((item: any) => item.slug === slug)[0];
 
     return {
         props: { product }
@@ -83,10 +83,6 @@ export const getStaticProps = async (context: any) => {
 }
 
 export const getStaticPaths = async () => {
-    const res = await fetch(`${server}/api/products`);
-    const products = await res.json();
-    console.log(products);
-
     const slugs = products.map((product: any) => product.slug)
     const paths = slugs.map((slug: any) => ({
         params: {

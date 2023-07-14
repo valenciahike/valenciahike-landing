@@ -1,4 +1,3 @@
-import { server } from 'config';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 
@@ -8,6 +7,8 @@ import TestimonialComponent from '@/components/swiper/TestimonialComponent';
 import TrailsComponent from '@/components/swiper/trailsComponent';
 import { Meta } from '@/layouts/Meta';
 import { Main } from '@/templates/Main';
+
+import { products } from '../../products';
 
 const team = [
     {
@@ -108,7 +109,7 @@ const team = [
     },
 ];
 
-const Index = ({products}: any) => {
+const Index = () => {
   const router = useRouter();
 
     return (<Main meta={<Meta title="Bienvenido a Valencia Hike" description="Organización sin fines de lucro dedicada a mostrar las rutas de montaña que ofrece el estado Carabobo y Venezuela." />}>
@@ -351,9 +352,6 @@ const Index = ({products}: any) => {
 }
 
 export const getStaticProps = async () => {
-    const res = await fetch(`${server}/api/products`)
-    const products = await res.json()
-
     return {
         props: { products }
     }
