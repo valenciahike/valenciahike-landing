@@ -50,114 +50,74 @@ export default function TrailsComponent() {
         >
             <SwiperSlide>
                 <div className="group relative block aspect-[4/3] overflow-hidden rounded-2xl transition-all duration-500 ease-out hover:scale-105 hover:shadow-xl">
-                    <img
-                        src={`${router.basePath}/assets/images/trails/trail_01.jpg`}
-                        className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
-                        alt=""
-                    />
-                    <div className="absolute inset-x-0 bottom-0 bg-gradient-to-b from-transparent to-black px-3 py-4 text-center text-white">
-                        <div className="font-subtitle leading-none tracking-wide">
-                            Vigirima hasta Patanemo
-                        </div>
-                    </div>
+                    <img src={`${router.basePath}/assets/images/bg/img-6b2nhrh.jpg`} className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110" alt="" />
+                    {/* <div className="absolute inset-x-0 bottom-0 bg-gradient-to-b from-transparent to-black px-3 py-4 text-center text-white">
+                        <div className="font-subtitle leading-none tracking-wide"> Vigirima hasta Patanemo </div>
+                    </div> */}
                 </div>
             </SwiperSlide>
             <SwiperSlide>
                 <div className="group relative block aspect-[4/3] overflow-hidden rounded-2xl transition-all duration-500 ease-out hover:scale-105 hover:shadow-xl">
-                    <img
-                        src={`${router.basePath}/assets/images/trails/trail_02.jpg`}
-                        className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
-                        alt=""
-                    />
-                    <div className="absolute inset-x-0 bottom-0 bg-gradient-to-b from-transparent to-black px-3 py-4 text-center text-white">
-                        <div className="font-subtitle leading-none tracking-wide">
-                            Pico Hilaria
-                        </div>
-                    </div>
+                    <img src={`${router.basePath}/assets/images/gallery/img-5nr4dg5g.jpg`} className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110" alt="" />
+                    {/* <div className="absolute inset-x-0 bottom-0 bg-gradient-to-b from-transparent to-black px-3 py-4 text-center text-white">
+                        <div className="font-subtitle leading-none tracking-wide"> Vigirima hasta Patanemo </div>
+                    </div> */}
                 </div>
             </SwiperSlide>
             <SwiperSlide>
                 <div className="group relative block aspect-[4/3] overflow-hidden rounded-2xl transition-all duration-500 ease-out hover:scale-105 hover:shadow-xl">
-                    <img
-                        src={`${router.basePath}/assets/images/trails/trail_03.jpg`}
-                        className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
-                        alt=""
-                    />
-                    <div className="absolute inset-x-0 bottom-0 bg-gradient-to-b from-transparent to-black px-3 py-4 text-center text-white">
-                        <div className="font-subtitle leading-none tracking-wide">
-                            Camino de Carabobo
-                        </div>
-                    </div>
+                    <img src={`${router.basePath}/assets/images/bg/img-lkhgl5n2.jpg`} className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110" alt="" />
+                    {/* <div className="absolute inset-x-0 bottom-0 bg-gradient-to-b from-transparent to-black px-3 py-4 text-center text-white">
+                        <div className="font-subtitle leading-none tracking-wide"> Vigirima hasta Patanemo </div>
+                    </div> */}
                 </div>
             </SwiperSlide>
             <SwiperSlide>
                 <div className="group relative block aspect-[4/3] overflow-hidden rounded-2xl transition-all duration-500 ease-out hover:scale-105 hover:shadow-xl">
-                    <img
-                        src={`${router.basePath}/assets/images/trails/trail_04.jpg`}
-                        className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
-                        alt=""
-                    />
-                    <div className="absolute inset-x-0 bottom-0 bg-gradient-to-b from-transparent to-black px-3 py-4 text-center text-white">
-                        <div className="font-subtitle leading-none tracking-wide">
-                            Cerro Villalonga
-                        </div>
-                    </div>
+                    <img src={`${router.basePath}/assets/images/bg/img-9eghd4f.jpg`} className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110" alt="" />
+                    {/* <div className="absolute inset-x-0 bottom-0 bg-gradient-to-b from-transparent to-black px-3 py-4 text-center text-white">
+                        <div className="font-subtitle leading-none tracking-wide"> Pico Hilaria </div>
+                    </div> */}
                 </div>
             </SwiperSlide>
             <SwiperSlide>
                 <div className="group relative block aspect-[4/3] overflow-hidden rounded-2xl transition-all duration-500 ease-out hover:scale-105 hover:shadow-xl">
-                    <img
-                        src={`${router.basePath}/assets/images/trails/trail_01.jpg`}
-                        className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
-                        alt=""
-                    />
-                    <div className="absolute inset-x-0 bottom-0 bg-gradient-to-b from-transparent to-black px-3 py-4 text-center text-white">
-                        <div className="font-subtitle leading-none tracking-wide">
-                            Vigirima hasta Patanemo
-                        </div>
-                    </div>
+                    <img src={`${router.basePath}/assets/images/gallery/img-re9jndf.jpg`} className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110" alt="" />
+                    {/* <div className="absolute inset-x-0 bottom-0 bg-gradient-to-b from-transparent to-black px-3 py-4 text-center text-white">
+                        <div className="font-subtitle leading-none tracking-wide"> Pico Hilaria </div>
+                    </div> */}
                 </div>
             </SwiperSlide>
             <SwiperSlide>
                 <div className="group relative block aspect-[4/3] overflow-hidden rounded-2xl transition-all duration-500 ease-out hover:scale-105 hover:shadow-xl">
-                    <img
-                        src={`${router.basePath}/assets/images/trails/trail_02.jpg`}
-                        className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
-                        alt=""
-                    />
-                    <div className="absolute inset-x-0 bottom-0 bg-gradient-to-b from-transparent to-black px-3 py-4 text-center text-white">
-                        <div className="font-subtitle leading-none tracking-wide">
-                            Pico Hilaria
-                        </div>
-                    </div>
+                    <img src={`${router.basePath}/assets/images/gallery/img-g7ewhsb.jpg`} className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110" alt="" />
+                    {/* <div className="absolute inset-x-0 bottom-0 bg-gradient-to-b from-transparent to-black px-3 py-4 text-center text-white">
+                        <div className="font-subtitle leading-none tracking-wide"> Camino de Carabobo </div>
+                    </div> */}
                 </div>
             </SwiperSlide>
             <SwiperSlide>
                 <div className="group relative block aspect-[4/3] overflow-hidden rounded-2xl transition-all duration-500 ease-out hover:scale-105 hover:shadow-xl">
-                    <img
-                        src={`${router.basePath}/assets/images/trails/trail_03.jpg`}
-                        className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
-                        alt=""
-                    />
-                    <div className="absolute inset-x-0 bottom-0 bg-gradient-to-b from-transparent to-black px-3 py-4 text-center text-white">
-                        <div className="font-subtitle leading-none tracking-wide">
-                            Camino de Carabobo
-                        </div>
-                    </div>
+                    <img src={`${router.basePath}/assets/images/bg/img-ewgd5n.jpg`} className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110" alt="" />
+                    {/* <div className="absolute inset-x-0 bottom-0 bg-gradient-to-b from-transparent to-black px-3 py-4 text-center text-white">
+                        <div className="font-subtitle leading-none tracking-wide"> Cerro Villalonga </div>
+                    </div> */}
                 </div>
             </SwiperSlide>
             <SwiperSlide>
                 <div className="group relative block aspect-[4/3] overflow-hidden rounded-2xl transition-all duration-500 ease-out hover:scale-105 hover:shadow-xl">
-                    <img
-                        src={`${router.basePath}/assets/images/trails/trail_04.jpg`}
-                        className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
-                        alt=""
-                    />
-                    <div className="absolute inset-x-0 bottom-0 bg-gradient-to-b from-transparent to-black px-3 py-4 text-center text-white">
-                        <div className="font-subtitle leading-none tracking-wide">
-                            Cerro Villalonga
-                        </div>
-                    </div>
+                    <img src={`${router.basePath}/assets/images/gallery/img-qw9r8gs.jpg`} className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110" alt="" />
+                    {/* <div className="absolute inset-x-0 bottom-0 bg-gradient-to-b from-transparent to-black px-3 py-4 text-center text-white">
+                        <div className="font-subtitle leading-none tracking-wide"> Cerro Villalonga </div>
+                    </div> */}
+                </div>
+            </SwiperSlide>
+            <SwiperSlide>
+                <div className="group relative block aspect-[4/3] overflow-hidden rounded-2xl transition-all duration-500 ease-out hover:scale-105 hover:shadow-xl">
+                    <img src={`${router.basePath}/assets/images/bg/img-werh98n5.jpg`} className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110" alt="" />
+                    {/* <div className="absolute inset-x-0 bottom-0 bg-gradient-to-b from-transparent to-black px-3 py-4 text-center text-white">
+                        <div className="font-subtitle leading-none tracking-wide"> Pico Hilaria </div>
+                    </div> */}
                 </div>
             </SwiperSlide>
         </Swiper>
