@@ -1,14 +1,14 @@
+import { server } from 'config';
 import { useRouter } from 'next/router';
 
+import ProductCardComponent from '@/components/productCardComponent';
 import { Meta } from '@/layouts/Meta';
 import { Main } from '@/templates/Main';
-import ProductCardComponent from '@/components/productCardComponent';
-import { server } from 'config';
 
-function index({products}: any) {
-    const router = useRouter()
+const Index = ({products}: any) => {
+    const router = useRouter();
 
-    return (<Main meta={<Meta title="Lineamientos y Estatutos - Valencia Hike" description="Valencia Hike es una organización registrada bajo la figura de Fundación con el RIF Nro J-502603492, lo que hace necesario la creación de estatutos y lineamientos a seguir para poder llevar un orden y control dentro de las actividades." />}>
+    return (<Main meta={<Meta title="Tienda - Valencia Hike" description="Valencia Hike es una organización registrada bajo la figura de Fundación con el RIF Nro J-502603492, lo que hace necesario la creación de estatutos y lineamientos a seguir para poder llevar un orden y control dentro de las actividades." />}>
         {/* hero */}
         <section className="relative flex items-center z-10 bg-slate-900 text-white text-center py-32 bg-no-repeat bg-cover bg-center"
                 style={{ backgroundImage: `url(${router.basePath}/assets/images/bg/img-lkhgl5n2.jpg)` }}>
@@ -70,4 +70,4 @@ export const getStaticProps = async () => {
     }
 }
 
-export default index;
+export default Index;

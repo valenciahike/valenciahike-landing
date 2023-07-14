@@ -5,8 +5,11 @@ export const products = [
         slug: 'franela-vh-negra',
         description: '<p>Disponible en variante manga larga, manga corta, sin mangas y con capucha.</p> <p><b>Tallas:</b> S, M, L, XL, XXL. <br /> <small>Preguntar disponibilidad si requiere otra talla en especifico.</small></p>',
         price: '30.00',
-        image: 'black-01.png',
-        imageHover: 'black-02.png',
+        images: [
+            { id: '1', filename: 'black-01.png', },
+            { id: '2', filename: 'black-02.png', },
+            { id: '3', filename: 'black-03.png', },
+        ]
     },
     {
         id: '2',
@@ -14,8 +17,11 @@ export const products = [
         slug: 'franela-vh-verde',
         description: '<p>Disponible en variante manga larga, manga corta, sin mangas y con capucha.</p> <p><b>Tallas:</b> S, M, L, XL, XXL. <br /> <small>Preguntar disponibilidad si requiere otra talla en especifico.</small></p>',
         price: '30.00',
-        image: 'green-01.png',
-        imageHover: 'green-02.png',
+        images: [
+            { id: '1', filename: 'green-01.png', },
+            { id: '2', filename: 'green-02.png', },
+            { id: '3', filename: 'green-03.png', },
+        ]
     },
     {
         id: '3',
@@ -23,8 +29,11 @@ export const products = [
         slug: 'franela-vh-gris',
         description: '<p>Disponible en variante manga larga, manga corta, sin mangas y con capucha.</p> <p><b>Materiales disponibles:</b> Tex Flex - Dynamic</p> <p><b>Tallas:</b> S, M, L, XL, XXL. <br /> <small>Preguntar disponibilidad si requiere otra talla en especifico.</small></p>',
         price: '30.00',
-        image: 'gray-01.png',
-        imageHover: 'gray-02.png',
+        images: [
+            { id: '1', filename: 'gray-01.png', },
+            { id: '2', filename: 'gray-02.png', },
+            { id: '3', filename: 'gray-03.png', },
+        ]
     },
     {
         id: '4',
@@ -32,7 +41,10 @@ export const products = [
         slug: 'franela-vh-maco-maco',
         description: '<p>Disponible en variante manga larga, manga corta, sin mangas y con capucha.</p> <p><b>Materiales disponibles:</b> Tex Flex - Dynamic</p> <p><b>Tallas:</b> S, M, L, XL, XXL. <br /> <small>Preguntar disponibilidad si requiere otra talla en especifico.</small></p>',
         price: '30.00',
-        image: 'macomaco-01.png',
-        imageHover: 'macomaco-02.png',
+        images: [
+            { id: '1', filename: 'macomaco-01.png', },
+            { id: '2', filename: 'macomaco-02.png', },
+            { id: '3', filename: 'macomaco-03.png', },
+        ]
     }
 ]

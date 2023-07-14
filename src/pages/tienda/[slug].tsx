@@ -1,31 +1,16 @@
-import { useRouter } from 'next/router';
-
-import { Meta } from '@/layouts/Meta';
-import { Main } from '@/templates/Main';
 import { server } from 'config';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
+
+import ProductGallery from '@/components/swiper/ProductGallery';
+import { Meta } from '@/layouts/Meta';
+import { Main } from '@/templates/Main';
 import { AppConfig } from '@/utils/AppConfig';
 
-function Product({product}: any) {
+const Product = ({product}: any) => {
     const router = useRouter();
 
     return (<Main meta={<Meta title={`${product.name} - Valencia Hike`} description="Todo lo que necesitas saber sobre nosotros, nuestra organización y nuestras actividades." />}>
-        {/* hero */}
-        {/* <section className="relative flex items-center z-10 bg-slate-900 text-white text-center py-32 bg-no-repeat bg-cover bg-center"
-                style={{ backgroundImage: `url(${router.basePath}/assets/images/bg/img-9eghd4f.jpg)` }}>
-
-            <div className="overflow-hidden">
-                <img src={`${router.basePath}/assets/images/mountain-white-top.svg`} alt="" className="absolute top-0 inset-x-0 h-14 md:h-auto object-cover md:w-full select-none pointer-events-none" />
-                <img src={`${router.basePath}/assets/images/mountain-cream-bottom.svg`} alt="" className="absolute bottom-0 inset-x-0 h-14 md:h-auto object-cover md:w-full select-none pointer-events-none" />
-            </div>
-
-            <div className="absolute bg-black/30 inset-0 -z-10"></div>
-
-            <div className="container max-w-4xl">
-                <h1 className="text-3xl md:text-5xl font-title">{product.name}</h1>
-            </div>
-        </section> */}
-
         {/* product details */}
         <section className="relative z-10 bg-cream-yellow py-14 lg:py-24">
             <div className="overflow-hidden">
@@ -61,20 +46,12 @@ function Product({product}: any) {
                 </div>
             </div>
 
-
             <div className="mb-12">
                 <div className="container max-w-5xl">
                     <div className="grid grid-cols-12 gap-6 md:gap-12 lg:gap-6">
                         <div className='col-span-12 md:col-span-6'>
                             <h1 className="text-3xl lg:text-4xl font-title mb-4 md:hidden">{product.name}</h1>
-                            <div className="mb-4">
-                                <img className="rounded-2xl shadow-xl" src={`${router.basePath}/assets/images/products/${product.image}`} alt="" />
-                            </div>
-                            <div className="grid grid-cols-3 gap-4">
-                                <img className="rounded-lg" src={`${router.basePath}/assets/images/products/${product.imageHover}`} alt="" />
-                                <img className="rounded-lg" src={`${router.basePath}/assets/images/products/${product.imageHover}`} alt="" />
-                                <img className="rounded-lg" src={`${router.basePath}/assets/images/products/${product.imageHover}`} alt="" />
-                            </div>
+                            <ProductGallery images={product.images} />
                         </div>
                         <div className='col-span-12 md:col-span-6 lg:col-start-8 lg:col-span-5'>
                             <h1 className="text-3xl lg:text-4xl font-title mb-4 hidden md:block">{product.name}</h1>
@@ -93,19 +70,6 @@ function Product({product}: any) {
                 </div>
             </div>
         </section>
-
-        {/* register form */}
-        {/* <section className="relative bg-cream-yellow py-20">
-            <div className="container max-w-3xl px-0 md:px-4">
-                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSerkWGN1arBeeDyOZCma8ybVpazquZYPgiojIfUbXNnyqryzA/viewform?embedded=true"
-                    className="h-[85vh] w-full bg-primary md:rounded-2xl shadow-xl pt-4"
-                        frameborder="0"
-                        marginheight="0"
-                        marginwidth="200px">
-                    Cargando…
-                </iframe>
-            </div>
-        </section> */}
     </Main>);
 }
 
@@ -121,6 +85,7 @@ export const getStaticProps = async (context: any) => {
 export const getStaticPaths = async () => {
     const res = await fetch(`${server}/api/products`);
     const products = await res.json();
+    console.log(products);
 
     const slugs = products.map((product: any) => product.slug)
     const paths = slugs.map((slug: any) => ({
@@ -132,4 +97,4 @@ export const getStaticPaths = async () => {
     return { paths, fallback: false }
 }
 
-export default Product
+export default Product;

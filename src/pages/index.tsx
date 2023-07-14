@@ -1,12 +1,13 @@
+import { server } from 'config';
+import Link from 'next/link';
 import { useRouter } from 'next/router';
 
+import ProductCardComponent from '@/components/productCardComponent';
 import PartnersComponent from '@/components/swiper/PartnersComponent';
 import TestimonialComponent from '@/components/swiper/TestimonialComponent';
 import TrailsComponent from '@/components/swiper/trailsComponent';
 import { Meta } from '@/layouts/Meta';
 import { Main } from '@/templates/Main';
-import { server } from 'config';
-import ProductCardComponent from '@/components/productCardComponent';
 
 const team = [
     {
@@ -261,7 +262,7 @@ const Index = ({products}: any) => {
                         <div className="font-serif text-stone-500 mt-6 mb-4">
                             <p>Con la compra de cualquiera de estos productos estás colaborando con una mejor experiencia para los participantes de nuestras rutas, dichos fondos son destinados a la compra de distintos equipos necesarios para el desarrollo de nuestras actividades.</p>
                         </div>
-                        <a href="" className="inline-block bg-green-700 text-white hover:text-white/80 font-bold rounded-2xl bg-gradient-to-b from-primary-light to-primary-dark px-6 py-3 hover:-translate-y-px">Ver tienda</a>
+                        <Link href={`${router.basePath}/tienda`} className="inline-block bg-green-700 text-white hover:text-white/80 font-bold rounded-2xl bg-gradient-to-b from-primary-light to-primary-dark px-6 py-3 hover:-translate-y-px">Ver tienda</Link>
                     </div>
                     <div className="col-span-12 lg:col-span-9 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 xl:gap-6">
                         {products.map((product: any, i: any) => {
