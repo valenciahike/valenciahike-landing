@@ -25,6 +25,10 @@ const testimonials = [
     {
         name: 'Cruz Ivan Castaño',
         content: 'Con Valencia hike he vuelto a descubrir que un día nublado o una densa niebla, con una buena brisa también me revela el infinito azul del horizonte. Que los diferentes tonos de verde me pueden llevar por los mejores  caminos, laderas, rocas y toyotas. Que en un día soleado cada paso cuenta y que en un terreno húmedo, mojado o resbaloso el culi-cross también cuenta. Y esa es la magia de un sendero y la recompensa que recibe un senderista todo esto y muchos, sin olvidar el valor agregado de compartir la experiencia en una cola de café y las innumerables imágenes que nos llevamos en el baúl de la memoria.'
+    },
+    {
+        name: 'Stephany Colorado',
+        content: 'Solo tengo por decir que ha sido súper enriquecedora desde la primera ruta que realice con el team por allá en 2020, desde entonces se han convertido en mi familia de montaña, muchísimas experiencias compartidas y siempre disfrutadas, cada ruta completamente distinta una de otra así el recorrido sea el mismo, pero sin duda lo único que no cambia es la satisfacción de lograrlo acompañada de personas increíbles siempre con buena actitud, energía y disposición! Que sigamos sumando km juntos familia ❤️'
     }
 ]
 
