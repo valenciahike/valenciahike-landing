@@ -68,14 +68,6 @@ const team = [
         photo: 'juancho.png'
     },
     {
-        name: 'José Dionisio Morales',
-        description: 'Abogado',
-        rrss: {
-            instagram: 'josedionisioml'
-        },
-        photo: 'josemorales.png'
-    },
-    {
         name: 'Tirso Lecointere',
         description: 'Fotógrafo / Programador web',
         rrss: {
@@ -106,6 +98,14 @@ const team = [
             twitter: 'erick_algo'
         },
         photo: 'erick.png'
+    },
+    {
+        name: 'José Dionisio Morales',
+        description: 'Colaborador',
+        rrss: {
+            instagram: 'josedionisioml'
+        },
+        photo: 'josemorales.png'
     },
 ];
 
