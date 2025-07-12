@@ -11,7 +11,11 @@ function ProductCardComponent({product}: any) {
                 </Link>
                 <div className="font-title font-extrabold text-center">
                     <Link href={`${router.basePath}/tienda/[slug]`} as={`${router.basePath}/tienda/${product.slug}`} className="text-sm mb-1" tabIndex={-1}>{ product.name }</Link>
-                    <div className="text-primary-light">USD { product.price }</div>
+                    {product.in_stock ? (
+                        <div className="text-primary-light">{ product.price }</div>
+                    ) : (
+                        <div className="text-red-500">No disponible</div>
+                    )}
                 </div>
             </div>
 }

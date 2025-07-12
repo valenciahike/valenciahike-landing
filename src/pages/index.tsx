@@ -266,9 +266,12 @@ const Index = () => {
                         <Link href={`${router.basePath}/tienda`} className="inline-block bg-green-700 text-white hover:text-white/80 font-bold rounded-2xl bg-gradient-to-b from-primary-light to-primary-dark px-6 py-3 hover:-translate-y-px">Ver tienda</Link>
                     </div>
                     <div className="col-span-12 lg:col-span-9 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 xl:gap-6">
-                        {products.map((product: any, i: any) => {
-                            return <ProductCardComponent product={product} key={i} />
-                        })}
+                        {[...products]
+                            .filter((product: any) => product.in_stock)
+                            .sort((a, b) => (b as any).id - (a as any).id)
+                            .map((product: any, i: any) => (
+                                <ProductCardComponent product={product} key={i} />
+                            ))}
                     </div>
                 </div>
             </div>

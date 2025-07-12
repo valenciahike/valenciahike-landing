@@ -37,9 +37,11 @@ const Index = () => {
                 <h1 className="font-title text-3xl mb-6">Franelas</h1>
 
                 <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 xl:gap-6">
-                    {products.map((product: any, i: any) => {
-                        return <ProductCardComponent product={product} key={i} />
-                    })}
+                    {[...products]
+                        .sort((a, b) => (b as any).id - (a as any).id)
+                        .map((product: any, i: any) => (
+                            <ProductCardComponent product={product} key={i} />
+                        ))}
                 </div>
             </div>
         </section>
