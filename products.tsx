@@ -38,6 +38,7 @@ export const products = [
             { id: '4', filename: 'gray-02-04.png', },
             { id: '5', filename: 'gray-02-05.png', },
             { id: '6', filename: 'gray-02-06.png', },
+            { id: '7', filename: 'gray-02-07.png', },
         ],
         in_stock: true
     },
@@ -54,6 +55,7 @@ export const products = [
             { id: '4', filename: 'macomaco-02-04.png', },
             { id: '5', filename: 'macomaco-02-05.png', },
             { id: '6', filename: 'macomaco-02-06.png', },
+            { id: '7', filename: 'macomaco-02-07.png', },
         ],
         in_stock: true
     },
@@ -70,6 +72,7 @@ export const products = [
             { id: '4', filename: 'gradient-blue-white-04.png', },
             { id: '5', filename: 'gradient-blue-white-05.png', },
             { id: '6', filename: 'gradient-blue-white-06.png', },
+            { id: '7', filename: 'gradient-blue-white-07.png', },
         ],
         in_stock: true
     },
@@ -86,6 +89,7 @@ export const products = [
             { id: '4', filename: 'gradient-blue-04.png', },
             { id: '5', filename: 'gradient-blue-05.png', },
             { id: '6', filename: 'gradient-blue-06.png', },
+            { id: '7', filename: 'gradient-blue-07.png', },
         ],
         in_stock: true
     },
@@ -102,6 +106,7 @@ export const products = [
             { id: '4', filename: 'gradient-verde-04.png', },
             { id: '5', filename: 'gradient-verde-05.png', },
             { id: '6', filename: 'gradient-verde-06.png', },
+            { id: '7', filename: 'gradient-verde-07.png', },
         ],
         in_stock: true
     }
