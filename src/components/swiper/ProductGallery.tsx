@@ -9,12 +9,10 @@ import { useRouter } from 'next/router';
 import { useState } from 'react';
 import { Navigation, Thumbs, Pagination, FreeMode } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import type { Swiper as SwiperType } from "swiper";
-
 
 function ProductGallery({ images }: any) {
     const router = useRouter();
-    const [thumbsSwiper, setThumbsSwiper] = useState<SwiperType | null>(null);
+    const [thumbsSwiper, setThumbsSwiper] = useState<any>(null);
 
     return (
         <>
