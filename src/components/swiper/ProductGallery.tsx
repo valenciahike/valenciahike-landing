@@ -6,7 +6,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/thumbs';
 
 import { useRouter } from 'next/router';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import type { Swiper as SwiperType } from "swiper";
 import { FreeMode, Navigation, Pagination, Thumbs } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -15,6 +15,13 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 function ProductGallery({ images }: any) {
     const router = useRouter();
     const [thumbsSwiper, setThumbsSwiper] = useState<SwiperType | null>(null);
+    const [isClient, setIsClient] = useState(false);
+
+    useEffect(() => {
+        setIsClient(true);
+    }, []);
+
+    if (!isClient) return null;
 
     return (
         <>
