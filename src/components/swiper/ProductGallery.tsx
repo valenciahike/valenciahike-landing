@@ -2,17 +2,19 @@
 import 'swiper/css';
 import 'swiper/css/free-mode';
 import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 import 'swiper/css/thumbs';
 
 import { useRouter } from 'next/router';
 import { useState } from 'react';
-import { FreeMode, Navigation, Thumbs } from 'swiper';
+import { Navigation, Thumbs, Pagination, FreeMode } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import type { Swiper as SwiperType } from "swiper";
 
 
 function ProductGallery({ images }: any) {
     const router = useRouter();
-    const [thumbsSwiper, setThumbsSwiper] = useState(null);
+    const [thumbsSwiper, setThumbsSwiper] = useState<SwiperType | null>(null);
 
     return (
         <>
@@ -31,15 +33,16 @@ function ProductGallery({ images }: any) {
                 ))}
             </Swiper>
             <Swiper
-                // @ts-ignore
                 onSwiper={setThumbsSwiper}
                 loop
+                freeMode
                 spaceBetween={10}
                 slidesPerView={3}
-                freeMode
+                slidesPerGroup={3}
+                pagination={{ clickable: true }}
                 watchSlidesProgress
-                modules={[FreeMode, Navigation, Thumbs]}
-                className="productDetails--swiper"
+                modules={[FreeMode, Navigation, Thumbs, Pagination]}
+                className="productDetails--swiper !pb-8"
             >
                 {images.map((image: any, i: any) => (
                     <SwiperSlide className="cursor-pointer" key={i}>
