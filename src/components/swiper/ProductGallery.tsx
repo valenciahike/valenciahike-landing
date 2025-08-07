@@ -19,7 +19,7 @@ function ProductGallery({ images }: any) {
     return (
         <>
             <Swiper
-                loop
+                rewind
                 spaceBetween={16}
                 navigation
                 thumbs={{
@@ -36,11 +36,11 @@ function ProductGallery({ images }: any) {
             </Swiper>
             <Swiper
                 onSwiper={setThumbsSwiper}
-                loop
+                rewind
                 freeMode
                 spaceBetween={10}
-                slidesPerView={3}
-                slidesPerGroup={3}
+                slidesPerView={4}
+                slidesPerGroup={4}
                 pagination={{ clickable: true }}
                 watchSlidesProgress
                 modules={[FreeMode, Navigation, Thumbs, Pagination]}

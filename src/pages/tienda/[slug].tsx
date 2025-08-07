@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
+import { useState } from 'react';
 
 import ProductGallery from '@/components/swiper/ProductGallery';
 import { Meta } from '@/layouts/Meta';
@@ -10,6 +11,13 @@ import { products } from '../../../products';
 
 const Product = ({product}: any) => {
     const router = useRouter();
+    const [selectedGenre, setSelectedGenre] = useState<'men' | 'women'>('men');
+
+    // Filter images by selected genre, fallback to all if none match
+    const filteredImages = product.images.filter(
+        (img: any) => !img.genre || img.genre === selectedGenre
+    );
+    const imagesToShow = filteredImages.length > 0 ? filteredImages : product.images;
 
     return (<Main meta={<Meta title={`${product.name} - Valencia Hike`} description="Con la compra de cualquiera de estos productos estás colaborando con una mejor experiencia para los participantes de nuestras rutas, dichos fondos son destinados a la compra de distintos equipos necesarios para el desarrollo de nuestras actividades." />}>
         {/* product details */}
@@ -52,12 +60,60 @@ const Product = ({product}: any) => {
                     <div className="grid grid-cols-12 gap-6 md:gap-12 lg:gap-6">
                         <div className='col-span-12 md:col-span-6'>
                             <h1 className="text-3xl lg:text-4xl font-title mb-4 md:hidden">{product.name}</h1>
-                            <ProductGallery images={product.images} />
+                            <ProductGallery images={imagesToShow} />
                         </div>
                         <div className='col-span-12 md:col-span-6 lg:col-start-8 lg:col-span-5'>
                             <h1 className="text-3xl lg:text-4xl font-title mb-4 hidden md:block">{product.name}</h1>
                             {product.in_stock ? (
-                                <div className="font-title font-extrabold text-2xl text-primary-light">{product.price}</div>
+                                <div>
+                                    <div className="font-title font-extrabold text-2xl text-primary-light">{product.price}</div>
+                                    <div className="flex gap-2 my-8">
+                                        <div>
+                                            <input
+                                                type="radio"
+                                                id="genre-men"
+                                                name="genre"
+                                                value="men"
+                                                checked={selectedGenre === 'men'}
+                                                onChange={() => setSelectedGenre('men')}
+                                                className="peer hidden"
+                                            />
+                                            <label
+                                                htmlFor="genre-men"
+                                                className={`cursor-pointer px-4 py-2 rounded-full border font-medium transition
+                                                    ${selectedGenre === 'men'
+                                                        ? 'bg-primary-light text-white border-primary-light'
+                                                        : 'bg-white text-stone-900 border-stone-300 hover:bg-stone-100'}
+                                                    peer-checked:bg-primary-light peer-checked:text-white peer-checked:border-primary-light
+                                                `}
+                                            >
+                                                Caballero
+                                            </label>
+                                        </div>
+                                        <div>
+                                            <input
+                                                type="radio"
+                                                id="genre-women"
+                                                name="genre"
+                                                value="women"
+                                                checked={selectedGenre === 'women'}
+                                                onChange={() => setSelectedGenre('women')}
+                                                className="peer hidden"
+                                            />
+                                            <label
+                                                htmlFor="genre-women"
+                                                className={`cursor-pointer px-4 py-2 rounded-full border font-medium transition
+                                                    ${selectedGenre === 'women'
+                                                        ? 'bg-primary-light text-white border-primary-light'
+                                                        : 'bg-white text-stone-900 border-stone-300 hover:bg-stone-100'}
+                                                    peer-checked:bg-primary-light peer-checked:text-white peer-checked:border-primary-light
+                                                `}
+                                            >
+                                                Dama
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
                             ) : (
                                 <div className="font-title font-extrabold text-2xl text-red-500">No disponible</div>
                             )}

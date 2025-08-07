@@ -28,7 +28,7 @@
 }
 
 .productDetails--swiper .swiper-slide > img {
-    @apply border-4 border-transparent scale-95 transition-all hover:scale-100
+    @apply border-4 border-stone-100 scale-95 transition-all hover:scale-100
 }
 .productDetails--swiper .swiper-slide-thumb-active > img {
     @apply border-primary scale-100
