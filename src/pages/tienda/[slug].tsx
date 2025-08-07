@@ -69,15 +69,6 @@ const Product = ({product}: any) => {
                                     <div className="font-title font-extrabold text-2xl text-primary-light">{product.price}</div>
                                     <div className="flex gap-2 my-8">
                                         <div>
-                                            <input
-                                                type="radio"
-                                                id="genre-men"
-                                                name="genre"
-                                                value="men"
-                                                checked={selectedGenre === 'men'}
-                                                onChange={() => setSelectedGenre('men')}
-                                                className="peer hidden"
-                                            />
                                             <label
                                                 htmlFor="genre-men"
                                                 className={`cursor-pointer px-4 py-2 rounded-full border font-medium transition
@@ -87,19 +78,19 @@ const Product = ({product}: any) => {
                                                     peer-checked:bg-primary-light peer-checked:text-white peer-checked:border-primary-light
                                                 `}
                                             >
+                                                <input
+                                                    type="radio"
+                                                    id="genre-men"
+                                                    name="genre"
+                                                    value="men"
+                                                    checked={selectedGenre === 'men'}
+                                                    onChange={() => setSelectedGenre('men')}
+                                                    className="peer hidden"
+                                                />
                                                 Caballero
                                             </label>
                                         </div>
                                         <div>
-                                            <input
-                                                type="radio"
-                                                id="genre-women"
-                                                name="genre"
-                                                value="women"
-                                                checked={selectedGenre === 'women'}
-                                                onChange={() => setSelectedGenre('women')}
-                                                className="peer hidden"
-                                            />
                                             <label
                                                 htmlFor="genre-women"
                                                 className={`cursor-pointer px-4 py-2 rounded-full border font-medium transition
@@ -109,6 +100,15 @@ const Product = ({product}: any) => {
                                                     peer-checked:bg-primary-light peer-checked:text-white peer-checked:border-primary-light
                                                 `}
                                             >
+                                                <input
+                                                    type="radio"
+                                                    id="genre-women"
+                                                    name="genre"
+                                                    value="women"
+                                                    checked={selectedGenre === 'women'}
+                                                    onChange={() => setSelectedGenre('women')}
+                                                    className="peer hidden"
+                                                />
                                                 Dama
                                             </label>
                                         </div>
