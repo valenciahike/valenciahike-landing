@@ -74,7 +74,7 @@ const Guidelines = () => {
 
                         <h3>Moderación y cumplimiento</h3>
                         <ul>
-                            <li>ℹ️ Los administradores se reservan el derecho de eliminar mensajes que consideren inapropiados o que puedan ser irrelevantes o de spam, y en casos graves, pueden expulsar a miembros que incumplan las normas.</li>
+                            <li>ℹ️ Los administradores se reservan el derecho de eliminar mensajes que consideren inapropiados, irrelevantes o de spam, y en casos graves, pueden expulsar a miembros que incumplan las normas.</li>
                         </ul>
 
                         <p>Si tienes dudas o sugerencias, comunícate con los administradores en privado.</p>
