@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import { useEffect,useState } from 'react';
+import { useState } from 'react';
 
 import ProductGallery from '@/components/swiper/ProductGallery';
 import { Meta } from '@/layouts/Meta';
@@ -12,36 +12,12 @@ import { products } from '../../../products';
 const Product = ({product}: any) => {
     const router = useRouter();
     const [selectedGenre, setSelectedGenre] = useState<'men' | 'women'>('men');
-    const [loadingImages, setLoadingImages] = useState(false);
 
     // Filter images by selected genre, fallback to all if none match
     const filteredImages = product.images.filter(
         (img: any) => !img.genre || img.genre === selectedGenre
     );
     const imagesToShow = filteredImages.length > 0 ? filteredImages : product.images;
-
-    // Loader logic: show loader when genre changes, hide when all images loaded
-    useEffect(() => {
-        setLoadingImages(true);
-        let loaded = 0;
-        const total = imagesToShow.length;
-        if (total === 0) {
-            setLoadingImages(false);
-            return;
-        }
-        imagesToShow.forEach((img: any) => {
-            const image = new window.Image();
-            image.src = `${router.basePath}/assets/images/products/${img.filename}`;
-            image.onload = () => {
-                loaded+=1;
-                if (loaded === total) setLoadingImages(false);
-            };
-            image.onerror = () => {
-                loaded+=1;
-                if (loaded === total) setLoadingImages(false);
-            };
-        });
-    }, [selectedGenre, imagesToShow, router.basePath]);
 
     return (<Main meta={<Meta title={`${product.name} - Valencia Hike`} description="Con la compra de cualquiera de estos productos estás colaborando con una mejor experiencia para los participantes de nuestras rutas, dichos fondos son destinados a la compra de distintos equipos necesarios para el desarrollo de nuestras actividades." />}>
         {/* product details */}
@@ -75,6 +51,7 @@ const Product = ({product}: any) => {
                             </li>
                         </ol>
                     </nav>
+
                 </div>
             </div>
 
@@ -83,9 +60,7 @@ const Product = ({product}: any) => {
                     <div className="grid grid-cols-12 gap-6 md:gap-12 lg:gap-6">
                         <div className='col-span-12 md:col-span-6'>
                             <h1 className="text-3xl lg:text-4xl font-title mb-4 md:hidden">{product.name}</h1>
-                            <div className={loadingImages ? 'opacity-50 blur-sm' : ''}>
-                                <ProductGallery images={imagesToShow} />
-                            </div>
+                            <ProductGallery images={imagesToShow} />
                         </div>
                         <div className='col-span-12 md:col-span-6 lg:col-start-8 lg:col-span-5'>
                             <h1 className="text-3xl lg:text-4xl font-title mb-4 hidden md:block">{product.name}</h1>
