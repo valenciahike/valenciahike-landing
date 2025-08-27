@@ -6,7 +6,7 @@ import { Main } from '@/templates/Main';
 const Guidelines = () => {
     const router = useRouter()
 
-    return (<Main meta={<Meta title="Normativa de Grupo de Whatsapp - Valencia Hike" description="Valencia Hike es una organización registrada bajo la figura de Fundación con el RIF Nro J-502603492, lo que hace necesario la creación de estatutos y lineamientos a seguir para poder llevar un orden y control dentro de las actividades." />}>
+    return (<Main meta={<Meta title="Normativa de Grupo de Whatsapp - Valencia Hike" description="Invitamos a todos a leerlas detenidamente y seguirlas para mantener un espacio organizado y agradable para todos." />}>
         {/* hero */}
         <section className="relative flex items-center z-10 bg-slate-900 text-white text-center py-32 bg-no-repeat bg-cover bg-center"
                 style={{ backgroundImage: `url(${router.basePath}/assets/images/bg/img-lkhgl5n2.jpg)` }}>
