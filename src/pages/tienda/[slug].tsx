@@ -83,13 +83,7 @@ const Product = ({product}: any) => {
                     <div className="grid grid-cols-12 gap-6 md:gap-12 lg:gap-6">
                         <div className='col-span-12 md:col-span-6'>
                             <h1 className="text-3xl lg:text-4xl font-title mb-4 md:hidden">{product.name}</h1>
-                            <div className="relative">
-                                {loadingImages ?
-                                    <div role="status" className='absolute top-1 right-1 z-10'>
-                                        <span className="text-xs">Cargando...</span>
-                                    </div>
-                                    : ''
-                                }
+                            <div className={loadingImages ? 'opacity-50 blur-sm' : ''}>
                                 <ProductGallery images={imagesToShow} />
                             </div>
                         </div>
