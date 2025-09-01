@@ -4,6 +4,7 @@ export const products = [
         name: 'Franela VH Negra',
         slug: 'franela-vh-negra',
         description: '<p>Disponible en variante manga larga, manga corta, sin mangas y con capucha.</p> <p><b>Tallas:</b> S, M, L, XL, XXL. <br /> <small>Preguntar disponibilidad si requiere otra talla en especifico.</small></p>',
+        category: 'shirts',
         price: 'USD 20.00 ~ USD 28.00',
         images: [
             { id: '1', filename: 'black-01.png', },
@@ -17,6 +18,7 @@ export const products = [
         name: 'Franela VH Verde',
         slug: 'franela-vh-verde',
         description: '<p>Disponible en variante manga larga, manga corta, sin mangas y con capucha.</p> <p><b>Tallas:</b> S, M, L, XL, XXL. <br /> <small>Preguntar disponibilidad si requiere otra talla en especifico.</small></p>',
+        category: 'shirts',
         price: 'USD 20.00 ~ USD 28.00',
         images: [
             { id: '1', filename: 'green-01.png', },
@@ -30,6 +32,7 @@ export const products = [
         name: 'Franela Caliza',
         slug: 'franela-Caliza',
         description: '<p>Disponible en variante manga larga, manga corta, sin mangas y franelilla. Con capucha tiene un costo adicional de USD $2.00.</p><p><b>Materiales disponibles:</b> Dryfit - Microperforada</p> <p><b>Tallas:</b> S, M, L, XL, XXL. <br /> <small>Preguntar disponibilidad si requiere otra talla en especifico.</small></p>',
+        category: 'shirts',
         price: 'USD 20.00 ~ USD 28.00',
         images: [
             { id: '1', filename: 'caliza-01.png', genre: 'men' },
@@ -53,6 +56,7 @@ export const products = [
         name: 'Franela Maco Maco',
         slug: 'franela-maco-maco',
         description: '<p>Disponible en variante manga larga, manga corta, sin mangas y franelilla. Con capucha tiene un costo adicional de USD $2.00.</p><p><b>Materiales disponibles:</b> Dryfit - Microperforada</p> <p><b>Tallas:</b> S, M, L, XL, XXL. <br /> <small>Preguntar disponibilidad si requiere otra talla en especifico.</small></p>',
+        category: 'shirts',
         price: 'USD 20.00 ~ USD 28.00',
         images: [
             { id: '1', filename: 'macomaco-02-01.png', genre: 'men' },
@@ -78,6 +82,7 @@ export const products = [
         name: 'Franela Sierra',
         slug: 'franela-sierra',
         description: '<p>Disponible en variante manga larga, manga corta, sin mangas y franelilla. Con capucha tiene un costo adicional de USD $2.00.</p><p><b>Materiales disponibles:</b> Dryfit - Microperforada</p> <p><b>Tallas:</b> S, M, L, XL, XXL. <br /> <small>Preguntar disponibilidad si requiere otra talla en especifico.</small></p>',
+        category: 'shirts',
         price: 'USD 20.00 ~ USD 28.00',
         images: [
             { id: '1', filename: 'sierra-01.png', genre: 'men' },
@@ -101,6 +106,7 @@ export const products = [
         name: 'Franela Nebula',
         slug: 'franela-nebula',
         description: '<p>Disponible en variante manga larga, manga corta, sin mangas y franelilla. Con capucha tiene un costo adicional de USD $2.00.</p><p><b>Materiales disponibles:</b> Dryfit - Microperforada</p> <p><b>Tallas:</b> S, M, L, XL, XXL. <br /> <small>Preguntar disponibilidad si requiere otra talla en especifico.</small></p>',
+        category: 'shirts',
         price: 'USD 20.00 ~ USD 28.00',
         images: [
             { id: '1', filename: 'nebula-01.png', genre: 'men' },
@@ -122,6 +128,7 @@ export const products = [
         name: 'Franela Sabana',
         slug: 'franela-sabana',
         description: '<p>Disponible en variante manga larga, manga corta, sin mangas y franelilla. Con capucha tiene un costo adicional de USD $2.00.</p><p><b>Materiales disponibles:</b> Dryfit - Microperforada</p> <p><b>Tallas:</b> S, M, L, XL, XXL. <br /> <small>Preguntar disponibilidad si requiere otra talla en especifico.</small></p>',
+        category: 'shirts',
         price: 'USD 20.00 ~ USD 28.00',
         images: [
             { id: '1', filename: 'sabana-01.png', genre: 'men' },
@@ -138,5 +145,31 @@ export const products = [
             { id: '12', filename: 'sabana-12.png', genre: 'women' },
         ],
         in_stock: true
-    }
+    },
+    {
+        id: '8',
+        name: 'Toalla Mirador Casupo',
+        slug: 'toalla-mirador-casupo',
+        description: '<p>Fotografía por Tirso Lecointere</p><p><b>Tamaños disponibles</b> <ul><li>Pequeña: 35&times;71 CM</li><li>Grande: 67&times;137 CM</li></ul></p><p><b>Material:</b> Microfibra</p>',
+        category: 'accesories',
+        price: 'USD 12.00 ~ USD 25.00',
+        images: [
+            { id: '1', filename: 'toalla-mirador-01.png' },
+            { id: '2', filename: 'toalla-mirador-02.png' },
+        ],
+        in_stock: true
+    },
+    {
+        id: '9',
+        name: 'Toalla Cerro El Café',
+        slug: 'toalla-el-cafe',
+        description: '<p>Fotografía por Gerardo Valero</p><p><b>Tamaños disponibles</b> <ul><li>Pequeña: 35&times;71 CM</li><li>Grande: 67&times;137 CM</li></ul></p><p><b>Material:</b> Microfibra</p>',
+        category: 'accesories',
+        price: 'USD 12.00 ~ USD 25.00',
+        images: [
+            { id: '1', filename: 'toalla-el-cafe-01.png' },
+            { id: '2', filename: 'toalla-el-cafe-02.png' },
+        ],
+        in_stock: true
+    },
 ]

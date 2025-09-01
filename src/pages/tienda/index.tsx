@@ -9,6 +9,10 @@ import { products } from '../../../products';
 const Index = () => {
     const router = useRouter();
 
+    // Filter products by category
+    const shirts = products.filter((product: any) => product.category === 'shirts');
+    const accesories = products.filter((product: any) => product.category === 'accesories');
+
     return (<Main meta={<Meta title="Tienda - Valencia Hike" description="Con la compra de cualquiera de estos productos estás colaborando con una mejor experiencia para los participantes de nuestras rutas, dichos fondos son destinados a la compra de distintos equipos necesarios para el desarrollo de nuestras actividades." />}>
         {/* hero */}
         <section className="relative flex items-center z-10 bg-slate-900 text-white text-center py-32 bg-no-repeat bg-cover bg-center"
@@ -33,15 +37,30 @@ const Index = () => {
                 <img src={`${router.basePath}/assets/images/mountain-cream-bottom.svg`} alt="" className="absolute bottom-0 inset-x-0 h-14 md:h-auto object-cover md:w-full select-none pointer-events-none" />
             </div>
 
-            <div className="container">
-                <h1 className="font-title text-3xl mb-6">Franelas</h1>
+            <div className="pb-20">
+                <div className="container">
+                    <h1 className="font-title text-3xl mb-6">Franelas</h1>
 
-                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 xl:gap-6">
-                    {[...products]
-                        .sort((a, b) => (b as any).id - (a as any).id)
-                        .map((product: any, i: any) => (
-                            <ProductCardComponent product={product} key={i} />
-                        ))}
+                    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 xl:gap-6">
+                        {[...shirts]
+                            .sort((a, b) => (b as any).id - (a as any).id)
+                            .map((product: any, i: any) => (
+                                <ProductCardComponent product={product} key={i} />
+                            ))}
+                    </div>
+                </div>
+            </div>
+            <div className="pb-20">
+                <div className="container">
+                    <h1 className="font-title text-3xl mb-6">Accesorios</h1>
+
+                    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 xl:gap-6">
+                        {[...accesories]
+                            .sort((a, b) => (b as any).id - (a as any).id)
+                            .map((product: any, i: any) => (
+                                <ProductCardComponent product={product} key={i} />
+                            ))}
+                    </div>
                 </div>
             </div>
         </section>

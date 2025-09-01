@@ -13,6 +13,9 @@ const Product = ({product}: any) => {
     const router = useRouter();
     const [selectedGenre, setSelectedGenre] = useState<'men' | 'women'>('men');
 
+    // Check if product has any image with genre
+    const hasGenre = product.images.some((img: any) => img.genre);
+
     // Filter images by selected genre, fallback to all if none match
     const filteredImages = product.images.filter(
         (img: any) => !img.genre || img.genre === selectedGenre
@@ -67,52 +70,54 @@ const Product = ({product}: any) => {
                             {product.in_stock ? (
                                 <div>
                                     <div className="font-title font-extrabold text-2xl text-primary-light">{product.price}</div>
-                                    <div className="flex gap-2 my-8">
-                                        <div>
-                                            <label
-                                                htmlFor="genre-men"
-                                                className={`cursor-pointer px-4 py-2 rounded-full border font-medium transition
-                                                    ${selectedGenre === 'men'
-                                                        ? 'bg-primary-light text-white border-primary-light'
-                                                        : 'bg-white text-stone-900 border-stone-300 hover:bg-stone-100'}
-                                                    peer-checked:bg-primary-light peer-checked:text-white peer-checked:border-primary-light
-                                                `}
-                                            >
-                                                <input
-                                                    type="radio"
-                                                    id="genre-men"
-                                                    name="genre"
-                                                    value="men"
-                                                    checked={selectedGenre === 'men'}
-                                                    onChange={() => setSelectedGenre('men')}
-                                                    className="peer hidden"
-                                                />
-                                                Caballero
-                                            </label>
+                                    {hasGenre && (
+                                        <div className="flex gap-2 my-8">
+                                            <div>
+                                                <label
+                                                    htmlFor="genre-men"
+                                                    className={`cursor-pointer px-4 py-2 rounded-full border font-medium transition
+                                                        ${selectedGenre === 'men'
+                                                            ? 'bg-primary-light text-white border-primary-light'
+                                                            : 'bg-white text-stone-900 border-stone-300 hover:bg-stone-100'}
+                                                        peer-checked:bg-primary-light peer-checked:text-white peer-checked:border-primary-light
+                                                    `}
+                                                >
+                                                    <input
+                                                        type="radio"
+                                                        id="genre-men"
+                                                        name="genre"
+                                                        value="men"
+                                                        checked={selectedGenre === 'men'}
+                                                        onChange={() => setSelectedGenre('men')}
+                                                        className="peer hidden"
+                                                    />
+                                                    Caballero
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <label
+                                                    htmlFor="genre-women"
+                                                    className={`cursor-pointer px-4 py-2 rounded-full border font-medium transition
+                                                        ${selectedGenre === 'women'
+                                                            ? 'bg-primary-light text-white border-primary-light'
+                                                            : 'bg-white text-stone-900 border-stone-300 hover:bg-stone-100'}
+                                                        peer-checked:bg-primary-light peer-checked:text-white peer-checked:border-primary-light
+                                                    `}
+                                                >
+                                                    <input
+                                                        type="radio"
+                                                        id="genre-women"
+                                                        name="genre"
+                                                        value="women"
+                                                        checked={selectedGenre === 'women'}
+                                                        onChange={() => setSelectedGenre('women')}
+                                                        className="peer hidden"
+                                                    />
+                                                    Dama
+                                                </label>
+                                            </div>
                                         </div>
-                                        <div>
-                                            <label
-                                                htmlFor="genre-women"
-                                                className={`cursor-pointer px-4 py-2 rounded-full border font-medium transition
-                                                    ${selectedGenre === 'women'
-                                                        ? 'bg-primary-light text-white border-primary-light'
-                                                        : 'bg-white text-stone-900 border-stone-300 hover:bg-stone-100'}
-                                                    peer-checked:bg-primary-light peer-checked:text-white peer-checked:border-primary-light
-                                                `}
-                                            >
-                                                <input
-                                                    type="radio"
-                                                    id="genre-women"
-                                                    name="genre"
-                                                    value="women"
-                                                    checked={selectedGenre === 'women'}
-                                                    onChange={() => setSelectedGenre('women')}
-                                                    className="peer hidden"
-                                                />
-                                                Dama
-                                            </label>
-                                        </div>
-                                    </div>
+                                    )}
                                 </div>
                             ) : (
                                 <div className="font-title font-extrabold text-2xl text-red-500">No disponible</div>
