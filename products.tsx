@@ -146,8 +146,56 @@ export const products = [
         ],
         in_stock: true
     },
-    {
+        {
         id: '8',
+        name: 'Buff Clásico Negro',
+        slug: 'buff-clasico-negro',
+        description: '<p><b>Tamaño:</b> 40&times;20 CM</p><p><b>Material:</b> Microdurazno</p>',
+        category: 'accesories',
+        price: 'USD 8.00',
+        images: [
+            { id: '1', filename: 'buff-black-01.png' },
+        ],
+        in_stock: true
+    },
+    {
+        id: '9',
+        name: 'Buff Nebula',
+        slug: 'buff-nebula',
+        description: '<p><b>Tamaño:</b> 40&times;20 CM</p><p><b>Material:</b> Microdurazno</p>',
+        category: 'accesories',
+        price: 'USD 8.00',
+        images: [
+            { id: '1', filename: 'buff-nebula-01.png' },
+        ],
+        in_stock: true
+    },
+    {
+        id: '10',
+        name: 'Buff Sabana',
+        slug: 'buff-sabana',
+        description: '<p><b>Tamaño:</b> 40&times;20 CM</p><p><b>Material:</b> Microdurazno</p>',
+        category: 'accesories',
+        price: 'USD 8.00',
+        images: [
+            { id: '1', filename: 'buff-sabana-01.png' },
+        ],
+        in_stock: true
+    },
+    {
+        id: '11',
+        name: 'Buff Sierra',
+        slug: 'buff-sierra',
+        description: '<p><b>Tamaño:</b> 40&times;20 CM</p><p><b>Material:</b> Microdurazno</p>',
+        category: 'accesories',
+        price: 'USD 8.00',
+        images: [
+            { id: '1', filename: 'buff-sierra-01.png' },
+        ],
+        in_stock: true
+    },
+    {
+        id: '12',
         name: 'Toalla Mirador Casupo',
         slug: 'toalla-mirador-casupo',
         description: '<p>Fotografía por Tirso Lecointere</p><p><b>Tamaños disponibles</b> <ul><li>Pequeña: 35&times;71 CM</li><li>Grande: 67&times;137 CM</li></ul></p><p><b>Material:</b> Microfibra</p>',
@@ -160,7 +208,7 @@ export const products = [
         in_stock: true
     },
     {
-        id: '9',
+        id: '13',
         name: 'Toalla Cerro El Café',
         slug: 'toalla-el-cafe',
         description: '<p>Fotografía por Gerardo Valero</p><p><b>Tamaños disponibles</b> <ul><li>Pequeña: 35&times;71 CM</li><li>Grande: 67&times;137 CM</li></ul></p><p><b>Material:</b> Microfibra</p>',
