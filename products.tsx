@@ -150,7 +150,7 @@ export const products = [
         id: '8',
         name: 'Buff Clásico Negro',
         slug: 'buff-clasico-negro',
-        description: '<p><b>Tamaño:</b> 40&times;20 CM</p><p><b>Material:</b> Microdurazno</p>',
+        description: '<p><b>Tamaño:</b> 40&times;25 CM</p><p><b>Material:</b> Microdurazno</p>',
         category: 'accesories',
         price: 'USD 8.00',
         images: [
@@ -162,7 +162,7 @@ export const products = [
         id: '9',
         name: 'Buff Nebula',
         slug: 'buff-nebula',
-        description: '<p><b>Tamaño:</b> 40&times;20 CM</p><p><b>Material:</b> Microdurazno</p>',
+        description: '<p><b>Tamaño:</b> 40&times;25 CM</p><p><b>Material:</b> Microdurazno</p>',
         category: 'accesories',
         price: 'USD 8.00',
         images: [
@@ -174,7 +174,7 @@ export const products = [
         id: '10',
         name: 'Buff Sabana',
         slug: 'buff-sabana',
-        description: '<p><b>Tamaño:</b> 40&times;20 CM</p><p><b>Material:</b> Microdurazno</p>',
+        description: '<p><b>Tamaño:</b> 40&times;25 CM</p><p><b>Material:</b> Microdurazno</p>',
         category: 'accesories',
         price: 'USD 8.00',
         images: [
@@ -186,7 +186,7 @@ export const products = [
         id: '11',
         name: 'Buff Sierra',
         slug: 'buff-sierra',
-        description: '<p><b>Tamaño:</b> 40&times;20 CM</p><p><b>Material:</b> Microdurazno</p>',
+        description: '<p><b>Tamaño:</b> 40&times;25 CM</p><p><b>Material:</b> Microdurazno</p>',
         category: 'accesories',
         price: 'USD 8.00',
         images: [
