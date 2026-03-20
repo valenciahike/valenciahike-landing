@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 
 import ProductCardComponent from '@/components/productCardComponent';
+import HeaderSwiperComponent from '@/components/swiper/headerSwiperComponent';
 import PartnersComponent from '@/components/swiper/PartnersComponent';
 import TestimonialComponent from '@/components/swiper/TestimonialComponent';
 import TrailsComponent from '@/components/swiper/trailsComponent';
@@ -114,7 +115,7 @@ const Index = () => {
 
     return (<Main meta={<Meta title="Bienvenido a Valencia Hike" description="Organización sin fines de lucro dedicada a mostrar las rutas de montaña que ofrece el estado Carabobo y Venezuela." />}>
         {/* hero */}
-        <header className="relative flex items-center z-10 bg-slate-900 text-white text-center py-20 min-h-[85vh] bg-no-repeat bg-cover bg-center" style={{ backgroundImage: `url(${router.basePath}/assets/images/hero-img.jpg)` }}>
+        {/* <header className="relative flex items-center z-10 bg-slate-900 text-white text-center py-20 min-h-[85vh] bg-no-repeat bg-cover bg-center" style={{ backgroundImage: `url(${router.basePath}/assets/images/hero-img.jpg)` }}>
 
             <div className="overflow-hidden">
                 <img src={`${router.basePath}/assets/images/mountain-white-top.svg`} alt="" className="absolute top-0 inset-x-0 h-14 md:h-auto object-cover md:w-full select-none pointer-events-none" />
@@ -129,6 +130,16 @@ const Index = () => {
 
                 <Link href={`${router.basePath}/registrarse`} className="inline-block bg-green-700 text-white hover:text-white/80 font-bold rounded-2xl bg-gradient-to-b from-primary-light to-primary-dark px-6 py-3 hover:-translate-y-px">Unirse a Valencia Hike</Link>
             </div>
+        </header> */}
+
+        {/* hero slider */}
+        <header className="relative flex items-center z-10">
+            <div className="overflow-hidden z-10">
+                <img src={`${router.basePath}/assets/images/mountain-white-top.svg`} alt="" className="absolute top-0 inset-x-0 h-14 md:h-auto object-cover md:w-full select-none pointer-events-none" />
+                <img src={`${router.basePath}/assets/images/mountain-cream-bottom.svg`} alt="" className="absolute bottom-0 inset-x-0 h-14 md:h-auto object-cover md:w-full select-none pointer-events-none" />
+            </div>
+
+            <HeaderSwiperComponent />
         </header>
 
         {/* about us */}
