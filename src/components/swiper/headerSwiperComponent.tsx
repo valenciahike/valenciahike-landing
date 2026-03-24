@@ -40,13 +40,16 @@ export default function HeaderSwiperComponent() {
                                         <div>📅 Domingo 29 de marzo, 6:00 a.m.</div>
                                     </div>
                                 </div>
-                                {/* <Link href="#!" className="inline-flex items-center gap-2 bg-secondary text-white hover:text-white/80 font-bold rounded-2xl bg-gradient-to-b from-secondary-light to-secondary-dark px-6 py-3 hover:-translate-y-px">
-                                    Inscribirme
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="3" stroke="currentColor" className="w-4 h-4"> <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" /> </svg>
-                                </Link> */}
-                                <div>
-                                    <div className="inline-block p-4 text-sm bg-secondary rounded-lg font-serif">Inscripciones a partir del martes 24 de marzo, 8:00 a.m.</div>
+                                <div className="flex items-center gap-4">
+                                    <Link href="https://docs.google.com/forms/d/e/1FAIpQLSeSETq7BCCXoiOOBr_KCE6bEPlPhvb443t121X7kQXV33Mpbw/viewform" target='_blank' className="inline-flex items-center gap-2 bg-secondary text-white hover:text-white/80 font-bold rounded-2xl bg-gradient-to-b from-secondary-light to-secondary-dark px-6 py-3 hover:-translate-y-px">
+                                        Inscribirme
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="3" stroke="currentColor" className="w-4 h-4"> <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" /> </svg>
+                                    </Link>
+                                    <span className='font-serif'>Solo 200 cupos.</span>
                                 </div>
+                                {/* <div>
+                                    <div className="inline-block p-4 text-sm bg-secondary rounded-lg font-serif">¡AGOTADO!</div>
+                                </div> */}
                             </div>
                             <div className="col-span-12 md:col-span-4">
                                 <img src={`${router.basePath}/assets/images/carrera-valencia/img_e8fg4s.jpeg`} className='max-w-full h-auto rounded-2xl' alt="" />
